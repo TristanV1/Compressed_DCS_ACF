@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/counterBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counterBuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/integralTimer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module integralTimer
+WARNING: [VRFC 10-3401] illegal argument of type real in math function 'clog2()', expected integral type [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/integralTimer.v:35]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
