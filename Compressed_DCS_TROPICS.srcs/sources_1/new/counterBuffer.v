@@ -28,7 +28,7 @@ reg [sizeof_n:0] countBuffer = 0;
 
 always @ (enable) begin
     if (photonCounter == 1'b1) begin
-    currentCount <= currentCount + 1;
+        currentCount <= currentCount + 1;
     end
 end
 

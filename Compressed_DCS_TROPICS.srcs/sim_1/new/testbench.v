@@ -22,7 +22,7 @@
 
 module testbench();
 
-wire clk;
+reg clk;
 wire photonCounter;
 reg n;
 
@@ -33,11 +33,8 @@ reg n;
 //);
 
 wire t_int_out;
+
 integralTimer
-#(
-.clk_speed(2),
-.t_int(1)
-)
 uut(
 .clk(clk),
 .t_int_out(t_int_out)
@@ -45,10 +42,11 @@ uut(
 
 integer i;
 initial begin
+    clk = 0;
     for (i = 0; i < 25; i = i + 1) begin
         clk = ~clk;
+        #10;
     end
 
 end
-
 endmodule

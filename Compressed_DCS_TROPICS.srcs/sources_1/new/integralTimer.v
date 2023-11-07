@@ -33,17 +33,22 @@ output t_int_out
 );
 
 parameter count_max = $clog2($ceil(t_int_counter_max));
-reg [count_max:0] count;
-reg r_t_int_out;
+reg [count_max-1:0] count = 1;
+//reg [5:0] count = 0;
+reg r_t_int_out = 0;
 
-always @ (posedge(clk)) begin
-    if (count >= t_int_counter_max) begin
-        r_t_int_out = !r_t_int_out;
-        count <= 0; 
+assign t_int_out = r_t_int_out;
+
+always @ (posedge clk) begin
+//    if (count >= t_int_counter_max) begin
+    if (count >= 5) begin
+        r_t_int_out <= !r_t_int_out;
+        count <= 1; 
     end
     else begin
     count <= count + 1; 
     end
 end
+
 
 endmodule
