@@ -23,8 +23,8 @@
 module testbench();
 
 reg clk;
-wire photonCounter;
-reg n;
+reg photonCounter;
+wire n;
 
 //main(
 //.clk(clk),
@@ -34,19 +34,33 @@ reg n;
 
 wire t_int_out;
 
-integralTimer
-uut(
-.clk(clk),
-.t_int_out(t_int_out)
-);
+//integralTimer
+//uut(
+//.clk(clk),
+//.t_int_out(t_int_out)
+//);
+
+main uut(
+    .clk(clk),
+    .photonCounter(photonCounter),
+    .n(n)
+    );
 
 integer i;
 initial begin
     clk = 0;
-    for (i = 0; i < 25; i = i + 1) begin
-        clk = ~clk;
+    for (i = 0; i < 500; i = i + 1) begin
+        photonCounter = 0;
+        if (i % 5 == 0) begin
+            clk = ~clk;
+        end
+        
+        if (i % 2 == 0) begin
+            photonCounter = 1;
+        end
         #10;
     end
 
 end
 endmodule
+

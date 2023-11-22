@@ -23,7 +23,7 @@
 module integralTimer 
 #(
 parameter clk_speed = 50_000_000,
-parameter clk_period = 1/clk_speed,
+//parameter clk_period = 1/clk_speed,
 parameter t_int = 0.01,
 parameter t_int_counter_max = $ceil(t_int * clk_speed)
 )
@@ -32,16 +32,16 @@ input clk,
 output t_int_out
 );
 
-parameter count_max = $clog2($ceil(t_int_counter_max));
-reg [count_max-1:0] count = 1;
+parameter count_max = $clog2(t_int_counter_max);
+reg [count_max-1:0] count = 0;
 //reg [5:0] count = 0;
-reg r_t_int_out = 0;
+reg r_t_int_out = 1;
 
 assign t_int_out = r_t_int_out;
 
 always @ (posedge clk) begin
 //    if (count >= t_int_counter_max) begin
-    if (count >= 5) begin
+    if (count >= count_max) begin
         r_t_int_out <= !r_t_int_out;
         count <= 1; 
     end

@@ -22,7 +22,7 @@
 
 module main(
     input clk,
-    input photonCounter,
+    input photonCounterIn1,
     output n
 );
 
@@ -30,14 +30,14 @@ wire t_int_out;
 
 counterBuffer 
    #(
-    .ts(0.000001),
+    .fs(1_000),
     .t_int(0.01) //1 ms integration time
     ) 
-channel_1
+counterBuffer_1
     (
     .fs_clk(clk), //
     .enable(t_int_out), //The enable line will be connected to the t_int timer
-    .photonCounter(photonCounter), //The TTL pulse directly from the photonCounter
+    .photonCounter(photonCounterIn1), //The TTL pulse directly from the photonCounter
     .n(n)
 );
 
@@ -45,9 +45,9 @@ channel_1
 integralTimer 
    #(
     .clk_speed(50_000_000),
-    .t_int(0.01)
+    .t_int(0.00000006)
     )
-integralTimer1
+integralTimer_1
     (
     .clk(clk),
     .t_int_out(t_int_out)
