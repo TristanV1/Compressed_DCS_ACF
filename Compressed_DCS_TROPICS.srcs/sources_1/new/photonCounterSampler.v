@@ -27,8 +27,7 @@ input enable, //The enable line will be connected to the t_int timer.
 output photonCounterSampleOut //Sampled Photon Counter.
     );
     
-always @ (posedge(fs_clk)) begin
+always @ (fs_clk) begin
     photonCounterSampleOut = photonCounterIn & enable; //Ensures that the Photon Counter is only sampled when the integration timer is ON and the fs_clk is ON.
-
 end
 endmodule

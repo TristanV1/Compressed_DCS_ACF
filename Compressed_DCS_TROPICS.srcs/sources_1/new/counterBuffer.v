@@ -47,19 +47,19 @@
 //endmodule
 
 
-module counterBufferMemory
+module counterBuffer
 #(
 parameter fs = 1_000, //1,000 kHz Sampling Frequency
 parameter t_int = 0.01 //1 ms integration time
 ) 
 (
 input clk,
-input read_en,//Enables read at given address
+//input read_en,//Enables read at given address
 input write_en,//Enables write at given address
-input address_read,//Address to read from
+//input address_read,//Address to read from
 input address_write,//Address to write to 
 input data_in,//Data to write to memory
-output data_out,//Data read from memory at given address
+//output data_out,//Data read from memory at given address
 output Mem_OutOfRange//Memory overflow flag
 );
 
@@ -71,12 +71,13 @@ reg [MEMORY_WIDTH-1:0] counterBuffer [0:MEMORY_DEPTH-1] = 0;
 
 always @ (posedge(clk)) begin
 
-    if (read_en) begin
-        data_out <= counterBuffer[address_read];
-    end
-    
+//    if (read_en) begin
+//        data_out <= counterBuffer[address_read];
+//    end
     if (write_en) begin
         counterBuffer[address_write] <= data_in;
+    else if (write_en == 1'b0) begin
+        // Add reset logic
     end
     
     if (address_read > MEMORY_DEPTH-1 | address_write > MEMORY_DEPTH-1) begin
