@@ -50,15 +50,15 @@
 module counterBuffer
 #(
 parameter fs = 1_000, //1,000 kHz Sampling Frequency
-parameter t_int = 0.01 //1 ms integration time
+parameter t_int = 0.01 //10 ms integration time
 ) 
 (
 input clk,
 //input read_en,//Enables read at given address
 input write_en,//Enables write at given address
 //input address_read,//Address to read from
-input address_write,//Address to write to 
-input data_in,//Data to write to memory
+//input address_write,//Address to write to 
+input [3:0] data_in,//Data to write to memory
 //output data_out,//Data read from memory at given address
 output Mem_OutOfRange//Memory overflow flag
 );
@@ -67,22 +67,32 @@ parameter MEMORY_DEPTH = $rtoi($ceil(fs*t_int));
 parameter SIZE_OF_MEMORY_ADDRESS = $clog2($ceil(MEMORY_DEPTH));
 parameter MEMORY_WIDTH = 4;
 
-reg [MEMORY_WIDTH-1:0] counterBuffer [0:MEMORY_DEPTH-1] = 0;
+reg [MEMORY_WIDTH-1:0] counterBuffer [0:MEMORY_DEPTH-1];
 
+integer j;
+
+initial begin
+    for (j = 0; j < MEMORY_DEPTH-1; j = j+1)
+            counterBuffer[j] = 4'b0;
+end
+
+integer i;
 always @ (posedge(clk)) begin
 
 //    if (read_en) begin
 //        data_out <= counterBuffer[address_read];
 //    end
     if (write_en) begin
-        counterBuffer[address_write] <= data_in;
+        counterBuffer[0] <= data_in;
+    end
     else if (write_en == 1'b0) begin
-        // Add reset logic
+        for (i = 0; i < MEMORY_DEPTH-2; i = i+1)
+            counterBuffer[i+1] = counterBuffer[i];
     end
     
-    if (address_read > MEMORY_DEPTH-1 | address_write > MEMORY_DEPTH-1) begin
-        Mem_OutOfRange <= 1'b1;
-    end   
+//    if (address_read > MEMORY_DEPTH-1 | address_write > MEMORY_DEPTH-1) begin
+//        Mem_OutOfRange <= 1'b1;
+//    end   
 
 end
 endmodule 

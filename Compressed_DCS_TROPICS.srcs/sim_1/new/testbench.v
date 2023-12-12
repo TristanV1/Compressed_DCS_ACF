@@ -22,9 +22,9 @@
 
 module testbench();
 
-reg clk;
-reg photonCounter;
-wire n;
+//reg clk;
+//reg photonCounter;
+//wire n;
 
 //main(
 //.clk(clk),
@@ -32,7 +32,7 @@ wire n;
 //.n(n)
 //);
 
-wire t_int_out;
+//wire t_int_out;
 
 //integralTimer
 //uut(
@@ -40,25 +40,44 @@ wire t_int_out;
 //.t_int_out(t_int_out)
 //);
 
-main uut(
-    .clk(clk),
-    .photonCounter(photonCounter),
-    .n(n)
-    );
+//main uut(
+//    .clk(clk),
+//    .photonCounter(photonCounter),
+//    .n(n)
+//    );
+
+reg clk, write_en = 0;
+wire Mem_OutOfRange;
+reg [3:0] data_in = 4'b0;
+
+counterBuffer
+uut(
+.clk(clk),
+.write_en(write_en),
+//.address_write(address_write),
+.data_in(data_in[3:0]),
+.Mem_OutOfRange(Mem_OutOfRange)
+);
 
 integer i;
 initial begin
     clk = 0;
     for (i = 0; i < 500; i = i + 1) begin
-        photonCounter = 0;
+    
         if (i % 5 == 0) begin
-            clk = ~clk;
+            clk <= ~clk;
         end
         
         if (i % 2 == 0) begin
-            photonCounter = 1;
+            data_in <= data_in + 1;
         end
+        
+        if (i % 25 == 0) begin
+            write_en <= ~write_en;
+        end
+        
         #10;
+        
     end
 
 end
