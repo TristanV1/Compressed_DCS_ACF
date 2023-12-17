@@ -77,24 +77,20 @@ initial begin
 end
 
 integer i;
-always @ (posedge(clk)) begin
+always @ (posedge(write_en)) begin
 
-//    if (read_en) begin
-//        data_out <= counterBuffer[address_read];
-//    end
-    if (write_en) begin
-        counterBuffer[0] <= data_in;
-    end
-    else if (write_en == 1'b0) begin
-        for (i = 0; i < MEMORY_DEPTH-2; i = i+1)
-            counterBuffer[i+1] = counterBuffer[i];
-    end
+    if (write_en == 1'b1) begin
     
-//    if (address_read > MEMORY_DEPTH-1 | address_write > MEMORY_DEPTH-1) begin
-//        Mem_OutOfRange <= 1'b1;
-//    end   
+        for (i = MEMORY_DEPTH-1; i > 0; i = i-1) begin
+                counterBuffer[i] = counterBuffer[i-1];
+        end
+        
+        counterBuffer[0] <= data_in;
+    
+    end 
 
 end
+
 endmodule 
 
 
