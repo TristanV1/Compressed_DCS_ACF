@@ -27,33 +27,42 @@ parameter fs = 1_000_000 //1 MHz Sampling Frequency
 ) 
 (
 input clk,
-input sample_in,
-output sample_out,
-output sample_and_clear
+input [3:0] sample_in,
+output reg [3:0] sample_out,
+output reg sample_and_clear
 );
 
-reg count = 0; 
+reg [3:0]count = 0; 
 reg CLK_1MHZ = 0;
 
-always @ (posedge clk) begin
+always @ (posedge clk) begin //Clock divider to provide 1MHz sampling frequency.
  
     if (count >= 12) begin
-        count <= 0;
+        count <= 4'b0;
         CLK_1MHZ <= ~CLK_1MHZ;
     end    
     
     else if (count < 12) begin
-        count <= count + 1;
+        count = count + 1'b1;
     end
     
 end
 
+//reg w_sample_out;
+//reg w_sample_and_clear;
+
 always @ (posedge CLK_1MHZ) begin
-    sample_out <= sample_in;
-    sample_and_clear <= 1'b1;
+    if (CLK_1MHZ == 1'b1) begin
+        sample_out <= sample_in;
+        sample_and_clear <= 1'b1;
+    end
 end 
 
-always @ (CLK_1MHZ) begin
+//assign sample_out = w_sample_out;
+//assign sample_and_clear = w_sample_and_clear;
+
+always @ (negedge CLK_1MHZ) begin
+    sample_out <= 4'b0;
     sample_and_clear <= 1'b0;
 end 
 

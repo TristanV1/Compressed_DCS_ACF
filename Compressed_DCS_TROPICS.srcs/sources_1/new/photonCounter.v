@@ -23,20 +23,34 @@
 module photonCounter(
 input photonCounter_TTL,
 input reset,
-output counter_val
+output [3:0] counter_val
 );
 
-reg counter = 0;
+reg [3:0] counter = 0;
 
-always @ (posedge(photonCounter)) begin
-
+always @ (photonCounter_TTL,reset) begin
     if (reset == 1'b1) begin
         counter <= 0;
-    end
-    else begin
-        counter <= counter + 1;
+    end 
+      
+    else if(reset == 1'b0) begin
+        if (photonCounter_TTL == 1'b1) begin 
+            counter <= counter + 1;
+        end
+        
+        else if (photonCounter_TTL == 1'b0) begin 
+            counter <= counter;
+        end
     end
     
+
+    else begin
+        counter <= 0;
+    end
+    
+    
 end
+
+assign counter_val = counter;
 
 endmodule

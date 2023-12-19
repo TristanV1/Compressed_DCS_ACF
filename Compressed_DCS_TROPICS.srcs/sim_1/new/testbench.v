@@ -46,40 +46,65 @@ module testbench();
 //    .n(n)
 //    );
 
-reg clk, write_en = 0;
-wire Mem_OutOfRange;
-reg [3:0] data_in = 4'b0;
+//reg clk, write_en = 0;
+//wire Mem_OutOfRange;
+//reg [3:0] data_in = 4'b0;
 
-counterBuffer
-uut(
-.clk(clk),
-.write_en(write_en),
-//.address_write(address_write),
-.data_in(data_in[3:0]),
-.Mem_OutOfRange(Mem_OutOfRange)
+//counterBuffer
+//uut(
+//.clk(clk),
+//.write_en(write_en),
+////.address_write(address_write),
+//.data_in(data_in[3:0]),
+//.Mem_OutOfRange(Mem_OutOfRange)
+//);
+
+//integer i;
+//initial begin
+//    clk = 0;
+//    for (i = 0; i < 500; i = i + 1) begin
+    
+//        if (i % 5 == 0) begin
+//            clk <= ~clk;
+//        end
+        
+//        if (i % 2 == 0) begin
+//            data_in <= data_in + 1;
+//        end
+        
+//        if (i % 25 == 0) begin
+//            write_en <= ~write_en;
+//        end
+        
+//        #10;
+        
+//    end
+
+//end
+
+reg clk = 0;
+reg photonCounterIn1 = 0;
+wire n;
+
+main uut(
+    .clk(clk),
+    .photonCounterIn1(photonCounterIn1),
+    .n(n)
 );
 
 integer i;
 initial begin
-    clk = 0;
-    for (i = 0; i < 500; i = i + 1) begin
-    
-        if (i % 5 == 0) begin
-            clk <= ~clk;
-        end
-        
-        if (i % 2 == 0) begin
-            data_in <= data_in + 1;
-        end
-        
-        if (i % 25 == 0) begin
-            write_en <= ~write_en;
-        end
-        
-        #10;
-        
+    for(i = 0; i<100000; i = i+1) begin
+       if(i%10==0) begin
+          clk <= ~clk;   
+       end
+       
+       if(i % ($random%5) == 0) begin
+          photonCounterIn1 <= ~photonCounterIn1;
+       end
+       
+       #10;   
     end
-
 end
 endmodule
 
