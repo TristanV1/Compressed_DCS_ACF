@@ -1,0 +1,215 @@
+
+*** Running vivado
+    with args -log AutoCorrelator.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source AutoCorrelator.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source AutoCorrelator.tcl -notrace
+Command: synth_design -top AutoCorrelator -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 47004
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1261.242 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-567] referenced signal 'SumBuffer_Num' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:34]
+WARNING: [Synth 8-567] referenced signal 'n_i' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:34]
+WARNING: [Synth 8-567] referenced signal 'n_delta' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:34]
+WARNING: [Synth 8-567] referenced signal 'SumBuffer_Den' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:34]
+WARNING: [Synth 8-3848] Net n in module/entity AutoCorrelator does not have driver. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator' (1#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-3330] design AutoCorrelator has an empty top module
+WARNING: [Synth 8-7129] Port n[7] in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n[6] in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n[5] in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n[4] in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n[3] in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n[2] in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n[1] in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n[0] in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port enable in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n_i[3] in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n_i[2] in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n_i[1] in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n_i[0] in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n_delta[3] in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n_delta[2] in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n_delta[1] in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n_delta[0] in module AutoCorrelator is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1261.242 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1261.242 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1261.242 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1261.242 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3330] design AutoCorrelator has an empty top module
+WARNING: [Synth 8-7129] Port n[7] in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n[6] in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n[5] in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n[4] in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n[3] in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n[2] in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n[1] in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n[0] in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port enable in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n_i[3] in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n_i[2] in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n_i[1] in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n_i[0] in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n_delta[3] in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n_delta[2] in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n_delta[1] in module AutoCorrelator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port n_delta[0] in module AutoCorrelator is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1261.242 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1261.242 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1261.242 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1261.242 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1261.242 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1261.242 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1261.242 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1261.242 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1261.242 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |OBUFT |     8|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     8|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1261.242 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 44 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1261.242 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1261.242 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1261.242 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1261.242 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: f4fc3a0b
+INFO: [Common 17-83] Releasing license: Synthesis
+12 Infos, 44 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1261.242 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.runs/synth_1/AutoCorrelator.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file AutoCorrelator_utilization_synth.rpt -pb AutoCorrelator_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 20 00:48:41 2023...

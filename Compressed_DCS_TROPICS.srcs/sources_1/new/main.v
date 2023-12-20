@@ -71,6 +71,9 @@ sampler_1
 wire toCounterBufferEnable;
 and(toCounterBufferEnable, t_int_out, sample_and_clear);
 
+wire [3:0] n_i;
+wire [3:0] n_delta;
+
 counterBuffer 
    #(
     .fs(1_000_000),
@@ -79,7 +82,17 @@ counterBuffer
 counterBuffer_1
     (
     .write_en(sample_and_clear), //The enable line will be connected to the sample_and_clear line
-    .data_in(toBuffer) 
+    .data_in(toBuffer),
+    .n_i(n_i),
+    .n_delta(n_delta)
+);
+
+AutoCorrelator AutoCorrelator_1(
+.enable(sample_and_clear),
+.reset(~sample_and_clear),
+.n_i(n_i),
+.n_delta(n_delta),
+.n(n)
 );
 
 
