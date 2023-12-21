@@ -89,7 +89,7 @@ counterBuffer_1
 
 AutoCorrelator AutoCorrelator_1(
 .enable(sample_and_clear),
-.reset(~sample_and_clear),
+.reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta),
 .n(n)

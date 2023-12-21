@@ -37,20 +37,23 @@ initial begin
 end
 
 always @ (enable) begin
-    if (enable == 1'b1) begin
-        SumBuffer_Num <= SumBuffer_Num + (n_i * n_delta);
-        SumBuffer_Den <= SumBuffer_Den + (n_i * n_i);
-    end
+    if (reset == 1'b0) begin
+        if (enable == 1'b1) begin
+            SumBuffer_Num <= SumBuffer_Num + (n_i * n_delta);
+            SumBuffer_Den <= SumBuffer_Den + (n_i * n_i);
+        end
     
-    else if (enable == 1'b0) begin
-        SumBuffer_Num <= SumBuffer_Num;
-        SumBuffer_Den <= SumBuffer_Den;
+        else begin
+            SumBuffer_Num <= SumBuffer_Num;
+            SumBuffer_Den <= SumBuffer_Den;
+        end
     end
     
     else begin
-        SumBuffer_Num <= SumBuffer_Num;
-        SumBuffer_Den <= SumBuffer_Den;
+        SumBuffer_Num <= 0;
+        SumBuffer_Den <= 0;
     end
+    
 end
     
 endmodule

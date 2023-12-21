@@ -23,7 +23,7 @@ integer j;
 
 initial begin
     for (j = 0; j < MEMORY_DEPTH; j = j+1)
-            counterBuffer[j] = 4'b0;
+            counterBuffer[j] = 0;
 end
 
 integer i;
