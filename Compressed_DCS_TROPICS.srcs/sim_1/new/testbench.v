@@ -84,30 +84,30 @@ module testbench();
 
 /////////////////////////////////////////Full Sampling Stage Integration Test Bench///////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////Full Sampling Stage Integration Test Bench///////////////////////////////////////////////////////////////////////////
-reg clk = 0;
-reg photonCounterIn1 = 0;
-wire n;
+//reg clk = 0;
+//reg photonCounterIn1 = 0;
+//wire n;
 
-main uut(
-    .clk(clk),
-    .photonCounterIn1(photonCounterIn1),
-    .n(n)
-);
+//main uut(
+//    .clk(clk),
+//    .photonCounterIn1(photonCounterIn1),
+//    .n(n)
+//);
 
-integer i;
-initial begin
-    for(i = 0; i<100000; i = i+1) begin
-       if(i%10==0) begin
-          clk <= ~clk;   
-       end
+//integer i;
+//initial begin
+//    for(i = 0; i<100000; i = i+1) begin
+//       if(i%10==0) begin
+//          clk <= ~clk;   
+//       end
        
-       if(i % ($random%5) == 0) begin
-          photonCounterIn1 <= ~photonCounterIn1;
-       end
+//       if(i % ($random%5) == 0) begin
+//          photonCounterIn1 <= ~photonCounterIn1;
+//       end
        
-       #10;   
-    end
-end
+//       #10;   
+//    end
+//end
 
 /////////////////////////////////////////Full Sampling Stage Integration Test Bench///////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////Full Sampling Stage Integration Test Bench///////////////////////////////////////////////////////////////////////////
@@ -151,5 +151,45 @@ end
 
 
 ///////////////////////////////////////// Auto Correlator Test Bench ///////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////// Divider  ///////////////////////////////////////////////////////////////////////////
+parameter WIDTH = 11;
+reg clk = 0,enable = 0;
+wire done,DBZ_flag;
+wire [WIDTH-1:0] divisor = 10'd10;
+wire [WIDTH-1:0] dividend = 10'd101;
+wire [WIDTH-1:0] quotient = 0;
+wire [WIDTH-1:0] remainder = 0;
+
+Divider uut
+(
+.clk(clk),
+.enable(enable),
+.dividend(dividend),
+.divisor(divisor),
+.quotient(quotient),
+.remainder(remainder),
+.done(done),
+.DBZ_flag(DBZ_flag)
+);
+
+integer i;
+
+initial begin
+    for(i = 0; i<100000; i = i+1) begin
+       if(i%10==0) begin
+          clk <= ~clk;   
+       end
+       
+       if(i%200==0) begin
+          enable <= ~enable;   
+       end
+       
+       #10;   
+    end
+end
+
+
+///////////////////////////////////////// Divider ///////////////////////////////////////////////////////////////////////////
 
 endmodule
