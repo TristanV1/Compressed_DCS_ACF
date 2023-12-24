@@ -156,8 +156,8 @@ module testbench();
 parameter WIDTH = 11;
 reg clk = 0,enable = 0;
 wire done,DBZ_flag;
-wire [WIDTH-1:0] divisor = 11'd10;
-wire [WIDTH-1:0] dividend = 11'd101;
+reg [WIDTH-1:0] divisor = 11'd9;
+reg [WIDTH-1:0] dividend = 11'd9;
 wire [WIDTH-1:0] quotient;
 wire [WIDTH-1:0] remainder;
 
@@ -175,15 +175,26 @@ Divider uut
 );
 
 integer i;
-
+integer tog = 0;
+integer tog2 = 0;
 initial begin
     for(i = 0; i<100000; i = i+1) begin
+       if (tog == 0) begin
+          if (done == 1'b1) begin
+            dividend = dividend + 9;
+            tog = 1;
+          end
+       end
+       else if (done == 1'b0) begin
+          tog = 0;
+       end
+       
        #10;
        if(i%10==0) begin
           clk <= ~clk;   
        end
        
-       if(i%200==0) begin
+       if(i%500==0) begin
           enable <= ~enable;   
        end
           

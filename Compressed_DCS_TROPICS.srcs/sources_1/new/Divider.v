@@ -35,6 +35,13 @@ output reg done,
 output reg DBZ_flag
 );
 
+initial begin
+    done <= 0;
+    DBZ_flag <= 0;
+    quotient <= 0;
+    remainder <=0;
+end
+
 reg [WIDTH:0] acc = 0;
 reg [WIDTH-1:0] r_quotient = 0;
 reg [3*WIDTH:0]working_register = 0;
@@ -64,31 +71,30 @@ end
 always @ (posedge(clk)) 
 begin : Output_Logic
     case(current_state) 
-        IDLE: 
-            if(enable == 1'b1) begin
-                 working_register[3*WIDTH:0] <= {acc,dividend,r_quotient};
-                 next_state <= DIVIDE_1;
-                 done <= 1'b0;
-                 
-              end
-              else begin
-                 acc <= 0;
-                 r_quotient <= 0;
-                 done <= 1'b1;
-                 DBZ_flag <= 1'b0;
-              end
+        IDLE:
+            if (divisor == 0 & enable == 1'b1) begin
+                next_state <= ERROR;
+            end
+            else begin
+                if(enable == 1'b1) begin
+                    working_register[3*WIDTH:0] <= {acc,dividend,r_quotient};
+                    next_state <= DIVIDE_1;
+                    done <= 1'b0; 
+                end
+                else begin
+                    acc <= 0;
+                    r_quotient <= 0;
+                    done <= 1'b1;
+                    DBZ_flag <= 1'b0;
+                end
+            end
         DIVIDE_1: 
             if (count <= WIDTH) begin
                 count <= count + 1;
                 if (working_register[Amsb:Alsb]>divisor) begin
-                    if (divisor == 0) begin
-                        next_state <= ERROR;
-                    end
-                    else begin
                         working_register[Qmsb:Qlsb] <= working_register[Qmsb:Qlsb] + 1; 
                         working_register[Amsb:Alsb] <= working_register[Amsb:Alsb] - divisor;
                         next_state <= DIVIDE_2;
-                    end
                 end
                 else begin
                     working_register = working_register << 1;
@@ -107,11 +113,13 @@ begin : Output_Logic
             else begin
                 next_state <= COMPLETE;
             end
+            
         ERROR:
         begin
             DBZ_flag <= 1'b1; 
             next_state <= COMPLETE;
         end
+        
         COMPLETE:
         begin
             done <= 1'b1;
