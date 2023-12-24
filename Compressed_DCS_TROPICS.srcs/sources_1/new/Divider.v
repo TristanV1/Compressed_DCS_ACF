@@ -47,7 +47,7 @@ parameter Dlsb = WIDTH;
 parameter Qmsb = WIDTH - 1;
 parameter Qlsb = 0;
 
-reg [2:0] current_state = 3'b000;
+reg [2:0] current_state = 3'b100;
 reg [2:0] next_state = 3'b000;
 
 parameter IDLE = 3'b000, 
@@ -61,7 +61,8 @@ begin : Next_State_Logic
     current_state <= next_state;
 end
 
-always @ (current_state) begin
+always @ (posedge(clk)) 
+begin : Output_Logic
     case(current_state) 
         IDLE: 
             if(enable == 1'b1) begin
@@ -77,7 +78,7 @@ always @ (current_state) begin
                  DBZ_flag <= 1'b0;
               end
         DIVIDE_1: 
-            if (count <= WIDTH-1) begin
+            if (count <= WIDTH) begin
                 count <= count + 1;
                 if (working_register[Amsb:Alsb]>divisor) begin
                     if (divisor == 0) begin
@@ -117,6 +118,7 @@ always @ (current_state) begin
             count <= 1'b0;
             quotient <= working_register[Qmsb:Qlsb];
             remainder <= working_register[Amsb:Alsb];
+            next_state <= IDLE;
         end    
 
     endcase
