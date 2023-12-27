@@ -47,7 +47,7 @@ end
 reg [WIDTH:0] acc = 0;
 reg [WIDTH-1:0] r_quotient = 0;
 reg [3*WIDTH:0]working_register = 0;
-reg [$clog2(WIDTH)-1:0] count = 0;
+reg [$clog2(WIDTH):0] count = 0;
 
 parameter Amsb = 3*WIDTH;
 parameter Alsb = 2*WIDTH;
@@ -95,27 +95,29 @@ begin : Output_Logic
                     busy <= 1'b1;
                 end
                 else begin
-                    acc <= 0;
-                    r_quotient <= 0;
+                    count <= 1'b0;
+                    working_register[Amsb:Alsb] <= 0;
+                    working_register[Qmsb:Qlsb] <= 0;
                     done <= 1'b1;
                     DBZ_flag <= 1'b0;
                 end
             end
           DIVIDE_1:
-              if (count <= WIDTH-1) begin
                  if (working_register[Amsb:Alsb] >= {1'b0,divisor}) begin
                     working_register[Qlsb] <= 1; 
                     acc_next <= working_register[Amsb:Alsb] - {1'b0,divisor};
                     next_state <= DIVIDE_2;
                  end
                  else begin
-                    count <= count + 1;
-                    working_register = working_register << 1;
-                 end
-              end
-              else begin
-                 next_state <= COMPLETE;
-              end
+                    if (count <= WIDTH-1) begin
+                        count <= count + 1;
+                        working_register = working_register << 1;
+                    end
+                    else begin
+                        next_state <= COMPLETE;
+                    end
+                end
+              
               
           DIVIDE_2:   
                begin

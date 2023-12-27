@@ -23,7 +23,7 @@
 module integralTimer 
 #(
 parameter clk_speed = 12_000_000, //12MHz clock speed
-parameter t_int = 0.000040 //40 us integration time (Typical for in vivo experiment)
+parameter t_int = 0.040 //40 ms integration time (Typical for in vivo experiment)
 )
 (
 input clk,

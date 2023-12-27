@@ -114,84 +114,100 @@ module testbench();
 
 
 ///////////////////////////////////////// Auto Correlator Test Bench ///////////////////////////////////////////////////////////////////////////
-//reg enable = 0;
-//reg reset = 0;
-//reg [3:0] n_i = 0;
-//reg [3:0] n_delta = 0;
-//wire [7:0] n = 0;
+parameter WIDTH = 16;
+reg clk = 0;
+reg enable = 0;
+reg reset = 0;
+reg [3:0] n_i = 0;
+reg [3:0] n_delta = 0;
+wire [7:0] n = 0;
+wire [WIDTH-1:0] ACF_result;
 
-//AutoCorrelator uut(
-//.enable(enable),
-//.reset(reset),
-//.n_i(n_i),
-//.n_delta(n_delta),
-//.n(n)
-//);
+AutoCorrelator 
+#(
+.WIDTH(WIDTH)
+)
+uut(
+.clk(clk),
+.enable(enable),
+.reset(reset),
+.n_i(n_i),
+.n_delta(n_delta),
+.ACF_result(ACF_result)
+);
 
-//integer i;
+integer i;
 
-//initial begin
-//    for(i = 0; i<100000; i = i+1) begin
-//       if(i%10==0) begin
-//          enable <= ~enable;   
-//       end
+initial begin
+    for(i = 0; i<100000; i = i+1) begin
+       if(i%1==0) begin
+          clk <= ~clk;   
+       end
+    
+       if(i%10==0) begin
+          enable <= ~enable;   
+       end
        
-//       if(i%25000==0) begin
-//          reset <= ~reset;   
-//       end
+       if(i%250==0) begin
+          reset <= ~reset;   
+       end
        
-//       if(i % 5 == 0) begin
-//          n_i <= $random%16;
-//          n_delta <= $random%16;
-//       end
+       if(i % 50 == 0) begin
+          n_i <= $random%10;
+          n_delta <= $random%10;
+       end
        
-//       #10;   
-//    end
-//end
+       #10;   
+    end
+end
 
 
 ///////////////////////////////////////// Auto Correlator Test Bench ///////////////////////////////////////////////////////////////////////////
 
 ///////////////////////////////////////// Divider  ///////////////////////////////////////////////////////////////////////////
-parameter WIDTH = 11;
-reg clk = 0,enable = 0;
-wire done,DBZ_flag,busy;
-reg [WIDTH-1:0] divisor = 11'd11;
-reg [WIDTH-1:0] dividend = 11'd223;
-wire [WIDTH-1:0] quotient;
-wire [WIDTH-1:0] remainder;
+//parameter WIDTH = 32;
+//reg clk = 0,enable = 0;
+//wire done,DBZ_flag,busy;
+//reg [WIDTH-1:0] dividend = 11'd3; //Scale by 1000 to have 3 signigicant figures.
+//reg [WIDTH-1:0] divisor = 11'd5; // 1/3 = 0.33333
+//wire [WIDTH-1:0] quotient;
+//wire [WIDTH-1:0] remainder;
 
 
-Divider uut
-(
-.clk(clk),
-.enable(enable),
-.dividend(dividend),
-.divisor(divisor),
-.quotient(quotient),
-.remainder(remainder),
-.done(done),
-.busy(busy),
-.DBZ_flag(DBZ_flag)
-);
+//Divider 
+//#(
+//.WIDTH(WIDTH)
+//)
+//uut
+//(
+//.clk(clk),
+//.enable(enable),
+//.dividend(dividend),
+//.divisor(divisor),
+//.quotient(quotient),
+//.remainder(remainder),
+//.done(done),
+//.busy(busy),
+//.DBZ_flag(DBZ_flag)
+//);
 
-integer i;
-integer tog = 0;
-integer tog2 = 0;
-initial begin
-    for(i = 0; i<100000; i = i+1) begin
-       if(i%10==0) begin
-       enable <= ~enable;
-       end 
+//integer i;
+//integer tog = 0;
+//integer tog2 = 0;
+//initial begin
+//    for(i = 0; i<100000; i = i+1) begin
+//       if(i%10==0) begin
+//       enable <= ~enable;
+//       end 
        
-       #10;
-       if(i%10==0) begin
-          clk <= ~clk;   
-       end
+//       #10;
+//       if(i%10==0) begin
+//          clk <= ~clk;   
+//       end
        
           
-    end
-end
+//    end
+//end
 
 
 ///////////////////////////////////////// Divider ///////////////////////////////////////////////////////////////////////////

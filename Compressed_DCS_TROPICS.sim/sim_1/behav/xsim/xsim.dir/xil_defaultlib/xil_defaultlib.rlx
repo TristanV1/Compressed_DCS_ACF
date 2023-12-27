@@ -3,5 +3,6 @@
 Oct 19 2021
 03:16:22
 C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.sim/sim_1/behav/xsim/glbl.v,1634335545,verilog,,,,glbl,,,,,,,,
-C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sim_1/new/testbench.v,1703450687,verilog,,,,testbench,,,,,,,,
-C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v,1703450504,verilog,,C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sim_1/new/testbench.v,,Divider,,,,,,,,
+C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sim_1/new/testbench.v,1703633967,verilog,,,,testbench,,,,,,,,
+C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v,1703636282,verilog,,C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v,,AutoCorrelator,,,,,,,,
+C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v,1703633449,verilog,,C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sim_1/new/testbench.v,,Divider,,,,,,,,

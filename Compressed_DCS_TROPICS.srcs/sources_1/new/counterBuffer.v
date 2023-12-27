@@ -3,19 +3,17 @@
 module counterBuffer
 #(
 parameter fs = 1_000_000, //1 MHz Sampling Frequency
-parameter delayTime_T = 0.000105 //105 us delay time
+parameter delayTime_T = 0.000125 //125 us delay time (largest expected delay time)
 ) 
 (
 input write_en,//Enables write 
 input [3:0] data_in,//Data to write to memory
-//output Mem_OutOfRange//Memory overflow flag
 output [3:0] n_i,
 output [3:0] n_delta
 );
 
 parameter MEMORY_DEPTH = $rtoi($ceil(fs*delayTime_T)); //This is delta n, the minimum memory depth to perform the ACF.
 parameter MEMORY_WIDTH = 4;
-//parameter SIZE_OF_MEMORY_ADDRESS = $ceil($clog2(MEMORY_DEPTH));
 
 reg [MEMORY_WIDTH-1:0] counterBuffer [0:MEMORY_DEPTH-1];
 
@@ -32,8 +30,6 @@ assign n_i = counterBuffer[0];
 assign n_delta = counterBuffer[MEMORY_DEPTH-1];
 
 always @ (posedge(write_en)) begin
-//    n_i <= counterBuffer[0];
-//    n_delta <= counterBuffer[MEMORY_DEPTH-1];
 
     if (write_en == 1'b1) begin
     

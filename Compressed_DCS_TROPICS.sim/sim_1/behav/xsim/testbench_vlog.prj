@@ -1,5 +1,6 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
+"../../../../Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v" \
 "../../../../Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v" \
 "../../../../Compressed_DCS_TROPICS.srcs/sim_1/new/testbench.v" \
 
