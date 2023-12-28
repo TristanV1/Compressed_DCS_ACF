@@ -114,7 +114,7 @@ module testbench();
 
 
 ///////////////////////////////////////// Auto Correlator Test Bench ///////////////////////////////////////////////////////////////////////////
-parameter WIDTH = 16;
+parameter WIDTH = 19;
 reg clk = 0;
 reg enable = 0;
 reg reset = 0;
@@ -137,26 +137,37 @@ uut(
 );
 
 integer i;
+integer j = 0;
+
+parameter WIDTH_2 = 100;
+reg [3:0] n_i_reg [0:WIDTH_2-1] = '{4'd1, 4'd3, 4'd8, 4'd10, 4'd5, 4'd10, 4'd6, 4'd9, 4'd0, 4'd5, 4'd5, 4'd6, 4'd10, 4'd10, 4'd1, 4'd10, 4'd7, 4'd1, 4'd10, 4'd8, 4'd3, 4'd6, 4'd6, 4'd9, 4'd6, 4'd1, 4'd6, 4'd5, 4'd0, 4'd4, 4'd5, 4'd8, 4'd10, 4'd0, 4'd3, 4'd0, 4'd0, 4'd0, 4'd3, 4'd0, 4'd7, 4'd10, 4'd10, 4'd6, 4'd6, 4'd8, 4'd2, 4'd2, 4'd4, 4'd5, 4'd10, 4'd0, 4'd2, 4'd8, 4'd5, 4'd0, 4'd9, 4'd7, 4'd8, 4'd6, 4'd8, 4'd6, 4'd2, 4'd1, 4'd4, 4'd4, 4'd0, 4'd4, 4'd7, 4'd8, 4'd1, 4'd8, 4'd5, 4'd10, 4'd6, 4'd4, 4'd10, 4'd3, 4'd3, 4'd2, 4'd1, 4'd5, 4'd1, 4'd0, 4'd5, 4'd1, 4'd2, 4'd8, 4'd3, 4'd1, 4'd9, 4'd5, 4'd4, 4'd0, 4'd10, 4'd4, 4'd4, 4'd4, 4'd8, 4'd1};
+reg [3:0] n_delta_reg [0:WIDTH_2-1]  = '{4'd0,4'd1, 4'd3, 4'd8, 4'd10, 4'd5, 4'd10, 4'd6, 4'd9, 4'd0, 4'd5, 4'd5, 4'd6, 4'd10, 4'd10, 4'd1, 4'd10, 4'd7, 4'd1, 4'd10, 4'd8, 4'd3, 4'd6, 4'd6, 4'd9, 4'd6, 4'd1, 4'd6, 4'd5, 4'd0, 4'd4, 4'd5, 4'd8, 4'd10, 4'd0, 4'd3, 4'd0, 4'd0, 4'd0, 4'd3, 4'd0, 4'd7, 4'd10, 4'd10, 4'd6, 4'd6, 4'd8, 4'd2, 4'd2, 4'd4, 4'd5, 4'd10, 4'd0, 4'd2, 4'd8, 4'd5, 4'd0, 4'd9, 4'd7, 4'd8, 4'd6, 4'd8, 4'd6, 4'd2, 4'd1, 4'd4, 4'd4, 4'd0, 4'd4, 4'd7, 4'd8, 4'd1, 4'd8, 4'd5, 4'd10, 4'd6, 4'd4, 4'd10, 4'd3, 4'd3, 4'd2, 4'd1, 4'd5, 4'd1, 4'd0, 4'd5, 4'd1, 4'd2, 4'd8, 4'd3, 4'd1, 4'd9, 4'd5, 4'd4, 4'd0, 4'd10, 4'd4, 4'd4, 4'd4, 4'd8};
 
 initial begin
+
     for(i = 0; i<100000; i = i+1) begin
        if(i%1==0) begin
           clk <= ~clk;   
        end
     
-       if(i%10==0) begin
-          enable <= ~enable;   
+       if(i%5==0) begin
+          enable <= ~enable;  
+       end
+       if (i%10==0) begin
+          n_i <= n_i_reg[j];
+          n_delta <= n_delta_reg[j];
+          if (j>=WIDTH_2-1) begin
+             j = 0;
+          end
+          else begin
+            j = j +1; 
+          end
+          
        end
        
-       if(i%250==0) begin
+       if(i%1000==0) begin
           reset <= ~reset;   
        end
-       
-       if(i % 50 == 0) begin
-          n_i <= $random%10;
-          n_delta <= $random%10;
-       end
-       
        #10;   
     end
 end

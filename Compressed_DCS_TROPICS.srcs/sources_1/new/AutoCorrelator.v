@@ -73,7 +73,7 @@ parameter delta_n = $rtoi($ceil(fs * delayTime_T));
 parameter n_avg_num = n_int - delta_n;
 
 parameter prescaler_val = $rtoi($ceil(10**PRECISION));
-parameter precompute_val = $ceil(n_avg_num/n_int * prescaler_val) ;
+parameter precompute_val = $ceil($itor(n_avg_num)/$itor(n_int) * prescaler_val);
 
 reg [WIDTH-1:0] precompute;
 reg [WIDTH-1:0] prescaler;
