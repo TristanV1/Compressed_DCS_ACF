@@ -25,7 +25,7 @@ module AutoCorrelator
 parameter WIDTH = 16,
 parameter PRECISION = 2,
 parameter fs = 1_000_000, //1 MHz Sampling Frequency
-parameter delayTime_T = 0.000105, //105 us delay time
+parameter delayTime = 0.000105, //105 us delay time
 parameter t_int = 0.040 //40 ms integration time (Typical for in vivo experiment)
 )
 (
@@ -69,7 +69,7 @@ end
 
 
 parameter n_int = $rtoi($ceil(fs * t_int));
-parameter delta_n = $rtoi($ceil(fs * delayTime_T));
+parameter delta_n = $rtoi($ceil(fs * delayTime));
 parameter n_avg_num = n_int - delta_n;
 
 parameter prescaler_val = $rtoi($ceil(10**PRECISION));
