@@ -22,7 +22,7 @@
 
 module main
 #(
-parameter integration_time = 0.000130,
+parameter integration_time = 0.040,
 parameter default_clock_frequency = 5_000_000,
 parameter sampling_frequency = 1_000_000
 )
@@ -175,10 +175,10 @@ counterBuffer_1
 wire ACF_result;
 AutoCorrelator 
 #(
-.WIDTH(16),
+.WIDTH(20),
 .PRECISION(2),
 .fs(sampling_frequency), //1 MHz Sampling Frequency
-.delayTime(0.000125), //105 us delay time
+.delayTime(0.000125), //125 us max delay time
 .t_int(integration_time) //40 ms integration time (Typical for in vivo experiment)
 )
 AutoCorrelator_1

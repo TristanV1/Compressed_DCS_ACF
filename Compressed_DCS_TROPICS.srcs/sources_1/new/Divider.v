@@ -37,7 +37,7 @@ output reg DBZ_flag
 );
 
 initial begin
-    done <= 0;
+    done <= 1;
     busy <= 0;
     DBZ_flag <= 0;
     quotient <= 0;
