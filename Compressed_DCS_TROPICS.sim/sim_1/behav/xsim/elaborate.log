@@ -4,12 +4,22 @@ Running: D:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 20 for port 'ACF_result' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:191]
+WARNING: [VRFC 10-3091] actual bit length 58 differs from formal bit length 26 for port 'dividend' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:104]
+WARNING: [VRFC 10-3091] actual bit length 58 differs from formal bit length 26 for port 'divisor' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:105]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:104]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:105]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.Divider(WIDTH=19)
-Compiling module xil_defaultlib.AutoCorrelator(WIDTH=19)
+Compiling module xil_defaultlib.integralTimer(clk_speed=5000000)
+Compiling module xil_defaultlib.photonCounter
+Compiling module xil_defaultlib.sampler(default_fclk=5000000)
+Compiling module xil_defaultlib.counterBuffer_default
+Compiling module xil_defaultlib.Divider(WIDTH=26)
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.main
 Compiling module xil_defaultlib.testbench
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot testbench_behav

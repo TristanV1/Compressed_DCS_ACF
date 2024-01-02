@@ -40,6 +40,8 @@ output reg [WIDTH-1:0] ACF_result
 reg [WIDTH-1:0] SumBuffer_Num;
 reg [WIDTH-1:0] SumBuffer_Den;
 
+parameter DIVIDER_WIDTH = WIDTH + 6;
+
 initial begin
     SumBuffer_Num = 0;
     SumBuffer_Den = 0;
@@ -52,8 +54,8 @@ always @ (enable) begin
     end  
 end
 
-reg [WIDTH-1:0] dividend;
-reg [WIDTH-1:0] divisor;
+reg [DIVIDER_WIDTH-1:0] dividend;
+reg [DIVIDER_WIDTH-1:0] divisor;
 
 initial begin
     dividend = 0;
@@ -73,7 +75,7 @@ parameter delta_n = $rtoi($ceil(fs * delayTime));
 parameter n_avg_num = n_int - delta_n;
 
 parameter prescaler_val = $rtoi($ceil(10**PRECISION));
-parameter precompute_val = $ceil($itor(n_avg_num)/$itor(n_int) * prescaler_val);
+parameter precompute_val = $ceil($itor(n_avg_num)/$itor(n_int));
 
 reg [WIDTH-1:0] precompute;
 reg [WIDTH-1:0] prescaler;
@@ -83,24 +85,24 @@ initial begin
     prescaler = prescaler_val;
 end
 
-wire [WIDTH-1:0] quotient;
-wire [WIDTH-1:0] remainder;
+wire [DIVIDER_WIDTH-1:0] quotient;
+wire [DIVIDER_WIDTH-1:0] remainder;
+
 wire done;
 wire busy;
 wire DBZ_flag; //Ignore??? How should we handle DBZ errors for this function.
 
 
-
 Divider 
 #(
-.WIDTH(WIDTH)
+.WIDTH(WIDTH+6)
 )
 Divider
 (
 .clk(clk),
 .enable(reset), //Once the MAC is done, we can compute division.
-.dividend(dividend * prescaler), //Scale divisor to obtain user-defined precision.
-.divisor(divisor),
+.dividend({0,dividend * prescaler}), //Scale divisor to obtain user-defined precision.
+.divisor({0,divisor}),
 .quotient(quotient),
 .remainder(remainder),
 .done(done),

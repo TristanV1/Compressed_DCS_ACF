@@ -190,7 +190,7 @@ assign n_delta_38 = counterBuffer[n_delta_address_38-1];
 assign n_delta_39 = counterBuffer[n_delta_address_39-1];
 assign n_delta_40 = counterBuffer[n_delta_address_40-1];
 
-always @ (posedge(write_en),reset) begin
+always @ (write_en, reset) begin
 
     if (write_en == 1'b1) begin
     

@@ -84,94 +84,106 @@ module testbench();
 
 /////////////////////////////////////////Full Sampling Stage Integration Test Bench///////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////Full Sampling Stage Integration Test Bench///////////////////////////////////////////////////////////////////////////
-//reg clk = 0;
-//reg photonCounterIn1 = 0;
-//wire n;
+reg clk = 1;
+reg photonCounterIn1 = 0;
+wire n;
 
-//main uut(
-//    .clk(clk),
-//    .photonCounterIn1(photonCounterIn1),
+main 
+#(
+.integration_time(0.040),
+.default_clock_frequency(5_000_000),
+.sampling_frequency(1_000_000)
+)
+uut(
+    .clk(clk),
+    .photonCounterIn1(photonCounterIn1)
 //    .n(n)
-//);
+);
 
-//integer i;
-//initial begin
-//    #10; 
-//    for(i = 0;; i = i+1) begin
-//       if(i%10==0) begin
-//          clk <= ~clk;   
-//       end
+integer i;
+initial begin
+    #10; 
+    for(i = 0;; i = i+1) begin
+       if(i%10==0) begin
+          clk <= ~clk;   
+       end
        
-//       if(i % ($random%5) == 0) begin
-//          photonCounterIn1 <= ~photonCounterIn1;
-//       end
+       if(i % ($random%5) == 0) begin
+          photonCounterIn1 <= ~photonCounterIn1;
+       end
        
-//       #10;   
-//    end
-//end
+       #10;   
+    end
+end
 
 /////////////////////////////////////////Full Sampling Stage Integration Test Bench///////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////Full Sampling Stage Integration Test Bench///////////////////////////////////////////////////////////////////////////
 
 
 ///////////////////////////////////////// Auto Correlator Test Bench ///////////////////////////////////////////////////////////////////////////
-parameter WIDTH = 19;
-reg clk = 0;
-reg enable = 0;
-reg reset = 0;
-reg [3:0] n_i = 0;
-reg [3:0] n_delta = 0;
-wire [7:0] n = 0;
-wire [WIDTH-1:0] ACF_result;
+//parameter WIDTH = 19;
+//reg clk = 0;
+//reg enable = 0;
+//reg reset = 0;
+//reg [3:0] n_i = 0;
+//reg [3:0] n_delta = 0;
+//wire [7:0] n = 0;
+//wire [WIDTH-1:0] ACF_result;
 
-AutoCorrelator 
-#(
-.WIDTH(WIDTH)
-)
-uut(
-.clk(clk),
-.enable(enable),
-.reset(reset),
-.n_i(n_i),
-.n_delta(n_delta),
-.ACF_result(ACF_result)
-);
+//AutoCorrelator 
+//#(
+//.WIDTH(WIDTH)
+//)
+//uut(
+//.clk(clk),
+//.enable(enable),
+//.reset(reset),
+//.n_i(n_i),
+//.n_delta(n_delta),
+//.ACF_result(ACF_result)
+//);
 
-integer i;
-integer j = 0;
+////integralTimer
+////uut(
+////.clk(clk),
+////.t_int_out(t_int_out)
+////);
 
-parameter WIDTH_2 = 100;
-reg [3:0] n_i_reg [0:WIDTH_2-1] = '{4'd1, 4'd3, 4'd8, 4'd10, 4'd5, 4'd10, 4'd6, 4'd9, 4'd0, 4'd5, 4'd5, 4'd6, 4'd10, 4'd10, 4'd1, 4'd10, 4'd7, 4'd1, 4'd10, 4'd8, 4'd3, 4'd6, 4'd6, 4'd9, 4'd6, 4'd1, 4'd6, 4'd5, 4'd0, 4'd4, 4'd5, 4'd8, 4'd10, 4'd0, 4'd3, 4'd0, 4'd0, 4'd0, 4'd3, 4'd0, 4'd7, 4'd10, 4'd10, 4'd6, 4'd6, 4'd8, 4'd2, 4'd2, 4'd4, 4'd5, 4'd10, 4'd0, 4'd2, 4'd8, 4'd5, 4'd0, 4'd9, 4'd7, 4'd8, 4'd6, 4'd8, 4'd6, 4'd2, 4'd1, 4'd4, 4'd4, 4'd0, 4'd4, 4'd7, 4'd8, 4'd1, 4'd8, 4'd5, 4'd10, 4'd6, 4'd4, 4'd10, 4'd3, 4'd3, 4'd2, 4'd1, 4'd5, 4'd1, 4'd0, 4'd5, 4'd1, 4'd2, 4'd8, 4'd3, 4'd1, 4'd9, 4'd5, 4'd4, 4'd0, 4'd10, 4'd4, 4'd4, 4'd4, 4'd8, 4'd1};
-reg [3:0] n_delta_reg [0:WIDTH_2-1]  = '{4'd0,4'd1, 4'd3, 4'd8, 4'd10, 4'd5, 4'd10, 4'd6, 4'd9, 4'd0, 4'd5, 4'd5, 4'd6, 4'd10, 4'd10, 4'd1, 4'd10, 4'd7, 4'd1, 4'd10, 4'd8, 4'd3, 4'd6, 4'd6, 4'd9, 4'd6, 4'd1, 4'd6, 4'd5, 4'd0, 4'd4, 4'd5, 4'd8, 4'd10, 4'd0, 4'd3, 4'd0, 4'd0, 4'd0, 4'd3, 4'd0, 4'd7, 4'd10, 4'd10, 4'd6, 4'd6, 4'd8, 4'd2, 4'd2, 4'd4, 4'd5, 4'd10, 4'd0, 4'd2, 4'd8, 4'd5, 4'd0, 4'd9, 4'd7, 4'd8, 4'd6, 4'd8, 4'd6, 4'd2, 4'd1, 4'd4, 4'd4, 4'd0, 4'd4, 4'd7, 4'd8, 4'd1, 4'd8, 4'd5, 4'd10, 4'd6, 4'd4, 4'd10, 4'd3, 4'd3, 4'd2, 4'd1, 4'd5, 4'd1, 4'd0, 4'd5, 4'd1, 4'd2, 4'd8, 4'd3, 4'd1, 4'd9, 4'd5, 4'd4, 4'd0, 4'd10, 4'd4, 4'd4, 4'd4, 4'd8};
+//integer i;
+//integer j = 0;
 
-initial begin
+//parameter WIDTH_2 = 100;
+//reg [3:0] n_i_reg [0:WIDTH_2-1] = '{4'd1, 4'd3, 4'd8, 4'd10, 4'd5, 4'd10, 4'd6, 4'd9, 4'd0, 4'd5, 4'd5, 4'd6, 4'd10, 4'd10, 4'd1, 4'd10, 4'd7, 4'd1, 4'd10, 4'd8, 4'd3, 4'd6, 4'd6, 4'd9, 4'd6, 4'd1, 4'd6, 4'd5, 4'd0, 4'd4, 4'd5, 4'd8, 4'd10, 4'd0, 4'd3, 4'd0, 4'd0, 4'd0, 4'd3, 4'd0, 4'd7, 4'd10, 4'd10, 4'd6, 4'd6, 4'd8, 4'd2, 4'd2, 4'd4, 4'd5, 4'd10, 4'd0, 4'd2, 4'd8, 4'd5, 4'd0, 4'd9, 4'd7, 4'd8, 4'd6, 4'd8, 4'd6, 4'd2, 4'd1, 4'd4, 4'd4, 4'd0, 4'd4, 4'd7, 4'd8, 4'd1, 4'd8, 4'd5, 4'd10, 4'd6, 4'd4, 4'd10, 4'd3, 4'd3, 4'd2, 4'd1, 4'd5, 4'd1, 4'd0, 4'd5, 4'd1, 4'd2, 4'd8, 4'd3, 4'd1, 4'd9, 4'd5, 4'd4, 4'd0, 4'd10, 4'd4, 4'd4, 4'd4, 4'd8, 4'd1};
+//reg [3:0] n_delta_reg [0:WIDTH_2-1]  = '{4'd0,4'd1, 4'd3, 4'd8, 4'd10, 4'd5, 4'd10, 4'd6, 4'd9, 4'd0, 4'd5, 4'd5, 4'd6, 4'd10, 4'd10, 4'd1, 4'd10, 4'd7, 4'd1, 4'd10, 4'd8, 4'd3, 4'd6, 4'd6, 4'd9, 4'd6, 4'd1, 4'd6, 4'd5, 4'd0, 4'd4, 4'd5, 4'd8, 4'd10, 4'd0, 4'd3, 4'd0, 4'd0, 4'd0, 4'd3, 4'd0, 4'd7, 4'd10, 4'd10, 4'd6, 4'd6, 4'd8, 4'd2, 4'd2, 4'd4, 4'd5, 4'd10, 4'd0, 4'd2, 4'd8, 4'd5, 4'd0, 4'd9, 4'd7, 4'd8, 4'd6, 4'd8, 4'd6, 4'd2, 4'd1, 4'd4, 4'd4, 4'd0, 4'd4, 4'd7, 4'd8, 4'd1, 4'd8, 4'd5, 4'd10, 4'd6, 4'd4, 4'd10, 4'd3, 4'd3, 4'd2, 4'd1, 4'd5, 4'd1, 4'd0, 4'd5, 4'd1, 4'd2, 4'd8, 4'd3, 4'd1, 4'd9, 4'd5, 4'd4, 4'd0, 4'd10, 4'd4, 4'd4, 4'd4, 4'd8};
 
-    for(i = 0; i<100000; i = i+1) begin
-       if(i%1==0) begin
-          clk <= ~clk;   
-       end
+//initial begin
+
+//    for(i = 0; i<100000; i = i+1) begin
+//       if(i%1==0) begin
+//          clk <= ~clk;   
+//       end
     
-       if(i%5==0) begin
-          enable <= ~enable;  
-       end
-       if (i%10==0) begin
-          n_i <= n_i_reg[j];
-          n_delta <= n_delta_reg[j];
-          if (j>=WIDTH_2-1) begin
-             j = 0;
-          end
-          else begin
-            j = j +1; 
-          end
+//       if(i%5==0) begin
+//          enable <= ~enable;  
+//       end
+//       if (i%10==0) begin
+//          n_i <= n_i_reg[j];
+//          n_delta <= n_delta_reg[j];
+//          if (j>=WIDTH_2-1) begin
+//             j = 0;
+//          end
+//          else begin
+//            j = j +1; 
+//          end
           
-       end
+//       end
        
-       if(i%1000==0) begin
-          reset <= ~reset;   
-       end
-       #10;   
-    end
-end
+//       if(i%1000==0) begin
+//          reset <= ~reset;   
+//       end
+//       #10;   
+//    end
+//end
 
 
 ///////////////////////////////////////// Auto Correlator Test Bench ///////////////////////////////////////////////////////////////////////////
@@ -223,5 +235,68 @@ end
 
 
 ///////////////////////////////////////// Divider ///////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////// Integration Timer & ACF ///////////////////////////////////////////////////////////////////////////
+//parameter WIDTH = 19;
+//reg clk = 0;
+//reg enable = 0;
+//reg reset = 0;
+//reg [3:0] n_i = 0;
+//reg [3:0] n_delta = 0;
+//wire [7:0] n = 0;
+//wire [WIDTH-1:0] ACF_result;
+
+//AutoCorrelator 
+//#(
+//.WIDTH(WIDTH)
+//)
+//uut1(
+//.clk(clk),
+//.enable(enable),
+//.reset(~t_int_out),
+//.n_i(n_i),
+//.n_delta(n_delta),
+//.ACF_result(ACF_result)
+//);
+
+//integralTimer
+//uut2(
+//.clk(clk),
+//.t_int_out(t_int_out)
+//);
+
+//integer i;
+//integer j = 0;
+
+//parameter WIDTH_2 = 100;
+//reg [3:0] n_i_reg [0:WIDTH_2-1] = '{4'd1, 4'd3, 4'd8, 4'd10, 4'd5, 4'd10, 4'd6, 4'd9, 4'd0, 4'd5, 4'd5, 4'd6, 4'd10, 4'd10, 4'd1, 4'd10, 4'd7, 4'd1, 4'd10, 4'd8, 4'd3, 4'd6, 4'd6, 4'd9, 4'd6, 4'd1, 4'd6, 4'd5, 4'd0, 4'd4, 4'd5, 4'd8, 4'd10, 4'd0, 4'd3, 4'd0, 4'd0, 4'd0, 4'd3, 4'd0, 4'd7, 4'd10, 4'd10, 4'd6, 4'd6, 4'd8, 4'd2, 4'd2, 4'd4, 4'd5, 4'd10, 4'd0, 4'd2, 4'd8, 4'd5, 4'd0, 4'd9, 4'd7, 4'd8, 4'd6, 4'd8, 4'd6, 4'd2, 4'd1, 4'd4, 4'd4, 4'd0, 4'd4, 4'd7, 4'd8, 4'd1, 4'd8, 4'd5, 4'd10, 4'd6, 4'd4, 4'd10, 4'd3, 4'd3, 4'd2, 4'd1, 4'd5, 4'd1, 4'd0, 4'd5, 4'd1, 4'd2, 4'd8, 4'd3, 4'd1, 4'd9, 4'd5, 4'd4, 4'd0, 4'd10, 4'd4, 4'd4, 4'd4, 4'd8, 4'd1};
+//reg [3:0] n_delta_reg [0:WIDTH_2-1]  = '{4'd0,4'd1, 4'd3, 4'd8, 4'd10, 4'd5, 4'd10, 4'd6, 4'd9, 4'd0, 4'd5, 4'd5, 4'd6, 4'd10, 4'd10, 4'd1, 4'd10, 4'd7, 4'd1, 4'd10, 4'd8, 4'd3, 4'd6, 4'd6, 4'd9, 4'd6, 4'd1, 4'd6, 4'd5, 4'd0, 4'd4, 4'd5, 4'd8, 4'd10, 4'd0, 4'd3, 4'd0, 4'd0, 4'd0, 4'd3, 4'd0, 4'd7, 4'd10, 4'd10, 4'd6, 4'd6, 4'd8, 4'd2, 4'd2, 4'd4, 4'd5, 4'd10, 4'd0, 4'd2, 4'd8, 4'd5, 4'd0, 4'd9, 4'd7, 4'd8, 4'd6, 4'd8, 4'd6, 4'd2, 4'd1, 4'd4, 4'd4, 4'd0, 4'd4, 4'd7, 4'd8, 4'd1, 4'd8, 4'd5, 4'd10, 4'd6, 4'd4, 4'd10, 4'd3, 4'd3, 4'd2, 4'd1, 4'd5, 4'd1, 4'd0, 4'd5, 4'd1, 4'd2, 4'd8, 4'd3, 4'd1, 4'd9, 4'd5, 4'd4, 4'd0, 4'd10, 4'd4, 4'd4, 4'd4, 4'd8};
+
+//initial begin
+
+//    for(i = 0;; i = i+1) begin
+//       if(i%1==0) begin
+//          clk <= ~clk;   
+//       end
+    
+//       if(i%5==0) begin
+//          enable <= ~enable;  
+//       end
+//       if (i%10==0) begin
+//          n_i <= n_i_reg[j];
+//          n_delta <= n_delta_reg[j];
+//          if (j>=WIDTH_2-1) begin
+//             j = 0;
+//          end
+//          else begin
+//            j = j +1; 
+//          end
+          
+//       end
+       
+//       #10;   
+//    end
+//end
+///////////////////////////////////////// Integration Timer & ACF  ///////////////////////////////////////////////////////////////////////////
 
 endmodule

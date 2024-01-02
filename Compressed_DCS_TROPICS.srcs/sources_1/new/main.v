@@ -28,8 +28,8 @@ parameter sampling_frequency = 1_000_000
 )
 (
     input clk,
-    input photonCounterIn1,
-    output n
+    input photonCounterIn1
+//    output n
 );
 
 wire t_int_out;
@@ -183,10 +183,11 @@ AutoCorrelator
 )
 AutoCorrelator_1
 (
+.clk(clk),
 .enable(sample_and_clear),
 .reset(~t_int_out),
 .n_i(n_i),
-.n_delta(n_delta_40),
+.n_delta(n_delta_1),
 .ACF_result(ACF_result)
 );
 
