@@ -37,12 +37,12 @@ reg CLK_1MHZ = 0;
 
 always @ (posedge clk) begin //Clock divider to provide 1MHz sampling frequency.
  
-    if (count >= 12) begin
+    if (count >= 6-1) begin
         count <= 4'b0;
         CLK_1MHZ <= ~CLK_1MHZ;
     end    
     
-    else if (count < 12) begin
+    else if (count < 6-1) begin
         count = count + 1'b1;
     end
     

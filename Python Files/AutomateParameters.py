@@ -6,8 +6,69 @@
 
 #print(a)
 
+b = """0.0000010000
+  0.0000011318
+  0.0000012810
+  0.0000014498
+  0.0000016408
+  0.0000018571
+  0.0000021018
+  0.0000023789
+  0.0000026924
+  0.0000030472
+  0.0000034488
+  0.0000039033
+  0.0000044178
+  0.0000050000
+  0.0000056590
+  0.0000064048
+  0.0000072489
+  0.0000082042
+  0.0000092855
+  0.0000105092
+  0.0000118943
+  0.0000134619
+  0.0000152360
+  0.0000172440
+  0.0000195167
+  0.0000220888
+  0.0000250000
+  0.0000282948
+  0.0000320239
+  0.0000362444
+  0.0000410211
+  0.0000464274
+  0.0000525462
+  0.0000594714
+  0.0000673093
+  0.0000761802
+  0.0000862202
+  0.0000975834
+  0.0001104442
+  0.0001250000"""
+b = b.split("\n")
 a = ""
 for i in range(1,41):
-    a = a + f".n_delta_{i}(n_delta_{i}), \n"
+    a = a + f""" 
+
+wire [WIDTH-1:0] ACF_result_{i};
+AutoCorrelator 
+#(
+.WIDTH(WIDTH),
+.PRECISION(2),
+.fs(sampling_frequency), //1 MHz Sampling Frequency
+.delayTime({b[i-1].replace(" ","")}), //{b[i-1].replace(" ","")} us max delay time
+.t_int(integration_time) //40 ms integration time (Typical for in vivo experiment)
+)
+AutoCorrelator_{i}
+(
+.clk(clk),
+.enable(sample_and_clear),
+.reset(~t_int_out),
+.n_i(n_i),
+.n_delta(n_delta_{i}),
+.ACF_result(ACF_result_{i})
+);
+"""
 
 print(a)

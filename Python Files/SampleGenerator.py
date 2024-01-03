@@ -14,7 +14,7 @@ def gen_samples(num_samples):
 
     return (outputstr,samples)
 
-a,b = gen_samples(100)
+a,b = gen_samples(125)
 print(a)
 print()
 print(b)
