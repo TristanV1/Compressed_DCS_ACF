@@ -18,3 +18,5 @@ a,b = gen_samples(125)
 print(a)
 print()
 print(b)
+
+

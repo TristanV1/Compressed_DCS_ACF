@@ -75,7 +75,7 @@ parameter delta_n = $rtoi($ceil(fs * delayTime));
 parameter n_avg_num = n_int - delta_n;
 
 parameter prescaler_val = $rtoi($ceil(10**PRECISION));
-parameter precompute_val = $rtoi(($itor(n_int)/$itor(n_avg_num)));
+parameter precompute_val = $rtoi( ( ( $itor(n_int)/$itor(n_avg_num) )*prescaler_val) + 0.5 ); //Verilog does not have a round to nearest integer funtion. To simulate function, add 0.5 to value.
 
 reg [WIDTH-1:0] precompute;
 reg [WIDTH-1:0] prescaler;
