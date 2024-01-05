@@ -92,7 +92,7 @@ output [3:0] n_delta_39,
 output [3:0] n_delta_40
 );
 
-parameter MEMORY_DEPTH = $rtoi($ceil(fs*delayTime_MAX)); //This is delta n, the minimum memory depth to perform the ACF.
+parameter MEMORY_DEPTH = $rtoi((fs*delayTime_MAX) + 0.5); //This is delta n, the minimum memory depth to perform the ACF. Verilog does not have a round to nearest integer funtion. To simulate function, add 0.5 to value.
 parameter MEMORY_WIDTH = 4;
 
 parameter n_delta_address_1 = $rtoi(fs*delayTime_1); 
