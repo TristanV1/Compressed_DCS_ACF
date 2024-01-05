@@ -70,8 +70,8 @@ always @ (posedge(reset)) begin
 end
 
 
-parameter n_int = $rtoi($ceil(fs * t_int));
-parameter delta_n = $rtoi($ceil(fs * delayTime));
+parameter n_int = $rtoi((fs * t_int) + 0.5);
+parameter delta_n = $rtoi((fs * delayTime) + 0.5); //Verilog does not have a round to nearest integer funtion. To simulate function, add 0.5 to value.
 parameter n_avg_num = n_int - delta_n;
 
 parameter prescaler_val = $rtoi($ceil(10**PRECISION));
