@@ -367,13 +367,11 @@ module testbench();
 //    end
 //end
 ///////////////////////////////////////// Integration Timer & ACF  ///////////////////////////////////////////////////////////////////////////
-parameter WIDTH_2 = 125;
-parameter integration_time = 0.000125;
+parameter WIDTH_2 = 100;
+parameter integration_time = 0.0001;
 parameter sampling_frequency = 1_000_000;
 
-reg [3:0] n_i_reg [0:WIDTH_2-1] = '{0, 9, 0, 5, 5, 8, 9, 4, 0, 2, 10, 4, 10, 0, 5, 8, 5, 5, 3, 4, 1, 10, 7, 8, 9, 5, 0, 8, 6, 8, 2, 2, 9, 0, 5, 0, 9, 6, 10, 2, 10, 0, 1, 6, 10, 4, 5, 3, 4, 10, 4, 6, 7, 2, 2, 10, 3, 2, 10, 5, 8, 7, 2, 10, 7, 0, 1, 0, 6, 0, 8, 2, 8, 9, 4, 5, 1, 0, 4, 5, 3, 3, 1, 2, 5, 10, 9, 5, 2, 8, 8, 5, 7, 2, 6, 1, 6, 3, 1, 8, 1, 10, 1, 2, 2, 1, 10, 4, 7, 3, 6, 4, 2, 6, 1, 8, 10, 8, 3, 8, 3, 0, 2, 1, 0};
-
-
+reg [3:0] n_i_reg [0:WIDTH_2-1] ='{ 5, 1, 1, 6,10, 6, 0, 3, 7, 7, 5, 1, 4, 4, 9, 8,10, 0, 7, 0, 7, 3, 1, 8, 1, 1, 1,10, 5, 7,10, 2, 4, 7, 1, 9, 8, 4, 6,10,10, 1, 6, 4, 5, 1, 5, 2, 1,10, 1, 6, 8, 8,10, 6, 7,10, 4, 4, 3, 3, 2,10, 5, 0, 5, 2, 6, 2, 0, 5, 6, 4, 6, 3, 3, 8, 1, 9, 5, 3,10, 0,10,10, 2, 5, 2, 5, 3, 6, 6, 7, 7, 9, 2, 5, 7, 7};
 reg clk = 0;
 
 integer i;
@@ -381,7 +379,7 @@ integer z = 0;
 
 reg prev = 0;
 initial begin
-    for(i=0;;i=i+1) begin
+    for(i=0;i<5100;i=i+1) begin
         clk <= ~clk;
         #41.667
         
@@ -395,6 +393,47 @@ initial begin
         prev <= sample_and_clear;  
         
     end
+    
+    $display($time, " ACF_result_1=%0d", ACF_result_1);
+    $display($time, " ACF_result_2=%0d", ACF_result_2);
+    $display($time, " ACF_result_3=%0d", ACF_result_3);
+    $display($time, " ACF_result_4=%0d", ACF_result_4);
+    $display($time, " ACF_result_5=%0d", ACF_result_5);
+    $display($time, " ACF_result_6=%0d", ACF_result_6);
+    $display($time, " ACF_result_7=%0d", ACF_result_7);
+    $display($time, " ACF_result_8=%0d", ACF_result_8);
+    $display($time, " ACF_result_9=%0d", ACF_result_9);
+    $display($time, " ACF_result_10=%0d", ACF_result_10);
+    $display($time, " ACF_result_11=%0d", ACF_result_11);
+    $display($time, " ACF_result_12=%0d", ACF_result_12);
+    $display($time, " ACF_result_13=%0d", ACF_result_13);
+    $display($time, " ACF_result_14=%0d", ACF_result_14);
+    $display($time, " ACF_result_15=%0d", ACF_result_15);
+    $display($time, " ACF_result_16=%0d", ACF_result_16);
+    $display($time, " ACF_result_17=%0d", ACF_result_17);
+    $display($time, " ACF_result_18=%0d", ACF_result_18);
+    $display($time, " ACF_result_19=%0d", ACF_result_19);
+    $display($time, " ACF_result_20=%0d", ACF_result_20);
+    $display($time, " ACF_result_21=%0d", ACF_result_21);
+    $display($time, " ACF_result_22=%0d", ACF_result_22);
+    $display($time, " ACF_result_23=%0d", ACF_result_23);
+    $display($time, " ACF_result_24=%0d", ACF_result_24);
+    $display($time, " ACF_result_25=%0d", ACF_result_25);
+    $display($time, " ACF_result_26=%0d", ACF_result_26);
+    $display($time, " ACF_result_27=%0d", ACF_result_27);
+    $display($time, " ACF_result_28=%0d", ACF_result_28);
+    $display($time, " ACF_result_29=%0d", ACF_result_29);
+    $display($time, " ACF_result_30=%0d", ACF_result_30);
+    $display($time, " ACF_result_31=%0d", ACF_result_31);
+    $display($time, " ACF_result_32=%0d", ACF_result_32);
+    $display($time, " ACF_result_33=%0d", ACF_result_33);
+    $display($time, " ACF_result_34=%0d", ACF_result_34);
+    $display($time, " ACF_result_35=%0d", ACF_result_35);
+    $display($time, " ACF_result_36=%0d", ACF_result_36);
+    $display($time, " ACF_result_37=%0d", ACF_result_37);
+    $display($time, " ACF_result_38=%0d", ACF_result_38);
+    $display($time, " ACF_result_39=%0d", ACF_result_39);
+    $display($time, " ACF_result_40=%0d", ACF_result_40); 
 end
 wire t_int_out;
 reg [3:0] toSampler = 0;
