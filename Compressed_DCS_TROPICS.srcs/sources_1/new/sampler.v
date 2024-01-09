@@ -51,19 +51,23 @@ end
 //reg w_sample_out;
 //reg w_sample_and_clear;
 
-always @ (posedge CLK_1MHZ) begin
+always @ (CLK_1MHZ) begin
     if (CLK_1MHZ == 1'b1) begin
         sample_out <= sample_in;
         sample_and_clear <= 1'b1;
+    end
+    else if (CLK_1MHZ == 1'b0) begin
+        sample_out <= 4'b0;
+        sample_and_clear <= 1'b0;
     end
 end 
 
 //assign sample_out = w_sample_out;
 //assign sample_and_clear = w_sample_and_clear;
 
-always @ (negedge CLK_1MHZ) begin
-    sample_out <= 4'b0;
-    sample_and_clear <= 1'b0;
-end 
+//always @ (negedge CLK_1MHZ) begin
+//    sample_out <= 4'b0;
+//    sample_and_clear <= 1'b0;
+//end 
 
 endmodule
