@@ -28,8 +28,8 @@ parameter sampling_frequency = 1_000_000
 )
 (
     input clk,
-    input photonCounterIn1
-//    output n
+    input photonCounterIn1,
+    output n
 );
 
 wire t_int_out;
@@ -37,6 +37,8 @@ wire [3:0] toSampler;
 wire [3:0] toBuffer;
 wire sample_and_clear;
 wire toPhotonCounterReset;
+
+assign n = ACF_result_1[0]; //REMEMBER TO DELETE LINE AFTER TEST
 
 integralTimer 
    #(

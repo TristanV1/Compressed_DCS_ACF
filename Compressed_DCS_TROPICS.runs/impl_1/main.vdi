@@ -1,0 +1,74 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Jan  8 23:00:53 2024
+# Process ID: 30916
+# Current directory: C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.runs/impl_1
+# Command line: vivado.exe -log main.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source main.tcl -notrace
+# Log file: C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.runs/impl_1/main.vdi
+# Journal file: C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.runs/impl_1\vivado.jou
+# Running On: DESKTOP-AQ1B764, OS: Windows, CPU Frequency: 3893 MHz, CPU Physical cores: 12, Host memory: 17021 MB
+#-----------------------------------------------------------
+source main.tcl -notrace
+Command: link_design -top main -part xc7a35tcpg236-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1259.430 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Constraints/Basys-3-Master.xdc]
+Finished Parsing XDC File [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Constraints/Basys-3-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1259.430 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net AutoCorrelator_1/Q[0] has multiple drivers: AutoCorrelator_1/SumBuffer_Den_reg[0]__0/Q, and AutoCorrelator_1/SumBuffer_Den_reg[0]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net AutoCorrelator_1/Q[10] has multiple drivers: AutoCorrelator_1/SumBuffer_Den_reg[10]/Q, and AutoCorrelator_1/SumBuffer_Den_reg[10]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net AutoCorrelator_1/Q[11] has multiple drivers: AutoCorrelator_1/SumBuffer_Den_reg[11]__0/Q, and AutoCorrelator_1/SumBuffer_Den_reg[11]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net AutoCorrelator_1/Q[12] has multiple drivers: AutoCorrelator_1/SumBuffer_Den_reg[12]__0/Q, and AutoCorrelator_1/SumBuffer_Den_reg[12]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net AutoCorrelator_1/Q[13] has multiple drivers: AutoCorrelator_1/SumBuffer_Den_reg[13]__0/Q, and AutoCorrelator_1/SumBuffer_Den_reg[13]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net AutoCorrelator_1/Q[14] has multiple drivers: AutoCorrelator_1/SumBuffer_Den_reg[14]__0/Q, and AutoCorrelator_1/SumBuffer_Den_reg[14]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net AutoCorrelator_1/Q[15] has multiple drivers: AutoCorrelator_1/SumBuffer_Den_reg[15]__0/Q, and AutoCorrelator_1/SumBuffer_Den_reg[15]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net AutoCorrelator_1/Q[16] has multiple drivers: AutoCorrelator_1/SumBuffer_Den_reg[16]__0/Q, and AutoCorrelator_1/SumBuffer_Den_reg[16]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net AutoCorrelator_1/Q[17] has multiple drivers: AutoCorrelator_1/SumBuffer_Den_reg[17]__0/Q, and AutoCorrelator_1/SumBuffer_Den_reg[17]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net AutoCorrelator_1/Q[18] has multiple drivers: AutoCorrelator_1/SumBuffer_Den_reg[18]__0/Q, and AutoCorrelator_1/SumBuffer_Den_reg[18]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net AutoCorrelator_1/Q[19] has multiple drivers: AutoCorrelator_1/SumBuffer_Den_reg[19]/Q, and AutoCorrelator_1/SumBuffer_Den_reg[19]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net AutoCorrelator_1/Q[1] has multiple drivers: AutoCorrelator_1/SumBuffer_Den_reg[1]__0/Q, and AutoCorrelator_1/SumBuffer_Den_reg[1]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net AutoCorrelator_1/Q[2] has multiple drivers: AutoCorrelator_1/SumBuffer_Den_reg[2]/Q, and AutoCorrelator_1/SumBuffer_Den_reg[2]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net AutoCorrelator_1/Q[3] has multiple drivers: AutoCorrelator_1/SumBuffer_Den_reg[3]__0/Q, and AutoCorrelator_1/SumBuffer_Den_reg[3]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net AutoCorrelator_1/Q[4] has multiple drivers: AutoCorrelator_1/SumBuffer_Den_reg[4]/Q, and AutoCorrelator_1/SumBuffer_Den_reg[4]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net AutoCorrelator_1/Q[5] has multiple drivers: AutoCorrelator_1/SumBuffer_Den_reg[5]/Q, and AutoCorrelator_1/SumBuffer_Den_reg[5]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net AutoCorrelator_1/Q[6] has multiple drivers: AutoCorrelator_1/SumBuffer_Den_reg[6]__0/Q, and AutoCorrelator_1/SumBuffer_Den_reg[6]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net AutoCorrelator_1/Q[7] has multiple drivers: AutoCorrelator_1/SumBuffer_Den_reg[7]__0/Q, and AutoCorrelator_1/SumBuffer_Den_reg[7]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net AutoCorrelator_1/Q[8] has multiple drivers: AutoCorrelator_1/SumBuffer_Den_reg[8]__0/Q, and AutoCorrelator_1/SumBuffer_Den_reg[8]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net AutoCorrelator_1/Q[9] has multiple drivers: AutoCorrelator_1/SumBuffer_Den_reg[9]__0/Q, and AutoCorrelator_1/SumBuffer_Den_reg[9]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net sampler_1/Q[0] has multiple drivers: sampler_1/sample_out_reg[0]/Q, and sampler_1/sample_out_reg[0]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net sampler_1/Q[1] has multiple drivers: sampler_1/sample_out_reg[1]__0/Q, and sampler_1/sample_out_reg[1]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net sampler_1/Q[2] has multiple drivers: sampler_1/sample_out_reg[2]/Q, and sampler_1/sample_out_reg[2]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net sampler_1/Q[3] has multiple drivers: sampler_1/sample_out_reg[3]__0/Q, and sampler_1/sample_out_reg[3]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net sampler_1/sample_and_clear has multiple drivers: sampler_1/sample_and_clear_reg__0/Q, and sampler_1/sample_and_clear_reg/Q.
+INFO: [Project 1-461] DRC finished with 25 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.828 . Memory (MB): peak = 1259.430 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+12 Infos, 0 Warnings, 0 Critical Warnings and 26 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Mon Jan  8 23:01:05 2024...
