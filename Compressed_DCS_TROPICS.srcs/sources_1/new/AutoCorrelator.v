@@ -47,12 +47,12 @@ initial begin
     SumBuffer_Den = 0;
 end
 
-always @ (enable) begin
-    if (reset == 1'b0 & enable == 1'b1) begin
-       SumBuffer_Num <= SumBuffer_Num + (n_i * n_delta); //Multiply-Accumulate operation
-       SumBuffer_Den <= SumBuffer_Den + (n_i * n_i); //Multiply-Accumulate operation
-    end  
-end
+//always @ (enable) begin
+//    if (reset == 1'b0 & enable == 1'b1) begin
+//       SumBuffer_Num <= SumBuffer_Num + (n_i * n_delta); //Multiply-Accumulate operation
+//       SumBuffer_Den <= SumBuffer_Den + (n_i * n_i); //Multiply-Accumulate operation
+//    end  
+//end
 
 reg [DIVIDER_WIDTH-1:0] dividend;
 reg [DIVIDER_WIDTH-1:0] divisor;
@@ -62,11 +62,28 @@ initial begin
     divisor = 0;
 end
 
-always @ (posedge(reset)) begin
-    dividend <= SumBuffer_Num;
-    divisor  <= SumBuffer_Den;
-    SumBuffer_Num <= 0;
-    SumBuffer_Den <= 0;
+//always @ (posedge(reset)) begin
+
+//    dividend <= SumBuffer_Num;
+//    divisor  <= SumBuffer_Den;
+//    SumBuffer_Num <= 0;
+//    SumBuffer_Den <= 0;
+
+//end
+
+always @ (posedge(reset) or (enable & ~reset)) begin
+    if (reset == 1'b0 & enable == 1'b1) begin
+        SumBuffer_Num <= SumBuffer_Num + (n_i * n_delta); // Multiply-Accumulate operation
+        SumBuffer_Den <= SumBuffer_Den + (n_i * n_i);      // Multiply-Accumulate operation
+    end
+
+    if (reset == 1'b1) begin
+        dividend <= SumBuffer_Num;
+        divisor  <= SumBuffer_Den;
+        SumBuffer_Num <= 0;
+        SumBuffer_Den <= 0;
+    end
+    
 end
 
 
