@@ -71,7 +71,7 @@ end
 
 //end
 
-always @ (posedge(reset) or (enable & ~reset)) begin
+always @ ((reset) or (enable & ~reset)) begin
     if (reset == 1'b0 & enable == 1'b1) begin
         SumBuffer_Num <= SumBuffer_Num + (n_i * n_delta); // Multiply-Accumulate operation
         SumBuffer_Den <= SumBuffer_Den + (n_i * n_i);      // Multiply-Accumulate operation

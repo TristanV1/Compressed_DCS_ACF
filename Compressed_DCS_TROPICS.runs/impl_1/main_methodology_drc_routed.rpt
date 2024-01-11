@@ -1,0 +1,288 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Tue Jan  9 15:13:09 2024
+| Host         : DESKTOP-AQ1B764 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file main_methodology_drc_routed.rpt -pb main_methodology_drc_routed.pb -rpx main_methodology_drc_routed.rpx
+| Design       : main
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 50
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert  | 1          |
+| TIMING-18 | Warning  | Missing input or output delay | 1          |
+| TIMING-20 | Warning  | Non-clocked latch             | 48         |
++-----------+----------+-------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell sampler_1/counter_reg[3]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) photonCounter_1/counter_reg[0]/CLR, photonCounter_1/counter_reg[1]/CLR,
+photonCounter_1/counter_reg[2]/CLR, photonCounter_1/counter_reg[3]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An output delay is missing on n relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/SumBuffer_Den_reg[0] cannot be properly analyzed as its control pin AutoCorrelator_1/SumBuffer_Den_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/SumBuffer_Den_reg[10] cannot be properly analyzed as its control pin AutoCorrelator_1/SumBuffer_Den_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/SumBuffer_Den_reg[11] cannot be properly analyzed as its control pin AutoCorrelator_1/SumBuffer_Den_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/SumBuffer_Den_reg[12] cannot be properly analyzed as its control pin AutoCorrelator_1/SumBuffer_Den_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/SumBuffer_Den_reg[13] cannot be properly analyzed as its control pin AutoCorrelator_1/SumBuffer_Den_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/SumBuffer_Den_reg[14] cannot be properly analyzed as its control pin AutoCorrelator_1/SumBuffer_Den_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/SumBuffer_Den_reg[15] cannot be properly analyzed as its control pin AutoCorrelator_1/SumBuffer_Den_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/SumBuffer_Den_reg[16] cannot be properly analyzed as its control pin AutoCorrelator_1/SumBuffer_Den_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/SumBuffer_Den_reg[17] cannot be properly analyzed as its control pin AutoCorrelator_1/SumBuffer_Den_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/SumBuffer_Den_reg[18] cannot be properly analyzed as its control pin AutoCorrelator_1/SumBuffer_Den_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/SumBuffer_Den_reg[19] cannot be properly analyzed as its control pin AutoCorrelator_1/SumBuffer_Den_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/SumBuffer_Den_reg[1] cannot be properly analyzed as its control pin AutoCorrelator_1/SumBuffer_Den_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/SumBuffer_Den_reg[2] cannot be properly analyzed as its control pin AutoCorrelator_1/SumBuffer_Den_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/SumBuffer_Den_reg[3] cannot be properly analyzed as its control pin AutoCorrelator_1/SumBuffer_Den_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/SumBuffer_Den_reg[4] cannot be properly analyzed as its control pin AutoCorrelator_1/SumBuffer_Den_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/SumBuffer_Den_reg[5] cannot be properly analyzed as its control pin AutoCorrelator_1/SumBuffer_Den_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/SumBuffer_Den_reg[6] cannot be properly analyzed as its control pin AutoCorrelator_1/SumBuffer_Den_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/SumBuffer_Den_reg[7] cannot be properly analyzed as its control pin AutoCorrelator_1/SumBuffer_Den_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/SumBuffer_Den_reg[8] cannot be properly analyzed as its control pin AutoCorrelator_1/SumBuffer_Den_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/SumBuffer_Den_reg[9] cannot be properly analyzed as its control pin AutoCorrelator_1/SumBuffer_Den_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/divisor_reg[0] cannot be properly analyzed as its control pin AutoCorrelator_1/divisor_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/divisor_reg[10] cannot be properly analyzed as its control pin AutoCorrelator_1/divisor_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/divisor_reg[11] cannot be properly analyzed as its control pin AutoCorrelator_1/divisor_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/divisor_reg[12] cannot be properly analyzed as its control pin AutoCorrelator_1/divisor_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/divisor_reg[13] cannot be properly analyzed as its control pin AutoCorrelator_1/divisor_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/divisor_reg[14] cannot be properly analyzed as its control pin AutoCorrelator_1/divisor_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/divisor_reg[15] cannot be properly analyzed as its control pin AutoCorrelator_1/divisor_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/divisor_reg[16] cannot be properly analyzed as its control pin AutoCorrelator_1/divisor_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/divisor_reg[17] cannot be properly analyzed as its control pin AutoCorrelator_1/divisor_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/divisor_reg[18] cannot be properly analyzed as its control pin AutoCorrelator_1/divisor_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/divisor_reg[19] cannot be properly analyzed as its control pin AutoCorrelator_1/divisor_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/divisor_reg[1] cannot be properly analyzed as its control pin AutoCorrelator_1/divisor_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/divisor_reg[2] cannot be properly analyzed as its control pin AutoCorrelator_1/divisor_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#34 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/divisor_reg[3] cannot be properly analyzed as its control pin AutoCorrelator_1/divisor_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#35 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/divisor_reg[4] cannot be properly analyzed as its control pin AutoCorrelator_1/divisor_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#36 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/divisor_reg[5] cannot be properly analyzed as its control pin AutoCorrelator_1/divisor_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#37 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/divisor_reg[6] cannot be properly analyzed as its control pin AutoCorrelator_1/divisor_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#38 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/divisor_reg[7] cannot be properly analyzed as its control pin AutoCorrelator_1/divisor_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#39 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/divisor_reg[8] cannot be properly analyzed as its control pin AutoCorrelator_1/divisor_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#40 Warning
+Non-clocked latch  
+The latch AutoCorrelator_1/divisor_reg[9] cannot be properly analyzed as its control pin AutoCorrelator_1/divisor_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#41 Warning
+Non-clocked latch  
+The latch counterBuffer_1/counterBuffer_reg[0][0] cannot be properly analyzed as its control pin counterBuffer_1/counterBuffer_reg[0][0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#42 Warning
+Non-clocked latch  
+The latch counterBuffer_1/counterBuffer_reg[0][1] cannot be properly analyzed as its control pin counterBuffer_1/counterBuffer_reg[0][1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#43 Warning
+Non-clocked latch  
+The latch counterBuffer_1/counterBuffer_reg[0][2] cannot be properly analyzed as its control pin counterBuffer_1/counterBuffer_reg[0][2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#44 Warning
+Non-clocked latch  
+The latch counterBuffer_1/counterBuffer_reg[0][3] cannot be properly analyzed as its control pin counterBuffer_1/counterBuffer_reg[0][3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#45 Warning
+Non-clocked latch  
+The latch photonCounter_1/counter_reg[0] cannot be properly analyzed as its control pin photonCounter_1/counter_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#46 Warning
+Non-clocked latch  
+The latch photonCounter_1/counter_reg[1] cannot be properly analyzed as its control pin photonCounter_1/counter_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#47 Warning
+Non-clocked latch  
+The latch photonCounter_1/counter_reg[2] cannot be properly analyzed as its control pin photonCounter_1/counter_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#48 Warning
+Non-clocked latch  
+The latch photonCounter_1/counter_reg[3] cannot be properly analyzed as its control pin photonCounter_1/counter_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+

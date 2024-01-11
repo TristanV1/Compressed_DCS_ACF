@@ -58,8 +58,13 @@ parameter Qlsb = 0;
 
 reg [WIDTH:0] acc_next = 0;
 
-reg [2:0] current_state = 3'b100;
-reg [2:0] next_state = 3'b000;
+reg [2:0] current_state;
+reg [2:0] next_state;
+
+initial begin
+    current_state <= 3'b100;
+    next_state <= 3'b000;
+end
 
 parameter IDLE = 3'b000, 
           DIVIDE_1 = 3'b001, 
@@ -75,13 +80,14 @@ always @ (posedge (clk)) begin
     end
 end
 
-always @ (posedge(clk)) 
-begin : Next_State_Logic
-    current_state <= next_state;
-end
+//always @ (posedge(clk)) 
+//begin : Next_State_Logic
+//    current_state <= next_state;
+//end
 
 always @ (posedge(clk)) 
-begin : Output_Logic
+begin : State_Logic
+    current_state <= next_state; // Next state logic;
     case(current_state) 
         IDLE:
             if (divisor == 0 & enable_state == 1'b1) begin
