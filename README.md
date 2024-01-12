@@ -1,4 +1,4 @@
-<h1 align="center">FPGA Based Auto Correlation for Diffused Spectroscopy</h1> 
+<h1 align="center">FPGA Based Auto Correlation for Diffuse Correlation Spectroscopy</h1> 
 
 
 <p align="center">
