@@ -1,3 +1,9 @@
-Auto Correlation algorithm used for Diffused Correlation Spectroscopy applications for the USF Translational Optics Imaging and Spectroscopy Lab
+<h1 align="center">FPGA Based Auto Correlation for Diffuse Correlation Spectroscopy</h1> 
 
-![alt text](https://github.com/TristanV1/Compressed_DCS_ACF/blob/master/Block%20Diagram/FPGA%20DCS%20ACF%20V1.png?raw=true)
+
+<p align="center">
+
+  <img src="https://github.com/TristanV1/Compressed_DCS_ACF/blob/master/Block%20Diagram/FPGA%20DCS%20ACF%20V1.png?raw=true" alt="Block Diagram"/>
+  
+  <img src="https://github.com/TristanV1/Compressed_DCS_ACF/blob/master/Verification%20Document/Comparison.png?raw=true" alt="Block Diagram"/>
+</p>
