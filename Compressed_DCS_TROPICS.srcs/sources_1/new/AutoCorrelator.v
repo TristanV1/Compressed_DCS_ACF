@@ -34,7 +34,8 @@ input enable,
 input reset,
 input  [3:0] n_i,
 input  [3:0] n_delta,
-output reg [WIDTH-1:0] ACF_result
+output reg [WIDTH-1:0] ACF_result,
+output done 
 );
 
 reg [WIDTH-1:0] SumBuffer_Num;
@@ -105,7 +106,7 @@ end
 wire [DIVIDER_WIDTH-1:0] quotient;
 wire [DIVIDER_WIDTH-1:0] remainder;
 
-wire done;
+wire w_done;
 wire busy;
 wire DBZ_flag; //Ignore??? How should we handle DBZ errors for this function.
 
@@ -122,12 +123,13 @@ Divider
 .divisor({0,divisor}),
 .quotient(quotient),
 .remainder(remainder),
-.done(done),
+.done(w_done),
 .busy(busy),
 .DBZ_flag(DBZ_flag)
 );
 
-always @ (done) begin
+assign done = w_done;
+always @ (w_done) begin
     ACF_result <= quotient * precompute;
 end
     

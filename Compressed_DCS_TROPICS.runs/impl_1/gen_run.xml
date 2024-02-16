@@ -17,6 +17,7 @@
   <File Type="BITSTR-MMI" Name="main.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="main_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-SYSDEF" Name="main.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="main_methodology_drc_routed.pb"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="main.ltx"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
@@ -48,7 +49,6 @@
   <File Type="PHYSOPT-DCP" Name="main_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="main_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="main_postroute_physopt_bb.dcp"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="main_methodology_drc_routed.pb"/>
   <File Type="ROUTE-DRC-RPX" Name="main_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="main_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="main.pdi"/>
