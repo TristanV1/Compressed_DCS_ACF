@@ -380,7 +380,7 @@ integer z = 0;
 
 reg prev = 0;
 initial begin
-    for(i=0;i<510000;i=i+1) begin
+    for(i=0;i<1020000;i=i+1) begin
         clk <= ~clk;
         #41.667
         

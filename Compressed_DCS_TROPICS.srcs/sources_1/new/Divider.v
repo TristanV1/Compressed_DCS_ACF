@@ -38,7 +38,7 @@ output reg DBZ_flag
 );
 
 initial begin
-    done <= 1;
+    done <= 0;
     busy <= 0;
     DBZ_flag <= 0;
     quotient <= 0;
@@ -74,9 +74,10 @@ parameter IDLE = 3'b000,
           COMPLETE = 3'b100;
           
 reg enable_state = 0;
-          
+reg hold = 1'b0;       
+
 always @ (posedge (clk)) begin
-    if (enable == 1'b1 & busy == 1'b0) begin
+    if (enable == 1'b1 & busy == 1'b0 & hold == 1'b0) begin
         enable_state <= 1'b1;
     end
 end
@@ -85,6 +86,15 @@ end
 //begin : Next_State_Logic
 //    current_state <= next_state;
 //end
+
+
+
+always @ (posedge(clk)) 
+begin : Reset_Condition
+    if(reset) begin
+        hold <= 1'b0;
+    end
+end
 
 always @ (posedge(clk)) 
 begin : State_Logic
@@ -95,17 +105,17 @@ begin : State_Logic
                 next_state <= ERROR;
             end
             else begin
-                if(enable_state == 1'b1) begin
+                if(enable_state == 1'b1 & hold != 1'b1) begin
                     working_register[3*WIDTH:0] <= {acc,dividend,r_quotient};
                     next_state <= DIVIDE_1;
                     done <= 1'b0; 
                     busy <= 1'b1;
+                    hold = 1'b1;
                 end
                 else begin
                     count <= 1'b0;
                     working_register[Amsb:Alsb] <= 0;
                     working_register[Qmsb:Qlsb] <= 0;
-                    done <= 1'b1;
                     DBZ_flag <= 1'b0;
                 end
             end

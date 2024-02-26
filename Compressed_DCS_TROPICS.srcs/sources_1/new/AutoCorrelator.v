@@ -113,7 +113,7 @@ wire DBZ_flag; //Ignore??? How should we handle DBZ errors for this function.
 
 Divider 
 #(
-.WIDTH(WIDTH+6)
+.WIDTH(DIVIDER_WIDTH)
 )
 Divider
 (
@@ -121,6 +121,7 @@ Divider
 .enable(reset), //Once the MAC is done, we can compute division.
 .dividend({0,dividend * prescaler}), //Scale divisor to obtain user-defined precision.
 .divisor({0,divisor}),
+.reset(~reset),
 .quotient(quotient),
 .remainder(remainder),
 .done(w_done),
