@@ -45,10 +45,17 @@ initial begin
     remainder <=0;
 end
 
-reg [WIDTH:0] acc = 0;
-reg [WIDTH-1:0] r_quotient = 0;
-reg [3*WIDTH:0]working_register = 0;
-reg [$clog2(WIDTH):0] count = 0;
+reg [WIDTH:0] acc;
+reg [WIDTH-1:0] r_quotient;
+reg [3*WIDTH:0] working_register;
+reg [$clog2(WIDTH):0] count;
+
+initial begin
+    acc <= 0;
+    r_quotient <= 0;
+    working_register <= 0;
+    count <= 0;
+end
 
 parameter Amsb = 3*WIDTH;
 parameter Alsb = 2*WIDTH;
@@ -57,7 +64,7 @@ parameter Dlsb = WIDTH;
 parameter Qmsb = WIDTH - 1;
 parameter Qlsb = 0;
 
-reg [WIDTH:0] acc_next = 0;
+reg [WIDTH:0] acc_next;
 
 reg [2:0] current_state;
 reg [2:0] next_state;
@@ -65,6 +72,7 @@ reg [2:0] next_state;
 initial begin
     current_state <= 3'b100;
     next_state <= 3'b000;
+    acc_next <= 0;
 end
 
 parameter IDLE = 3'b000, 
@@ -89,15 +97,19 @@ end
 
 
 
-always @ (posedge(clk)) 
-begin : Reset_Condition
-    if(reset) begin
-        hold <= 1'b0;
-    end
-end
+//always @ (posedge(clk)) 
+//begin : Reset_Condition
+//    if(reset) begin
+//        hold <= 1'b0;
+//    end
+//end
 
 always @ (posedge(clk)) 
 begin : State_Logic
+    if(reset) begin //Reset condition for FSM
+        hold <= 1'b0;
+        done <= 1'b0;
+    end
     current_state <= next_state; // Next state logic;
     case(current_state) 
         IDLE:
@@ -108,9 +120,9 @@ begin : State_Logic
                 if(enable_state == 1'b1 & hold != 1'b1) begin
                     working_register[3*WIDTH:0] <= {acc,dividend,r_quotient};
                     next_state <= DIVIDE_1;
-                    done <= 1'b0; 
+                     
                     busy <= 1'b1;
-                    hold = 1'b1;
+                    hold <= 1'b1;
                 end
                 else begin
                     count <= 1'b0;

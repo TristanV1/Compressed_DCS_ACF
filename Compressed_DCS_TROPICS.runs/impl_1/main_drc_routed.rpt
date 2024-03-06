@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-| Date         : Tue Jan  9 15:13:08 2024
+| Date         : Tue Mar  5 18:26:55 2024
 | Host         : DESKTOP-AQ1B764 running 64-bit major release  (build 9200)
 | Command      : report_drc -file main_drc_routed.rpt -pb main_drc_routed.pb -rpx main_drc_routed.rpx
 | Design       : main
@@ -52,7 +52,7 @@ Related violations: <none>
 
 PDRC-153#2 Warning
 Gated clock check  
-Net integralTimer_1/t_int_out_reg_1[0] is a gated clock net sourced by a combinational pin integralTimer_1/SumBuffer_Den_reg[19]_i_2/O, cell integralTimer_1/SumBuffer_Den_reg[19]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net integralTimer_1/t_int_out_reg_0[0] is a gated clock net sourced by a combinational pin integralTimer_1/SumBuffer_Den_reg[19]_i_2/O, cell integralTimer_1/SumBuffer_Den_reg[19]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 

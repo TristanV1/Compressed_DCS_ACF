@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-| Date         : Tue Jan  9 15:13:09 2024
+| Date         : Tue Mar  5 18:26:57 2024
 | Host         : DESKTOP-AQ1B764 running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -report_unconstrained -file main_timing_summary_routed.rpt -pb main_timing_summary_routed.pb -rpx main_timing_summary_routed.rpx -warn_on_violation
 | Design       : main
@@ -266,17 +266,17 @@ Slack (MET) :             4.783ns  (required time - arrival time)
     SLICE_X6Y24          LUT4 (Prop_lut4_I0_O)        0.124     6.640 r  AutoCorrelator_1/Divider/i__carry_i_8/O
                          net (fo=1, routed)           0.000     6.640    AutoCorrelator_1/Divider/i__carry_i_8_n_0
     SLICE_X6Y24          CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.513     7.153 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry/CO[3]
-                         net (fo=1, routed)           0.009     7.162    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry_n_0
+                                                      0.513     7.153 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry/CO[3]
+                         net (fo=1, routed)           0.009     7.162    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry_n_0
     SLICE_X6Y25          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     7.279 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0/CO[3]
-                         net (fo=1, routed)           0.000     7.279    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0_n_0
+                                                      0.117     7.279 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0/CO[3]
+                         net (fo=1, routed)           0.000     7.279    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0_n_0
     SLICE_X6Y26          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     7.396 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1/CO[3]
-                         net (fo=1, routed)           0.000     7.396    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1_n_0
+                                                      0.117     7.396 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1/CO[3]
+                         net (fo=1, routed)           0.000     7.396    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1_n_0
     SLICE_X6Y27          CARRY4 (Prop_carry4_CI_CO[1])
-                                                      0.157     7.553 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2/CO[1]
-                         net (fo=9, routed)           1.147     8.700    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2_n_2
+                                                      0.157     7.553 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2/CO[1]
+                         net (fo=9, routed)           1.147     8.700    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2_n_2
     SLICE_X8Y28          LUT4 (Prop_lut4_I0_O)        0.358     9.058 r  AutoCorrelator_1/Divider/acc_next[26]_i_1/O
                          net (fo=27, routed)          0.802     9.860    AutoCorrelator_1/Divider/acc_next[26]_i_1_n_0
     SLICE_X7Y24          FDRE                                         r  AutoCorrelator_1/Divider/acc_next_reg[10]/CE
@@ -337,17 +337,17 @@ Slack (MET) :             4.783ns  (required time - arrival time)
     SLICE_X6Y24          LUT4 (Prop_lut4_I0_O)        0.124     6.640 r  AutoCorrelator_1/Divider/i__carry_i_8/O
                          net (fo=1, routed)           0.000     6.640    AutoCorrelator_1/Divider/i__carry_i_8_n_0
     SLICE_X6Y24          CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.513     7.153 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry/CO[3]
-                         net (fo=1, routed)           0.009     7.162    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry_n_0
+                                                      0.513     7.153 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry/CO[3]
+                         net (fo=1, routed)           0.009     7.162    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry_n_0
     SLICE_X6Y25          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     7.279 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0/CO[3]
-                         net (fo=1, routed)           0.000     7.279    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0_n_0
+                                                      0.117     7.279 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0/CO[3]
+                         net (fo=1, routed)           0.000     7.279    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0_n_0
     SLICE_X6Y26          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     7.396 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1/CO[3]
-                         net (fo=1, routed)           0.000     7.396    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1_n_0
+                                                      0.117     7.396 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1/CO[3]
+                         net (fo=1, routed)           0.000     7.396    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1_n_0
     SLICE_X6Y27          CARRY4 (Prop_carry4_CI_CO[1])
-                                                      0.157     7.553 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2/CO[1]
-                         net (fo=9, routed)           1.147     8.700    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2_n_2
+                                                      0.157     7.553 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2/CO[1]
+                         net (fo=9, routed)           1.147     8.700    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2_n_2
     SLICE_X8Y28          LUT4 (Prop_lut4_I0_O)        0.358     9.058 r  AutoCorrelator_1/Divider/acc_next[26]_i_1/O
                          net (fo=27, routed)          0.802     9.860    AutoCorrelator_1/Divider/acc_next[26]_i_1_n_0
     SLICE_X7Y24          FDRE                                         r  AutoCorrelator_1/Divider/acc_next_reg[11]/CE
@@ -408,17 +408,17 @@ Slack (MET) :             4.783ns  (required time - arrival time)
     SLICE_X6Y24          LUT4 (Prop_lut4_I0_O)        0.124     6.640 r  AutoCorrelator_1/Divider/i__carry_i_8/O
                          net (fo=1, routed)           0.000     6.640    AutoCorrelator_1/Divider/i__carry_i_8_n_0
     SLICE_X6Y24          CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.513     7.153 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry/CO[3]
-                         net (fo=1, routed)           0.009     7.162    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry_n_0
+                                                      0.513     7.153 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry/CO[3]
+                         net (fo=1, routed)           0.009     7.162    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry_n_0
     SLICE_X6Y25          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     7.279 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0/CO[3]
-                         net (fo=1, routed)           0.000     7.279    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0_n_0
+                                                      0.117     7.279 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0/CO[3]
+                         net (fo=1, routed)           0.000     7.279    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0_n_0
     SLICE_X6Y26          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     7.396 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1/CO[3]
-                         net (fo=1, routed)           0.000     7.396    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1_n_0
+                                                      0.117     7.396 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1/CO[3]
+                         net (fo=1, routed)           0.000     7.396    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1_n_0
     SLICE_X6Y27          CARRY4 (Prop_carry4_CI_CO[1])
-                                                      0.157     7.553 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2/CO[1]
-                         net (fo=9, routed)           1.147     8.700    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2_n_2
+                                                      0.157     7.553 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2/CO[1]
+                         net (fo=9, routed)           1.147     8.700    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2_n_2
     SLICE_X8Y28          LUT4 (Prop_lut4_I0_O)        0.358     9.058 r  AutoCorrelator_1/Divider/acc_next[26]_i_1/O
                          net (fo=27, routed)          0.802     9.860    AutoCorrelator_1/Divider/acc_next[26]_i_1_n_0
     SLICE_X7Y24          FDRE                                         r  AutoCorrelator_1/Divider/acc_next_reg[8]/CE
@@ -479,17 +479,17 @@ Slack (MET) :             4.783ns  (required time - arrival time)
     SLICE_X6Y24          LUT4 (Prop_lut4_I0_O)        0.124     6.640 r  AutoCorrelator_1/Divider/i__carry_i_8/O
                          net (fo=1, routed)           0.000     6.640    AutoCorrelator_1/Divider/i__carry_i_8_n_0
     SLICE_X6Y24          CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.513     7.153 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry/CO[3]
-                         net (fo=1, routed)           0.009     7.162    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry_n_0
+                                                      0.513     7.153 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry/CO[3]
+                         net (fo=1, routed)           0.009     7.162    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry_n_0
     SLICE_X6Y25          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     7.279 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0/CO[3]
-                         net (fo=1, routed)           0.000     7.279    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0_n_0
+                                                      0.117     7.279 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0/CO[3]
+                         net (fo=1, routed)           0.000     7.279    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0_n_0
     SLICE_X6Y26          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     7.396 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1/CO[3]
-                         net (fo=1, routed)           0.000     7.396    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1_n_0
+                                                      0.117     7.396 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1/CO[3]
+                         net (fo=1, routed)           0.000     7.396    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1_n_0
     SLICE_X6Y27          CARRY4 (Prop_carry4_CI_CO[1])
-                                                      0.157     7.553 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2/CO[1]
-                         net (fo=9, routed)           1.147     8.700    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2_n_2
+                                                      0.157     7.553 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2/CO[1]
+                         net (fo=9, routed)           1.147     8.700    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2_n_2
     SLICE_X8Y28          LUT4 (Prop_lut4_I0_O)        0.358     9.058 r  AutoCorrelator_1/Divider/acc_next[26]_i_1/O
                          net (fo=27, routed)          0.802     9.860    AutoCorrelator_1/Divider/acc_next[26]_i_1_n_0
     SLICE_X7Y24          FDRE                                         r  AutoCorrelator_1/Divider/acc_next_reg[9]/CE
@@ -550,17 +550,17 @@ Slack (MET) :             4.812ns  (required time - arrival time)
     SLICE_X6Y24          LUT4 (Prop_lut4_I0_O)        0.124     6.640 r  AutoCorrelator_1/Divider/i__carry_i_8/O
                          net (fo=1, routed)           0.000     6.640    AutoCorrelator_1/Divider/i__carry_i_8_n_0
     SLICE_X6Y24          CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.513     7.153 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry/CO[3]
-                         net (fo=1, routed)           0.009     7.162    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry_n_0
+                                                      0.513     7.153 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry/CO[3]
+                         net (fo=1, routed)           0.009     7.162    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry_n_0
     SLICE_X6Y25          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     7.279 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0/CO[3]
-                         net (fo=1, routed)           0.000     7.279    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0_n_0
+                                                      0.117     7.279 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0/CO[3]
+                         net (fo=1, routed)           0.000     7.279    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0_n_0
     SLICE_X6Y26          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     7.396 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1/CO[3]
-                         net (fo=1, routed)           0.000     7.396    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1_n_0
+                                                      0.117     7.396 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1/CO[3]
+                         net (fo=1, routed)           0.000     7.396    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1_n_0
     SLICE_X6Y27          CARRY4 (Prop_carry4_CI_CO[1])
-                                                      0.157     7.553 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2/CO[1]
-                         net (fo=9, routed)           1.147     8.700    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2_n_2
+                                                      0.157     7.553 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2/CO[1]
+                         net (fo=9, routed)           1.147     8.700    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2_n_2
     SLICE_X8Y28          LUT4 (Prop_lut4_I0_O)        0.358     9.058 r  AutoCorrelator_1/Divider/acc_next[26]_i_1/O
                          net (fo=27, routed)          0.760     9.818    AutoCorrelator_1/Divider/acc_next[26]_i_1_n_0
     SLICE_X7Y25          FDRE                                         r  AutoCorrelator_1/Divider/acc_next_reg[12]/CE
@@ -621,17 +621,17 @@ Slack (MET) :             4.812ns  (required time - arrival time)
     SLICE_X6Y24          LUT4 (Prop_lut4_I0_O)        0.124     6.640 r  AutoCorrelator_1/Divider/i__carry_i_8/O
                          net (fo=1, routed)           0.000     6.640    AutoCorrelator_1/Divider/i__carry_i_8_n_0
     SLICE_X6Y24          CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.513     7.153 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry/CO[3]
-                         net (fo=1, routed)           0.009     7.162    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry_n_0
+                                                      0.513     7.153 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry/CO[3]
+                         net (fo=1, routed)           0.009     7.162    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry_n_0
     SLICE_X6Y25          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     7.279 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0/CO[3]
-                         net (fo=1, routed)           0.000     7.279    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0_n_0
+                                                      0.117     7.279 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0/CO[3]
+                         net (fo=1, routed)           0.000     7.279    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0_n_0
     SLICE_X6Y26          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     7.396 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1/CO[3]
-                         net (fo=1, routed)           0.000     7.396    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1_n_0
+                                                      0.117     7.396 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1/CO[3]
+                         net (fo=1, routed)           0.000     7.396    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1_n_0
     SLICE_X6Y27          CARRY4 (Prop_carry4_CI_CO[1])
-                                                      0.157     7.553 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2/CO[1]
-                         net (fo=9, routed)           1.147     8.700    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2_n_2
+                                                      0.157     7.553 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2/CO[1]
+                         net (fo=9, routed)           1.147     8.700    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2_n_2
     SLICE_X8Y28          LUT4 (Prop_lut4_I0_O)        0.358     9.058 r  AutoCorrelator_1/Divider/acc_next[26]_i_1/O
                          net (fo=27, routed)          0.760     9.818    AutoCorrelator_1/Divider/acc_next[26]_i_1_n_0
     SLICE_X7Y25          FDRE                                         r  AutoCorrelator_1/Divider/acc_next_reg[13]/CE
@@ -692,17 +692,17 @@ Slack (MET) :             4.812ns  (required time - arrival time)
     SLICE_X6Y24          LUT4 (Prop_lut4_I0_O)        0.124     6.640 r  AutoCorrelator_1/Divider/i__carry_i_8/O
                          net (fo=1, routed)           0.000     6.640    AutoCorrelator_1/Divider/i__carry_i_8_n_0
     SLICE_X6Y24          CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.513     7.153 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry/CO[3]
-                         net (fo=1, routed)           0.009     7.162    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry_n_0
+                                                      0.513     7.153 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry/CO[3]
+                         net (fo=1, routed)           0.009     7.162    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry_n_0
     SLICE_X6Y25          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     7.279 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0/CO[3]
-                         net (fo=1, routed)           0.000     7.279    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0_n_0
+                                                      0.117     7.279 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0/CO[3]
+                         net (fo=1, routed)           0.000     7.279    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0_n_0
     SLICE_X6Y26          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     7.396 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1/CO[3]
-                         net (fo=1, routed)           0.000     7.396    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1_n_0
+                                                      0.117     7.396 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1/CO[3]
+                         net (fo=1, routed)           0.000     7.396    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1_n_0
     SLICE_X6Y27          CARRY4 (Prop_carry4_CI_CO[1])
-                                                      0.157     7.553 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2/CO[1]
-                         net (fo=9, routed)           1.147     8.700    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2_n_2
+                                                      0.157     7.553 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2/CO[1]
+                         net (fo=9, routed)           1.147     8.700    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2_n_2
     SLICE_X8Y28          LUT4 (Prop_lut4_I0_O)        0.358     9.058 r  AutoCorrelator_1/Divider/acc_next[26]_i_1/O
                          net (fo=27, routed)          0.760     9.818    AutoCorrelator_1/Divider/acc_next[26]_i_1_n_0
     SLICE_X7Y25          FDRE                                         r  AutoCorrelator_1/Divider/acc_next_reg[14]/CE
@@ -763,17 +763,17 @@ Slack (MET) :             4.812ns  (required time - arrival time)
     SLICE_X6Y24          LUT4 (Prop_lut4_I0_O)        0.124     6.640 r  AutoCorrelator_1/Divider/i__carry_i_8/O
                          net (fo=1, routed)           0.000     6.640    AutoCorrelator_1/Divider/i__carry_i_8_n_0
     SLICE_X6Y24          CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.513     7.153 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry/CO[3]
-                         net (fo=1, routed)           0.009     7.162    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry_n_0
+                                                      0.513     7.153 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry/CO[3]
+                         net (fo=1, routed)           0.009     7.162    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry_n_0
     SLICE_X6Y25          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     7.279 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0/CO[3]
-                         net (fo=1, routed)           0.000     7.279    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0_n_0
+                                                      0.117     7.279 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0/CO[3]
+                         net (fo=1, routed)           0.000     7.279    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0_n_0
     SLICE_X6Y26          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     7.396 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1/CO[3]
-                         net (fo=1, routed)           0.000     7.396    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1_n_0
+                                                      0.117     7.396 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1/CO[3]
+                         net (fo=1, routed)           0.000     7.396    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1_n_0
     SLICE_X6Y27          CARRY4 (Prop_carry4_CI_CO[1])
-                                                      0.157     7.553 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2/CO[1]
-                         net (fo=9, routed)           1.147     8.700    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2_n_2
+                                                      0.157     7.553 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2/CO[1]
+                         net (fo=9, routed)           1.147     8.700    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2_n_2
     SLICE_X8Y28          LUT4 (Prop_lut4_I0_O)        0.358     9.058 r  AutoCorrelator_1/Divider/acc_next[26]_i_1/O
                          net (fo=27, routed)          0.760     9.818    AutoCorrelator_1/Divider/acc_next[26]_i_1_n_0
     SLICE_X7Y25          FDRE                                         r  AutoCorrelator_1/Divider/acc_next_reg[15]/CE
@@ -834,17 +834,17 @@ Slack (MET) :             4.873ns  (required time - arrival time)
     SLICE_X6Y24          LUT4 (Prop_lut4_I0_O)        0.124     6.640 r  AutoCorrelator_1/Divider/i__carry_i_8/O
                          net (fo=1, routed)           0.000     6.640    AutoCorrelator_1/Divider/i__carry_i_8_n_0
     SLICE_X6Y24          CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.513     7.153 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry/CO[3]
-                         net (fo=1, routed)           0.009     7.162    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry_n_0
+                                                      0.513     7.153 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry/CO[3]
+                         net (fo=1, routed)           0.009     7.162    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry_n_0
     SLICE_X6Y25          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     7.279 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0/CO[3]
-                         net (fo=1, routed)           0.000     7.279    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0_n_0
+                                                      0.117     7.279 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0/CO[3]
+                         net (fo=1, routed)           0.000     7.279    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0_n_0
     SLICE_X6Y26          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     7.396 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1/CO[3]
-                         net (fo=1, routed)           0.000     7.396    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1_n_0
+                                                      0.117     7.396 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1/CO[3]
+                         net (fo=1, routed)           0.000     7.396    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1_n_0
     SLICE_X6Y27          CARRY4 (Prop_carry4_CI_CO[1])
-                                                      0.157     7.553 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2/CO[1]
-                         net (fo=9, routed)           1.147     8.700    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2_n_2
+                                                      0.157     7.553 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2/CO[1]
+                         net (fo=9, routed)           1.147     8.700    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2_n_2
     SLICE_X8Y28          LUT4 (Prop_lut4_I0_O)        0.358     9.058 r  AutoCorrelator_1/Divider/acc_next[26]_i_1/O
                          net (fo=27, routed)          0.714     9.773    AutoCorrelator_1/Divider/acc_next[26]_i_1_n_0
     SLICE_X7Y22          FDRE                                         r  AutoCorrelator_1/Divider/acc_next_reg[0]/CE
@@ -905,17 +905,17 @@ Slack (MET) :             4.873ns  (required time - arrival time)
     SLICE_X6Y24          LUT4 (Prop_lut4_I0_O)        0.124     6.640 r  AutoCorrelator_1/Divider/i__carry_i_8/O
                          net (fo=1, routed)           0.000     6.640    AutoCorrelator_1/Divider/i__carry_i_8_n_0
     SLICE_X6Y24          CARRY4 (Prop_carry4_S[0]_CO[3])
-                                                      0.513     7.153 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry/CO[3]
-                         net (fo=1, routed)           0.009     7.162    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry_n_0
+                                                      0.513     7.153 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry/CO[3]
+                         net (fo=1, routed)           0.009     7.162    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry_n_0
     SLICE_X6Y25          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     7.279 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0/CO[3]
-                         net (fo=1, routed)           0.000     7.279    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0_n_0
+                                                      0.117     7.279 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0/CO[3]
+                         net (fo=1, routed)           0.000     7.279    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0_n_0
     SLICE_X6Y26          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     7.396 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1/CO[3]
-                         net (fo=1, routed)           0.000     7.396    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1_n_0
+                                                      0.117     7.396 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1/CO[3]
+                         net (fo=1, routed)           0.000     7.396    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1_n_0
     SLICE_X6Y27          CARRY4 (Prop_carry4_CI_CO[1])
-                                                      0.157     7.553 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2/CO[1]
-                         net (fo=9, routed)           1.147     8.700    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2_n_2
+                                                      0.157     7.553 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2/CO[1]
+                         net (fo=9, routed)           1.147     8.700    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2_n_2
     SLICE_X8Y28          LUT4 (Prop_lut4_I0_O)        0.358     9.058 r  AutoCorrelator_1/Divider/acc_next[26]_i_1/O
                          net (fo=27, routed)          0.714     9.773    AutoCorrelator_1/Divider/acc_next[26]_i_1_n_0
     SLICE_X7Y22          FDRE                                         r  AutoCorrelator_1/Divider/acc_next_reg[1]/CE
@@ -2708,17 +2708,17 @@ Slack:                    inf
     SLICE_X6Y24          LUT4 (Prop_lut4_I3_O)        0.124     1.629 r  AutoCorrelator_1/Divider/i__carry_i_7/O
                          net (fo=1, routed)           0.000     1.629    AutoCorrelator_1/Divider/i__carry_i_7_n_0
     SLICE_X6Y24          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.533     2.162 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry/CO[3]
-                         net (fo=1, routed)           0.009     2.171    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry_n_0
+                                                      0.533     2.162 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry/CO[3]
+                         net (fo=1, routed)           0.009     2.171    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry_n_0
     SLICE_X6Y25          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     2.288 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0/CO[3]
-                         net (fo=1, routed)           0.000     2.288    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0_n_0
+                                                      0.117     2.288 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0/CO[3]
+                         net (fo=1, routed)           0.000     2.288    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0_n_0
     SLICE_X6Y26          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     2.405 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1/CO[3]
-                         net (fo=1, routed)           0.000     2.405    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1_n_0
+                                                      0.117     2.405 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1/CO[3]
+                         net (fo=1, routed)           0.000     2.405    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1_n_0
     SLICE_X6Y27          CARRY4 (Prop_carry4_CI_CO[1])
-                                                      0.157     2.562 f  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2/CO[1]
-                         net (fo=9, routed)           1.147     3.709    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2_n_2
+                                                      0.157     2.562 f  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2/CO[1]
+                         net (fo=9, routed)           1.147     3.709    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2_n_2
     SLICE_X8Y28          LUT5 (Prop_lut5_I1_O)        0.332     4.041 r  AutoCorrelator_1/Divider/working_register[78]_i_1/O
                          net (fo=27, routed)          0.919     4.960    AutoCorrelator_1/Divider/working_register[78]_i_1_n_0
     SLICE_X5Y25          FDRE                                         r  AutoCorrelator_1/Divider/working_register_reg[64]/CE
@@ -2757,17 +2757,17 @@ Slack:                    inf
     SLICE_X6Y24          LUT4 (Prop_lut4_I3_O)        0.124     1.629 r  AutoCorrelator_1/Divider/i__carry_i_7/O
                          net (fo=1, routed)           0.000     1.629    AutoCorrelator_1/Divider/i__carry_i_7_n_0
     SLICE_X6Y24          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.533     2.162 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry/CO[3]
-                         net (fo=1, routed)           0.009     2.171    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry_n_0
+                                                      0.533     2.162 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry/CO[3]
+                         net (fo=1, routed)           0.009     2.171    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry_n_0
     SLICE_X6Y25          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     2.288 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0/CO[3]
-                         net (fo=1, routed)           0.000     2.288    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0_n_0
+                                                      0.117     2.288 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0/CO[3]
+                         net (fo=1, routed)           0.000     2.288    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0_n_0
     SLICE_X6Y26          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     2.405 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1/CO[3]
-                         net (fo=1, routed)           0.000     2.405    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1_n_0
+                                                      0.117     2.405 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1/CO[3]
+                         net (fo=1, routed)           0.000     2.405    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1_n_0
     SLICE_X6Y27          CARRY4 (Prop_carry4_CI_CO[1])
-                                                      0.157     2.562 f  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2/CO[1]
-                         net (fo=9, routed)           1.147     3.709    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2_n_2
+                                                      0.157     2.562 f  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2/CO[1]
+                         net (fo=9, routed)           1.147     3.709    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2_n_2
     SLICE_X8Y28          LUT5 (Prop_lut5_I1_O)        0.332     4.041 r  AutoCorrelator_1/Divider/working_register[78]_i_1/O
                          net (fo=27, routed)          0.919     4.960    AutoCorrelator_1/Divider/working_register[78]_i_1_n_0
     SLICE_X5Y25          FDRE                                         r  AutoCorrelator_1/Divider/working_register_reg[65]/CE
@@ -2806,17 +2806,17 @@ Slack:                    inf
     SLICE_X6Y24          LUT4 (Prop_lut4_I3_O)        0.124     1.629 r  AutoCorrelator_1/Divider/i__carry_i_7/O
                          net (fo=1, routed)           0.000     1.629    AutoCorrelator_1/Divider/i__carry_i_7_n_0
     SLICE_X6Y24          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.533     2.162 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry/CO[3]
-                         net (fo=1, routed)           0.009     2.171    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry_n_0
+                                                      0.533     2.162 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry/CO[3]
+                         net (fo=1, routed)           0.009     2.171    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry_n_0
     SLICE_X6Y25          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     2.288 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0/CO[3]
-                         net (fo=1, routed)           0.000     2.288    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0_n_0
+                                                      0.117     2.288 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0/CO[3]
+                         net (fo=1, routed)           0.000     2.288    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0_n_0
     SLICE_X6Y26          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     2.405 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1/CO[3]
-                         net (fo=1, routed)           0.000     2.405    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1_n_0
+                                                      0.117     2.405 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1/CO[3]
+                         net (fo=1, routed)           0.000     2.405    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1_n_0
     SLICE_X6Y27          CARRY4 (Prop_carry4_CI_CO[1])
-                                                      0.157     2.562 f  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2/CO[1]
-                         net (fo=9, routed)           1.147     3.709    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2_n_2
+                                                      0.157     2.562 f  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2/CO[1]
+                         net (fo=9, routed)           1.147     3.709    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2_n_2
     SLICE_X8Y28          LUT5 (Prop_lut5_I1_O)        0.332     4.041 r  AutoCorrelator_1/Divider/working_register[78]_i_1/O
                          net (fo=27, routed)          0.919     4.960    AutoCorrelator_1/Divider/working_register[78]_i_1_n_0
     SLICE_X5Y25          FDRE                                         r  AutoCorrelator_1/Divider/working_register_reg[66]/CE
@@ -2855,17 +2855,17 @@ Slack:                    inf
     SLICE_X6Y24          LUT4 (Prop_lut4_I3_O)        0.124     1.629 r  AutoCorrelator_1/Divider/i__carry_i_7/O
                          net (fo=1, routed)           0.000     1.629    AutoCorrelator_1/Divider/i__carry_i_7_n_0
     SLICE_X6Y24          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.533     2.162 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry/CO[3]
-                         net (fo=1, routed)           0.009     2.171    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry_n_0
+                                                      0.533     2.162 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry/CO[3]
+                         net (fo=1, routed)           0.009     2.171    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry_n_0
     SLICE_X6Y25          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     2.288 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0/CO[3]
-                         net (fo=1, routed)           0.000     2.288    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0_n_0
+                                                      0.117     2.288 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0/CO[3]
+                         net (fo=1, routed)           0.000     2.288    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0_n_0
     SLICE_X6Y26          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     2.405 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1/CO[3]
-                         net (fo=1, routed)           0.000     2.405    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1_n_0
+                                                      0.117     2.405 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1/CO[3]
+                         net (fo=1, routed)           0.000     2.405    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1_n_0
     SLICE_X6Y27          CARRY4 (Prop_carry4_CI_CO[1])
-                                                      0.157     2.562 f  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2/CO[1]
-                         net (fo=9, routed)           1.147     3.709    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2_n_2
+                                                      0.157     2.562 f  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2/CO[1]
+                         net (fo=9, routed)           1.147     3.709    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2_n_2
     SLICE_X8Y28          LUT5 (Prop_lut5_I1_O)        0.332     4.041 r  AutoCorrelator_1/Divider/working_register[78]_i_1/O
                          net (fo=27, routed)          0.919     4.960    AutoCorrelator_1/Divider/working_register[78]_i_1_n_0
     SLICE_X5Y25          FDRE                                         r  AutoCorrelator_1/Divider/working_register_reg[67]/CE
@@ -2904,17 +2904,17 @@ Slack:                    inf
     SLICE_X6Y24          LUT4 (Prop_lut4_I3_O)        0.124     1.629 r  AutoCorrelator_1/Divider/i__carry_i_7/O
                          net (fo=1, routed)           0.000     1.629    AutoCorrelator_1/Divider/i__carry_i_7_n_0
     SLICE_X6Y24          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.533     2.162 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry/CO[3]
-                         net (fo=1, routed)           0.009     2.171    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry_n_0
+                                                      0.533     2.162 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry/CO[3]
+                         net (fo=1, routed)           0.009     2.171    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry_n_0
     SLICE_X6Y25          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     2.288 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0/CO[3]
-                         net (fo=1, routed)           0.000     2.288    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0_n_0
+                                                      0.117     2.288 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0/CO[3]
+                         net (fo=1, routed)           0.000     2.288    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0_n_0
     SLICE_X6Y26          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     2.405 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1/CO[3]
-                         net (fo=1, routed)           0.000     2.405    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1_n_0
+                                                      0.117     2.405 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1/CO[3]
+                         net (fo=1, routed)           0.000     2.405    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1_n_0
     SLICE_X6Y27          CARRY4 (Prop_carry4_CI_CO[1])
-                                                      0.157     2.562 f  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2/CO[1]
-                         net (fo=9, routed)           1.147     3.709    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2_n_2
+                                                      0.157     2.562 f  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2/CO[1]
+                         net (fo=9, routed)           1.147     3.709    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2_n_2
     SLICE_X8Y28          LUT5 (Prop_lut5_I1_O)        0.332     4.041 r  AutoCorrelator_1/Divider/working_register[78]_i_1/O
                          net (fo=27, routed)          0.916     4.957    AutoCorrelator_1/Divider/working_register[78]_i_1_n_0
     SLICE_X5Y26          FDRE                                         r  AutoCorrelator_1/Divider/working_register_reg[68]/CE
@@ -2953,17 +2953,17 @@ Slack:                    inf
     SLICE_X6Y24          LUT4 (Prop_lut4_I3_O)        0.124     1.629 r  AutoCorrelator_1/Divider/i__carry_i_7/O
                          net (fo=1, routed)           0.000     1.629    AutoCorrelator_1/Divider/i__carry_i_7_n_0
     SLICE_X6Y24          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.533     2.162 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry/CO[3]
-                         net (fo=1, routed)           0.009     2.171    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry_n_0
+                                                      0.533     2.162 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry/CO[3]
+                         net (fo=1, routed)           0.009     2.171    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry_n_0
     SLICE_X6Y25          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     2.288 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0/CO[3]
-                         net (fo=1, routed)           0.000     2.288    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0_n_0
+                                                      0.117     2.288 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0/CO[3]
+                         net (fo=1, routed)           0.000     2.288    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0_n_0
     SLICE_X6Y26          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     2.405 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1/CO[3]
-                         net (fo=1, routed)           0.000     2.405    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1_n_0
+                                                      0.117     2.405 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1/CO[3]
+                         net (fo=1, routed)           0.000     2.405    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1_n_0
     SLICE_X6Y27          CARRY4 (Prop_carry4_CI_CO[1])
-                                                      0.157     2.562 f  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2/CO[1]
-                         net (fo=9, routed)           1.147     3.709    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2_n_2
+                                                      0.157     2.562 f  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2/CO[1]
+                         net (fo=9, routed)           1.147     3.709    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2_n_2
     SLICE_X8Y28          LUT5 (Prop_lut5_I1_O)        0.332     4.041 r  AutoCorrelator_1/Divider/working_register[78]_i_1/O
                          net (fo=27, routed)          0.916     4.957    AutoCorrelator_1/Divider/working_register[78]_i_1_n_0
     SLICE_X5Y26          FDRE                                         r  AutoCorrelator_1/Divider/working_register_reg[70]/CE
@@ -3002,17 +3002,17 @@ Slack:                    inf
     SLICE_X6Y24          LUT4 (Prop_lut4_I3_O)        0.124     1.629 r  AutoCorrelator_1/Divider/i__carry_i_7/O
                          net (fo=1, routed)           0.000     1.629    AutoCorrelator_1/Divider/i__carry_i_7_n_0
     SLICE_X6Y24          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.533     2.162 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry/CO[3]
-                         net (fo=1, routed)           0.009     2.171    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry_n_0
+                                                      0.533     2.162 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry/CO[3]
+                         net (fo=1, routed)           0.009     2.171    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry_n_0
     SLICE_X6Y25          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     2.288 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0/CO[3]
-                         net (fo=1, routed)           0.000     2.288    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0_n_0
+                                                      0.117     2.288 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0/CO[3]
+                         net (fo=1, routed)           0.000     2.288    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0_n_0
     SLICE_X6Y26          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     2.405 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1/CO[3]
-                         net (fo=1, routed)           0.000     2.405    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1_n_0
+                                                      0.117     2.405 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1/CO[3]
+                         net (fo=1, routed)           0.000     2.405    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1_n_0
     SLICE_X6Y27          CARRY4 (Prop_carry4_CI_CO[1])
-                                                      0.157     2.562 f  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2/CO[1]
-                         net (fo=9, routed)           1.147     3.709    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2_n_2
+                                                      0.157     2.562 f  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2/CO[1]
+                         net (fo=9, routed)           1.147     3.709    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2_n_2
     SLICE_X8Y28          LUT5 (Prop_lut5_I1_O)        0.332     4.041 r  AutoCorrelator_1/Divider/working_register[78]_i_1/O
                          net (fo=27, routed)          0.916     4.957    AutoCorrelator_1/Divider/working_register[78]_i_1_n_0
     SLICE_X5Y26          FDRE                                         r  AutoCorrelator_1/Divider/working_register_reg[71]/CE
@@ -3051,17 +3051,17 @@ Slack:                    inf
     SLICE_X6Y24          LUT4 (Prop_lut4_I3_O)        0.124     1.629 r  AutoCorrelator_1/Divider/i__carry_i_7/O
                          net (fo=1, routed)           0.000     1.629    AutoCorrelator_1/Divider/i__carry_i_7_n_0
     SLICE_X6Y24          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.533     2.162 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry/CO[3]
-                         net (fo=1, routed)           0.009     2.171    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry_n_0
+                                                      0.533     2.162 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry/CO[3]
+                         net (fo=1, routed)           0.009     2.171    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry_n_0
     SLICE_X6Y25          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     2.288 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0/CO[3]
-                         net (fo=1, routed)           0.000     2.288    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0_n_0
+                                                      0.117     2.288 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0/CO[3]
+                         net (fo=1, routed)           0.000     2.288    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0_n_0
     SLICE_X6Y26          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     2.405 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1/CO[3]
-                         net (fo=1, routed)           0.000     2.405    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1_n_0
+                                                      0.117     2.405 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1/CO[3]
+                         net (fo=1, routed)           0.000     2.405    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1_n_0
     SLICE_X6Y27          CARRY4 (Prop_carry4_CI_CO[1])
-                                                      0.157     2.562 f  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2/CO[1]
-                         net (fo=9, routed)           1.147     3.709    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2_n_2
+                                                      0.157     2.562 f  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2/CO[1]
+                         net (fo=9, routed)           1.147     3.709    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2_n_2
     SLICE_X8Y28          LUT5 (Prop_lut5_I1_O)        0.332     4.041 r  AutoCorrelator_1/Divider/working_register[78]_i_1/O
                          net (fo=27, routed)          0.842     4.883    AutoCorrelator_1/Divider/working_register[78]_i_1_n_0
     SLICE_X6Y23          FDRE                                         r  AutoCorrelator_1/Divider/working_register_reg[56]/CE
@@ -3100,17 +3100,17 @@ Slack:                    inf
     SLICE_X6Y24          LUT4 (Prop_lut4_I3_O)        0.124     1.629 r  AutoCorrelator_1/Divider/i__carry_i_7/O
                          net (fo=1, routed)           0.000     1.629    AutoCorrelator_1/Divider/i__carry_i_7_n_0
     SLICE_X6Y24          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.533     2.162 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry/CO[3]
-                         net (fo=1, routed)           0.009     2.171    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry_n_0
+                                                      0.533     2.162 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry/CO[3]
+                         net (fo=1, routed)           0.009     2.171    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry_n_0
     SLICE_X6Y25          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     2.288 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0/CO[3]
-                         net (fo=1, routed)           0.000     2.288    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0_n_0
+                                                      0.117     2.288 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0/CO[3]
+                         net (fo=1, routed)           0.000     2.288    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0_n_0
     SLICE_X6Y26          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     2.405 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1/CO[3]
-                         net (fo=1, routed)           0.000     2.405    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1_n_0
+                                                      0.117     2.405 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1/CO[3]
+                         net (fo=1, routed)           0.000     2.405    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1_n_0
     SLICE_X6Y27          CARRY4 (Prop_carry4_CI_CO[1])
-                                                      0.157     2.562 f  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2/CO[1]
-                         net (fo=9, routed)           1.147     3.709    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2_n_2
+                                                      0.157     2.562 f  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2/CO[1]
+                         net (fo=9, routed)           1.147     3.709    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2_n_2
     SLICE_X8Y28          LUT5 (Prop_lut5_I1_O)        0.332     4.041 r  AutoCorrelator_1/Divider/working_register[78]_i_1/O
                          net (fo=27, routed)          0.842     4.883    AutoCorrelator_1/Divider/working_register[78]_i_1_n_0
     SLICE_X6Y23          FDRE                                         r  AutoCorrelator_1/Divider/working_register_reg[57]/CE
@@ -3149,17 +3149,17 @@ Slack:                    inf
     SLICE_X6Y24          LUT4 (Prop_lut4_I3_O)        0.124     1.629 r  AutoCorrelator_1/Divider/i__carry_i_7/O
                          net (fo=1, routed)           0.000     1.629    AutoCorrelator_1/Divider/i__carry_i_7_n_0
     SLICE_X6Y24          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.533     2.162 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry/CO[3]
-                         net (fo=1, routed)           0.009     2.171    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry_n_0
+                                                      0.533     2.162 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry/CO[3]
+                         net (fo=1, routed)           0.009     2.171    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry_n_0
     SLICE_X6Y25          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     2.288 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0/CO[3]
-                         net (fo=1, routed)           0.000     2.288    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__0_n_0
+                                                      0.117     2.288 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0/CO[3]
+                         net (fo=1, routed)           0.000     2.288    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__0_n_0
     SLICE_X6Y26          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.117     2.405 r  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1/CO[3]
-                         net (fo=1, routed)           0.000     2.405    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__1_n_0
+                                                      0.117     2.405 r  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1/CO[3]
+                         net (fo=1, routed)           0.000     2.405    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__1_n_0
     SLICE_X6Y27          CARRY4 (Prop_carry4_CI_CO[1])
-                                                      0.157     2.562 f  AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2/CO[1]
-                         net (fo=9, routed)           1.147     3.709    AutoCorrelator_1/Divider/next_state1_inferred__1/i__carry__2_n_2
+                                                      0.157     2.562 f  AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2/CO[1]
+                         net (fo=9, routed)           1.147     3.709    AutoCorrelator_1/Divider/next_state1_inferred__0/i__carry__2_n_2
     SLICE_X8Y28          LUT5 (Prop_lut5_I1_O)        0.332     4.041 r  AutoCorrelator_1/Divider/working_register[78]_i_1/O
                          net (fo=27, routed)          0.842     4.883    AutoCorrelator_1/Divider/working_register[78]_i_1_n_0
     SLICE_X6Y23          FDRE                                         r  AutoCorrelator_1/Divider/working_register_reg[58]/CE

@@ -115,6 +115,8 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
@@ -123,7 +125,9 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+  set_param checkpoint.writeSynthRtdsInDcp 1
   set_param chipscope.maxJobs 3
+  set_param synth.incrementalSynthesisCache C:/Users/12289/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-29272-DESKTOP-AQ1B764/incrSyn
   open_checkpoint main_routed.dcp
   set_property webtalk.parent_dir C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.cache/wt [current_project]
 set_property TOP main [current_fileset]

@@ -2,8 +2,8 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Tue Jan  9 15:11:19 2024
-# Process ID: 8276
+# Start of session at: Tue Mar  5 18:15:24 2024
+# Process ID: 48816
 # Current directory: C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.runs/synth_1
 # Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
 # Log file: C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.runs/synth_1/main.vds
@@ -11,6 +11,7 @@
 # Running On: DESKTOP-AQ1B764, OS: Windows, CPU Frequency: 3893 MHz, CPU Physical cores: 12, Host memory: 17021 MB
 #-----------------------------------------------------------
 source main.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1276.836 ; gain = 526.512
 Command: read_checkpoint -auto_incremental -incremental C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/utils_1/imports/synth_1/AutoCorrelator.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/utils_1/imports/synth_1/AutoCorrelator.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -23,20 +24,20 @@ WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis b
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 8336
-WARNING: [Synth 8-2507] parameter declaration becomes local in AutoCorrelator with formal parameter declaration list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:43]
-WARNING: [Synth 8-2507] parameter declaration becomes local in AutoCorrelator with formal parameter declaration list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:90]
+INFO: [Synth 8-7075] Helper process launched with PID 9952
+WARNING: [Synth 8-2507] parameter declaration becomes local in AutoCorrelator with formal parameter declaration list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:44]
 WARNING: [Synth 8-2507] parameter declaration becomes local in AutoCorrelator with formal parameter declaration list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:91]
 WARNING: [Synth 8-2507] parameter declaration becomes local in AutoCorrelator with formal parameter declaration list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:92]
-WARNING: [Synth 8-2507] parameter declaration becomes local in AutoCorrelator with formal parameter declaration list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:94]
+WARNING: [Synth 8-2507] parameter declaration becomes local in AutoCorrelator with formal parameter declaration list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:93]
 WARNING: [Synth 8-2507] parameter declaration becomes local in AutoCorrelator with formal parameter declaration list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:95]
-WARNING: [Synth 8-2507] parameter declaration becomes local in Divider with formal parameter declaration list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:52]
-WARNING: [Synth 8-2507] parameter declaration becomes local in Divider with formal parameter declaration list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:53]
-WARNING: [Synth 8-2507] parameter declaration becomes local in Divider with formal parameter declaration list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:54]
-WARNING: [Synth 8-2507] parameter declaration becomes local in Divider with formal parameter declaration list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:55]
-WARNING: [Synth 8-2507] parameter declaration becomes local in Divider with formal parameter declaration list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:56]
-WARNING: [Synth 8-2507] parameter declaration becomes local in Divider with formal parameter declaration list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:57]
-WARNING: [Synth 8-2507] parameter declaration becomes local in Divider with formal parameter declaration list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:73]
+WARNING: [Synth 8-2507] parameter declaration becomes local in AutoCorrelator with formal parameter declaration list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:96]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Divider with formal parameter declaration list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:60]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Divider with formal parameter declaration list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:61]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Divider with formal parameter declaration list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:62]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Divider with formal parameter declaration list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:63]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Divider with formal parameter declaration list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:64]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Divider with formal parameter declaration list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:65]
+WARNING: [Synth 8-2507] parameter declaration becomes local in Divider with formal parameter declaration list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:82]
 WARNING: [Synth 8-2507] parameter declaration becomes local in counterBuffer with formal parameter declaration list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/counterBuffer.v:95]
 WARNING: [Synth 8-2507] parameter declaration becomes local in counterBuffer with formal parameter declaration list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/counterBuffer.v:96]
 WARNING: [Synth 8-2507] parameter declaration becomes local in counterBuffer with formal parameter declaration list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/counterBuffer.v:98]
@@ -84,7 +85,7 @@ WARNING: [Synth 8-2507] parameter declaration becomes local in integralTimer wit
 WARNING: [Synth 8-6901] identifier 'ACF_result_1' is used before its declaration [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:41]
 WARNING: [Synth 8-2507] parameter declaration becomes local in main with formal parameter declaration list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:177]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1260.723 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1276.836 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'main' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:23]
 INFO: [Synth 8-6157] synthesizing module 'integralTimer' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/integralTimer.v:23]
@@ -111,385 +112,465 @@ INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator' [C:/Users/12289/Deskto
 	Parameter fs bound to: 1000000 - type: integer 
 	Parameter delayTime bound to: 0.000001 - type: double 
 	Parameter t_int bound to: 0.040000 - type: double 
-WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'SumBuffer_Num' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'n_i' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'n_delta' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'SumBuffer_Den' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
+WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'SumBuffer_Num' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'n_i' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'n_delta' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'SumBuffer_Den' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
 INFO: [Synth 8-6157] synthesizing module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:23]
 	Parameter WIDTH bound to: 26 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:91]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:113]
 INFO: [Synth 8-6155] done synthesizing module 'Divider' (5#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:23]
-WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:121]
-WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
-WARNING: [Synth 8-567] referenced signal 'quotient' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:130]
-WARNING: [Synth 8-567] referenced signal 'precompute' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:130]
+WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+WARNING: [Synth 8-567] referenced signal 'quotient' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:133]
+WARNING: [Synth 8-567] referenced signal 'precompute' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:133]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator' (6#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_1' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:207]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_1' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:207]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_2' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:227]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_2' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:227]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_3' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:247]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_3' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:247]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_4' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:267]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_4' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:267]
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator__parameterized0' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
 	Parameter WIDTH bound to: 20 - type: integer 
 	Parameter PRECISION bound to: 2 - type: integer 
 	Parameter fs bound to: 1000000 - type: integer 
 	Parameter delayTime bound to: 0.000002 - type: double 
 	Parameter t_int bound to: 0.040000 - type: double 
-WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'SumBuffer_Num' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'n_i' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'n_delta' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'SumBuffer_Den' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:121]
-WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
-WARNING: [Synth 8-567] referenced signal 'quotient' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:130]
-WARNING: [Synth 8-567] referenced signal 'precompute' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:130]
+WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'SumBuffer_Num' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'n_i' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'n_delta' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'SumBuffer_Den' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+WARNING: [Synth 8-567] referenced signal 'quotient' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:133]
+WARNING: [Synth 8-567] referenced signal 'precompute' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:133]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator__parameterized0' (6#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_5' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:287]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_5' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:287]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_6' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:307]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_6' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:307]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_7' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:327]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_7' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:327]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_8' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:347]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_8' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:347]
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator__parameterized1' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
 	Parameter WIDTH bound to: 20 - type: integer 
 	Parameter PRECISION bound to: 2 - type: integer 
 	Parameter fs bound to: 1000000 - type: integer 
 	Parameter delayTime bound to: 0.000003 - type: double 
 	Parameter t_int bound to: 0.040000 - type: double 
-WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'SumBuffer_Num' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'n_i' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'n_delta' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'SumBuffer_Den' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:121]
-WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
-WARNING: [Synth 8-567] referenced signal 'quotient' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:130]
-WARNING: [Synth 8-567] referenced signal 'precompute' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:130]
+WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'SumBuffer_Num' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'n_i' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'n_delta' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'SumBuffer_Den' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+WARNING: [Synth 8-567] referenced signal 'quotient' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:133]
+WARNING: [Synth 8-567] referenced signal 'precompute' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:133]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator__parameterized1' (6#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_9' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:367]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_9' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:367]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_10' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:387]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_10' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:387]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_11' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:407]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_11' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:407]
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator__parameterized2' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
 	Parameter WIDTH bound to: 20 - type: integer 
 	Parameter PRECISION bound to: 2 - type: integer 
 	Parameter fs bound to: 1000000 - type: integer 
 	Parameter delayTime bound to: 0.000004 - type: double 
 	Parameter t_int bound to: 0.040000 - type: double 
-WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'SumBuffer_Num' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'n_i' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'n_delta' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'SumBuffer_Den' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:121]
-WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
-WARNING: [Synth 8-567] referenced signal 'quotient' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:130]
-WARNING: [Synth 8-567] referenced signal 'precompute' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:130]
+WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'SumBuffer_Num' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'n_i' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'n_delta' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'SumBuffer_Den' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+WARNING: [Synth 8-567] referenced signal 'quotient' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:133]
+WARNING: [Synth 8-567] referenced signal 'precompute' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:133]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator__parameterized2' (6#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_12' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:427]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_12' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:427]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_13' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:447]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_13' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:447]
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator__parameterized3' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
 	Parameter WIDTH bound to: 20 - type: integer 
 	Parameter PRECISION bound to: 2 - type: integer 
 	Parameter fs bound to: 1000000 - type: integer 
 	Parameter delayTime bound to: 0.000005 - type: double 
 	Parameter t_int bound to: 0.040000 - type: double 
-WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'SumBuffer_Num' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'n_i' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'n_delta' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'SumBuffer_Den' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:121]
-WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
-WARNING: [Synth 8-567] referenced signal 'quotient' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:130]
-WARNING: [Synth 8-567] referenced signal 'precompute' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:130]
+WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'SumBuffer_Num' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'n_i' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'n_delta' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'SumBuffer_Den' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+WARNING: [Synth 8-567] referenced signal 'quotient' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:133]
+WARNING: [Synth 8-567] referenced signal 'precompute' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:133]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator__parameterized3' (6#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_14' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:467]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_14' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:467]
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator__parameterized4' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
 	Parameter WIDTH bound to: 20 - type: integer 
 	Parameter PRECISION bound to: 2 - type: integer 
 	Parameter fs bound to: 1000000 - type: integer 
 	Parameter delayTime bound to: 0.000006 - type: double 
 	Parameter t_int bound to: 0.040000 - type: double 
-WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'SumBuffer_Num' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'n_i' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'n_delta' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'SumBuffer_Den' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:121]
-WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
-WARNING: [Synth 8-567] referenced signal 'quotient' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:130]
-WARNING: [Synth 8-567] referenced signal 'precompute' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:130]
+WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'SumBuffer_Num' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'n_i' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'n_delta' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'SumBuffer_Den' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+WARNING: [Synth 8-567] referenced signal 'quotient' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:133]
+WARNING: [Synth 8-567] referenced signal 'precompute' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:133]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator__parameterized4' (6#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_15' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:487]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_15' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:487]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_16' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:507]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_16' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:507]
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator__parameterized5' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
 	Parameter WIDTH bound to: 20 - type: integer 
 	Parameter PRECISION bound to: 2 - type: integer 
 	Parameter fs bound to: 1000000 - type: integer 
 	Parameter delayTime bound to: 0.000007 - type: double 
 	Parameter t_int bound to: 0.040000 - type: double 
-WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'SumBuffer_Num' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'n_i' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'n_delta' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'SumBuffer_Den' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:121]
-WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
-WARNING: [Synth 8-567] referenced signal 'quotient' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:130]
-WARNING: [Synth 8-567] referenced signal 'precompute' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:130]
+WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'SumBuffer_Num' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'n_i' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'n_delta' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'SumBuffer_Den' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+WARNING: [Synth 8-567] referenced signal 'quotient' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:133]
+WARNING: [Synth 8-567] referenced signal 'precompute' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:133]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator__parameterized5' (6#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_17' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:527]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_17' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:527]
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator__parameterized6' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
 	Parameter WIDTH bound to: 20 - type: integer 
 	Parameter PRECISION bound to: 2 - type: integer 
 	Parameter fs bound to: 1000000 - type: integer 
 	Parameter delayTime bound to: 0.000008 - type: double 
 	Parameter t_int bound to: 0.040000 - type: double 
-WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'SumBuffer_Num' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'n_i' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'n_delta' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'SumBuffer_Den' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:121]
-WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
-WARNING: [Synth 8-567] referenced signal 'quotient' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:130]
-WARNING: [Synth 8-567] referenced signal 'precompute' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:130]
+WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'SumBuffer_Num' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'n_i' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'n_delta' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'SumBuffer_Den' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+WARNING: [Synth 8-567] referenced signal 'quotient' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:133]
+WARNING: [Synth 8-567] referenced signal 'precompute' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:133]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator__parameterized6' (6#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_18' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:547]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_18' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:547]
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator__parameterized7' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
 	Parameter WIDTH bound to: 20 - type: integer 
 	Parameter PRECISION bound to: 2 - type: integer 
 	Parameter fs bound to: 1000000 - type: integer 
 	Parameter delayTime bound to: 0.000009 - type: double 
 	Parameter t_int bound to: 0.040000 - type: double 
-WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'SumBuffer_Num' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'n_i' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'n_delta' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'SumBuffer_Den' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:121]
-WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
-WARNING: [Synth 8-567] referenced signal 'quotient' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:130]
-WARNING: [Synth 8-567] referenced signal 'precompute' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:130]
+WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'SumBuffer_Num' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'n_i' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'n_delta' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'SumBuffer_Den' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+WARNING: [Synth 8-567] referenced signal 'quotient' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:133]
+WARNING: [Synth 8-567] referenced signal 'precompute' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:133]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator__parameterized7' (6#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_19' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:567]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_19' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:567]
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator__parameterized8' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
 	Parameter WIDTH bound to: 20 - type: integer 
 	Parameter PRECISION bound to: 2 - type: integer 
 	Parameter fs bound to: 1000000 - type: integer 
 	Parameter delayTime bound to: 0.000011 - type: double 
 	Parameter t_int bound to: 0.040000 - type: double 
-WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'SumBuffer_Num' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'n_i' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'n_delta' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'SumBuffer_Den' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:121]
-WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
-WARNING: [Synth 8-567] referenced signal 'quotient' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:130]
-WARNING: [Synth 8-567] referenced signal 'precompute' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:130]
+WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'SumBuffer_Num' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'n_i' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'n_delta' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'SumBuffer_Den' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+WARNING: [Synth 8-567] referenced signal 'quotient' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:133]
+WARNING: [Synth 8-567] referenced signal 'precompute' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:133]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator__parameterized8' (6#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_20' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:587]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_20' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:587]
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator__parameterized9' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
 	Parameter WIDTH bound to: 20 - type: integer 
 	Parameter PRECISION bound to: 2 - type: integer 
 	Parameter fs bound to: 1000000 - type: integer 
 	Parameter delayTime bound to: 0.000012 - type: double 
 	Parameter t_int bound to: 0.040000 - type: double 
-WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'SumBuffer_Num' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'n_i' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'n_delta' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'SumBuffer_Den' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:121]
-WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
-WARNING: [Synth 8-567] referenced signal 'quotient' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:130]
-WARNING: [Synth 8-567] referenced signal 'precompute' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:130]
+WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'SumBuffer_Num' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'n_i' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'n_delta' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'SumBuffer_Den' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+WARNING: [Synth 8-567] referenced signal 'quotient' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:133]
+WARNING: [Synth 8-567] referenced signal 'precompute' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:133]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator__parameterized9' (6#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_21' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:607]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_21' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:607]
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator__parameterized10' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
 	Parameter WIDTH bound to: 20 - type: integer 
 	Parameter PRECISION bound to: 2 - type: integer 
 	Parameter fs bound to: 1000000 - type: integer 
 	Parameter delayTime bound to: 0.000013 - type: double 
 	Parameter t_int bound to: 0.040000 - type: double 
-WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'SumBuffer_Num' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'n_i' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'n_delta' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'SumBuffer_Den' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:121]
-WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
-WARNING: [Synth 8-567] referenced signal 'quotient' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:130]
-WARNING: [Synth 8-567] referenced signal 'precompute' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:130]
+WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'SumBuffer_Num' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'n_i' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'n_delta' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'SumBuffer_Den' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+WARNING: [Synth 8-567] referenced signal 'quotient' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:133]
+WARNING: [Synth 8-567] referenced signal 'precompute' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:133]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator__parameterized10' (6#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_22' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:627]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_22' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:627]
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator__parameterized11' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
 	Parameter WIDTH bound to: 20 - type: integer 
 	Parameter PRECISION bound to: 2 - type: integer 
 	Parameter fs bound to: 1000000 - type: integer 
 	Parameter delayTime bound to: 0.000015 - type: double 
 	Parameter t_int bound to: 0.040000 - type: double 
-WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'SumBuffer_Num' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'n_i' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'n_delta' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'SumBuffer_Den' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:121]
-WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
-WARNING: [Synth 8-567] referenced signal 'quotient' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:130]
-WARNING: [Synth 8-567] referenced signal 'precompute' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:130]
+WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'SumBuffer_Num' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'n_i' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'n_delta' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'SumBuffer_Den' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+WARNING: [Synth 8-567] referenced signal 'quotient' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:133]
+WARNING: [Synth 8-567] referenced signal 'precompute' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:133]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator__parameterized11' (6#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_23' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:647]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_23' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:647]
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator__parameterized12' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
 	Parameter WIDTH bound to: 20 - type: integer 
 	Parameter PRECISION bound to: 2 - type: integer 
 	Parameter fs bound to: 1000000 - type: integer 
 	Parameter delayTime bound to: 0.000017 - type: double 
 	Parameter t_int bound to: 0.040000 - type: double 
-WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'SumBuffer_Num' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'n_i' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'n_delta' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
-WARNING: [Synth 8-567] referenced signal 'SumBuffer_Den' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:74]
+WARNING: [Synth 8-567] referenced signal 'enable' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'SumBuffer_Num' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'n_i' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'n_delta' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
+WARNING: [Synth 8-567] referenced signal 'SumBuffer_Den' should be on the sensitivity list [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:75]
 INFO: [Common 17-14] Message 'Synth 8-567' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:121]
-WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator__parameterized12' (6#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_24' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:667]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_24' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:667]
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator__parameterized13' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
 	Parameter WIDTH bound to: 20 - type: integer 
 	Parameter PRECISION bound to: 2 - type: integer 
 	Parameter fs bound to: 1000000 - type: integer 
 	Parameter delayTime bound to: 0.000020 - type: double 
 	Parameter t_int bound to: 0.040000 - type: double 
-WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:121]
-WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator__parameterized13' (6#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_25' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:687]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_25' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:687]
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator__parameterized14' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
 	Parameter WIDTH bound to: 20 - type: integer 
 	Parameter PRECISION bound to: 2 - type: integer 
 	Parameter fs bound to: 1000000 - type: integer 
 	Parameter delayTime bound to: 0.000022 - type: double 
 	Parameter t_int bound to: 0.040000 - type: double 
-WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:121]
-WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator__parameterized14' (6#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_26' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:707]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_26' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:707]
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator__parameterized15' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
 	Parameter WIDTH bound to: 20 - type: integer 
 	Parameter PRECISION bound to: 2 - type: integer 
 	Parameter fs bound to: 1000000 - type: integer 
 	Parameter delayTime bound to: 0.000025 - type: double 
 	Parameter t_int bound to: 0.040000 - type: double 
-WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:121]
-WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator__parameterized15' (6#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_27' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:727]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_27' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:727]
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator__parameterized16' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
 	Parameter WIDTH bound to: 20 - type: integer 
 	Parameter PRECISION bound to: 2 - type: integer 
 	Parameter fs bound to: 1000000 - type: integer 
 	Parameter delayTime bound to: 0.000028 - type: double 
 	Parameter t_int bound to: 0.040000 - type: double 
-WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:121]
-WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator__parameterized16' (6#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_28' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:747]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_28' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:747]
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator__parameterized17' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
 	Parameter WIDTH bound to: 20 - type: integer 
 	Parameter PRECISION bound to: 2 - type: integer 
 	Parameter fs bound to: 1000000 - type: integer 
 	Parameter delayTime bound to: 0.000032 - type: double 
 	Parameter t_int bound to: 0.040000 - type: double 
-WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:121]
-WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator__parameterized17' (6#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_29' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:767]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_29' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:767]
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator__parameterized18' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
 	Parameter WIDTH bound to: 20 - type: integer 
 	Parameter PRECISION bound to: 2 - type: integer 
 	Parameter fs bound to: 1000000 - type: integer 
 	Parameter delayTime bound to: 0.000036 - type: double 
 	Parameter t_int bound to: 0.040000 - type: double 
-WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:121]
-WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator__parameterized18' (6#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_30' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:787]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_30' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:787]
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator__parameterized19' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
 	Parameter WIDTH bound to: 20 - type: integer 
 	Parameter PRECISION bound to: 2 - type: integer 
 	Parameter fs bound to: 1000000 - type: integer 
 	Parameter delayTime bound to: 0.000041 - type: double 
 	Parameter t_int bound to: 0.040000 - type: double 
-WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:121]
-WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator__parameterized19' (6#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_31' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:807]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_31' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:807]
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator__parameterized20' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
 	Parameter WIDTH bound to: 20 - type: integer 
 	Parameter PRECISION bound to: 2 - type: integer 
 	Parameter fs bound to: 1000000 - type: integer 
 	Parameter delayTime bound to: 0.000046 - type: double 
 	Parameter t_int bound to: 0.040000 - type: double 
-WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:121]
-WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator__parameterized20' (6#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_32' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:827]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_32' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:827]
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator__parameterized21' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
 	Parameter WIDTH bound to: 20 - type: integer 
 	Parameter PRECISION bound to: 2 - type: integer 
 	Parameter fs bound to: 1000000 - type: integer 
 	Parameter delayTime bound to: 0.000053 - type: double 
 	Parameter t_int bound to: 0.040000 - type: double 
-WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:121]
-WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator__parameterized21' (6#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_33' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:847]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_33' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:847]
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator__parameterized22' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
 	Parameter WIDTH bound to: 20 - type: integer 
 	Parameter PRECISION bound to: 2 - type: integer 
 	Parameter fs bound to: 1000000 - type: integer 
 	Parameter delayTime bound to: 0.000059 - type: double 
 	Parameter t_int bound to: 0.040000 - type: double 
-WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:121]
-WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator__parameterized22' (6#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_34' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:867]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_34' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:867]
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator__parameterized23' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
 	Parameter WIDTH bound to: 20 - type: integer 
 	Parameter PRECISION bound to: 2 - type: integer 
 	Parameter fs bound to: 1000000 - type: integer 
 	Parameter delayTime bound to: 0.000067 - type: double 
 	Parameter t_int bound to: 0.040000 - type: double 
-WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:121]
-WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator__parameterized23' (6#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_35' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:887]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_35' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:887]
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator__parameterized24' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
 	Parameter WIDTH bound to: 20 - type: integer 
 	Parameter PRECISION bound to: 2 - type: integer 
 	Parameter fs bound to: 1000000 - type: integer 
 	Parameter delayTime bound to: 0.000076 - type: double 
 	Parameter t_int bound to: 0.040000 - type: double 
-WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:121]
-WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator__parameterized24' (6#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_36' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:907]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_36' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:907]
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator__parameterized25' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
 	Parameter WIDTH bound to: 20 - type: integer 
 	Parameter PRECISION bound to: 2 - type: integer 
 	Parameter fs bound to: 1000000 - type: integer 
 	Parameter delayTime bound to: 0.000086 - type: double 
 	Parameter t_int bound to: 0.040000 - type: double 
-WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:121]
-WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator__parameterized25' (6#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_37' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:927]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_37' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:927]
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator__parameterized26' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
 	Parameter WIDTH bound to: 20 - type: integer 
 	Parameter PRECISION bound to: 2 - type: integer 
 	Parameter fs bound to: 1000000 - type: integer 
 	Parameter delayTime bound to: 0.000098 - type: double 
 	Parameter t_int bound to: 0.040000 - type: double 
-WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:121]
-WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator__parameterized26' (6#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_38' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:947]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_38' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:947]
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator__parameterized27' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
 	Parameter WIDTH bound to: 20 - type: integer 
 	Parameter PRECISION bound to: 2 - type: integer 
 	Parameter fs bound to: 1000000 - type: integer 
 	Parameter delayTime bound to: 0.000110 - type: double 
 	Parameter t_int bound to: 0.040000 - type: double 
-WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:121]
-WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator__parameterized27' (6#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_39' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:967]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_39' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:967]
 INFO: [Synth 8-6157] synthesizing module 'AutoCorrelator__parameterized28' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
 	Parameter WIDTH bound to: 20 - type: integer 
 	Parameter PRECISION bound to: 2 - type: integer 
 	Parameter fs bound to: 1000000 - type: integer 
 	Parameter delayTime bound to: 0.000125 - type: double 
 	Parameter t_int bound to: 0.040000 - type: double 
-WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:121]
-WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'dividend' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [Synth 8-689] width (58) of port connection 'divisor' does not match port width (26) of module 'Divider' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
 INFO: [Synth 8-6155] done synthesizing module 'AutoCorrelator__parameterized28' (6#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:23]
+WARNING: [Synth 8-7071] port 'done' of module 'AutoCorrelator' is unconnected for instance 'AutoCorrelator_40' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:987]
+WARNING: [Synth 8-7023] instance 'AutoCorrelator_40' of module 'AutoCorrelator' has 7 connections declared, but only 6 given [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:987]
 INFO: [Synth 8-6155] done synthesizing module 'main' (7#1) [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1260.723 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1276.836 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1260.723 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1276.836 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1260.723 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1276.836 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.283 . Memory (MB): peak = 1260.723 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.254 . Memory (MB): peak = 1276.836 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -500,28 +581,28 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1310.645 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1285.797 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1310.645 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1285.797 ; gain = 0.000
 WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1310.645 ; gain = 49.922
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1285.797 ; gain = 8.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1310.645 ; gain = 49.922
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1285.797 ; gain = 8.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1310.645 ; gain = 49.922
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1285.797 ; gain = 8.961
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-327] inferring latch for variable 'counter_reg' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/photonCounter.v:33]
 WARNING: [Synth 8-327] inferring latch for variable 'counterBuffer_reg[0]' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/counterBuffer.v:150]
@@ -625,7 +706,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'counterBuffer_reg[79]' [C:/
 WARNING: [Synth 8-327] inferring latch for variable 'counterBuffer_reg[90]' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/counterBuffer.v:150]
 INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1310.645 ; gain = 49.922
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1285.797 ; gain = 8.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -642,20 +723,19 @@ Detailed RTL Component Info :
 	               26 Bit    Registers := 80    
 	                6 Bit    Registers := 40    
 	                3 Bit    Registers := 81    
-	                1 Bit    Registers := 122   
+	                1 Bit    Registers := 162   
 +---Muxes : 
 	   6 Input   79 Bit        Muxes := 40    
-	   3 Input   79 Bit        Muxes := 40    
-	   2 Input   79 Bit        Muxes := 80    
+	   2 Input   79 Bit        Muxes := 160   
 	   2 Input    6 Bit        Muxes := 40    
 	   4 Input    6 Bit        Muxes := 40    
 	   2 Input    4 Bit        Muxes := 1     
 	   6 Input    3 Bit        Muxes := 40    
 	   2 Input    3 Bit        Muxes := 40    
 	   2 Input    2 Bit        Muxes := 40    
-	   2 Input    1 Bit        Muxes := 320   
-	   4 Input    1 Bit        Muxes := 120   
-	   6 Input    1 Bit        Muxes := 120   
+	   2 Input    1 Bit        Muxes := 400   
+	   6 Input    1 Bit        Muxes := 200   
+	   4 Input    1 Bit        Muxes := 80    
 	   5 Input    1 Bit        Muxes := 40    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -673,241 +753,241 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
 DSP Report: register Divider/quotient_reg is absorbed into DSP ACF_result0.
 DSP Report: operator ACF_result0 is absorbed into DSP ACF_result0.
-WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:146]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Divider/quotient_reg' and it is trimmed from '26' to '20' bits. [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:168]
 DSP Report: Generating DSP dividend0, operation Mode is: A*(B:0x64).
 DSP Report: operator dividend0 is absorbed into DSP dividend0.
 DSP Report: Generating DSP ACF_result0, operation Mode is: A2*(B:0x64).
@@ -1014,11 +1094,11 @@ WARNING: [Synth 8-3332] Sequential element (dividend_reg[2]) is unused and will 
 WARNING: [Synth 8-3332] Sequential element (dividend_reg[1]) is unused and will be removed from module AutoCorrelator__parameterized21.
 WARNING: [Synth 8-3332] Sequential element (dividend_reg[0]) is unused and will be removed from module AutoCorrelator__parameterized21.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_2/AutoCorrelator_1/Divider/enable_state_reg/Q' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:93]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:93]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:93]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_2/AutoCorrelator_1/Divider/enable_state_reg/Q' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:115]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:115]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v:115]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1310.645 ; gain = 49.922
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1285.797 ; gain = 8.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1118,19 +1198,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1310.645 ; gain = 49.922
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1285.797 ; gain = 8.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1310.645 ; gain = 49.922
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 1304.391 ; gain = 27.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1310.645 ; gain = 49.922
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 1305.809 ; gain = 28.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1148,37 +1228,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1312.438 ; gain = 51.715
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1311.586 ; gain = 34.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1312.438 ; gain = 51.715
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1311.586 ; gain = 34.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1312.438 ; gain = 51.715
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1311.586 ; gain = 34.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1312.438 ; gain = 51.715
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1311.586 ; gain = 34.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1312.438 ; gain = 51.715
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1311.586 ; gain = 34.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1312.438 ; gain = 51.715
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1311.586 ; gain = 34.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1225,30 +1305,30 @@ Report Cell Usage:
 |15    |OBUF    |     1|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1312.438 ; gain = 51.715
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1311.586 ; gain = 34.750
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 3 critical warnings and 3447 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 1312.438 ; gain = 1.793
-Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1312.438 ; gain = 51.715
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 1311.586 ; gain = 25.789
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1311.586 ; gain = 34.750
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1324.484 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1323.652 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 70 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 20 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1330.176 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1327.328 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 48 instances were transformed.
   LD => LDCE: 4 instances
   LD => LDCE (inverted pins: G): 20 instances
   LDC => LDCE: 24 instances
 
-Synth Design complete, checksum: bec39eb8
+Synth Design complete, checksum: 8cb7f9c0
 INFO: [Common 17-83] Releasing license: Synthesis
-95 Infos, 462 Warnings, 3 Critical Warnings and 0 Errors encountered.
+95 Infos, 542 Warnings, 3 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1330.176 ; gain = 69.453
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 1327.328 ; gain = 50.492
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.runs/synth_1/main.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Jan  9 15:12:00 2024...
+INFO: [Common 17-206] Exiting Vivado at Tue Mar  5 18:16:16 2024...

@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
-| Date         : Tue Jan  9 15:12:52 2024
+| Date         : Tue Mar  5 18:26:40 2024
 | Host         : DESKTOP-AQ1B764 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
 | Design       : main
@@ -70,20 +70,20 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+-------------------------------------+-----------------------------------------------------------------+------------------------------------+------------------+----------------+--------------+
-|             Clock Signal            |                          Enable Signal                          |          Set/Reset Signal          | Slice Load Count | Bel Load Count | Bels / Slice |
-+-------------------------------------+-----------------------------------------------------------------+------------------------------------+------------------+----------------+--------------+
-|  clk_IBUF_BUFG                      | AutoCorrelator_1/Divider/working_register_reg[50]_srl25_i_1_n_0 |                                    |                1 |              2 |         2.00 |
-|  integralTimer_1/E[0]               |                                                                 | sampler_1/AR[0]                    |                1 |              4 |         4.00 |
-|  sampler_1/sample_and_clear         |                                                                 |                                    |                1 |              4 |         4.00 |
-|  clk_IBUF_BUFG                      | AutoCorrelator_1/Divider/count[4]_i_2_n_0                       | AutoCorrelator_1/Divider/SR[0]     |                1 |              5 |         5.00 |
-|  clk_IBUF_BUFG                      |                                                                 |                                    |                4 |             12 |         3.00 |
-|  clk_IBUF_BUFG                      |                                                                 | integralTimer_1/clear              |                5 |             18 |         3.60 |
-| ~integralTimer_1/t_int_out          |                                                                 |                                    |                6 |             20 |         3.33 |
-|  integralTimer_1/t_int_out_reg_1[0] |                                                                 | integralTimer_1/t_int_out_reg_0[0] |                5 |             20 |         4.00 |
-|  clk_IBUF_BUFG                      | AutoCorrelator_1/Divider/working_register[25]_i_1_n_0           |                                    |                7 |             25 |         3.57 |
-|  clk_IBUF_BUFG                      | AutoCorrelator_1/Divider/acc_next[26]_i_1_n_0                   |                                    |                7 |             27 |         3.86 |
-|  clk_IBUF_BUFG                      | AutoCorrelator_1/Divider/working_register[78]_i_1_n_0           |                                    |                8 |             27 |         3.38 |
-+-------------------------------------+-----------------------------------------------------------------+------------------------------------+------------------+----------------+--------------+
++-------------------------------------+-----------------------------------------------------------------+--------------------------------+------------------+----------------+--------------+
+|             Clock Signal            |                          Enable Signal                          |        Set/Reset Signal        | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------------+-----------------------------------------------------------------+--------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG                      | AutoCorrelator_1/Divider/working_register_reg[50]_srl25_i_1_n_0 |                                |                1 |              2 |         2.00 |
+|  integralTimer_1/E[0]               |                                                                 | sampler_1/AR[0]                |                1 |              4 |         4.00 |
+|  sampler_1/sample_and_clear         |                                                                 |                                |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                      | AutoCorrelator_1/Divider/count[4]_i_2_n_0                       | AutoCorrelator_1/Divider/SR[0] |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG                      |                                                                 |                                |                4 |             12 |         3.00 |
+|  clk_IBUF_BUFG                      |                                                                 | integralTimer_1/clear          |                5 |             18 |         3.60 |
+|  integralTimer_1/t_int_out_reg_0[0] |                                                                 | integralTimer_1/AR[0]          |                5 |             20 |         4.00 |
+| ~integralTimer_1/t_int_out          |                                                                 |                                |                6 |             20 |         3.33 |
+|  clk_IBUF_BUFG                      | AutoCorrelator_1/Divider/working_register[25]_i_1_n_0           |                                |                7 |             25 |         3.57 |
+|  clk_IBUF_BUFG                      | AutoCorrelator_1/Divider/acc_next[26]_i_1_n_0                   |                                |                7 |             27 |         3.86 |
+|  clk_IBUF_BUFG                      | AutoCorrelator_1/Divider/working_register[78]_i_1_n_0           |                                |                8 |             27 |         3.38 |
++-------------------------------------+-----------------------------------------------------------------+--------------------------------+------------------+----------------+--------------+
 
 
