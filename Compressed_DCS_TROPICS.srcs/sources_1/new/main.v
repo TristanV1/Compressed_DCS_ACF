@@ -29,7 +29,14 @@ parameter sampling_frequency = 1_000_000
 (
     input clk,
     input photonCounterIn1,
-    output n
+    input comm_clk,
+    input txe,
+    input data,
+    input wr,
+    input rd,
+    input siwu,
+    input oe_n,
+    output reg data_out
 );
 
 wire t_int_out;
@@ -38,7 +45,6 @@ wire [3:0] toBuffer;
 wire sample_and_clear;
 wire toPhotonCounterReset;
 
-assign n = ACF_result_1[0]; //REMEMBER TO DELETE LINE AFTER TEST
 
 integralTimer 
    #(
@@ -196,6 +202,7 @@ parameter WIDTH = 20;
 
 
 wire [WIDTH-1:0] ACF_result_1;
+wire ACF_done_1;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -211,11 +218,13 @@ AutoCorrelator_1
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_1),
-.ACF_result(ACF_result_1)
+.ACF_result(ACF_result_1),
+.done(ACF_done_1)
 );
 
 
 wire [WIDTH-1:0] ACF_result_2;
+wire ACF_done_2;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -231,11 +240,13 @@ AutoCorrelator_2
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_2),
-.ACF_result(ACF_result_2)
+.ACF_result(ACF_result_2),
+.done(ACF_done_2)
 );
 
 
 wire [WIDTH-1:0] ACF_result_3;
+wire ACF_done_3;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -251,11 +262,13 @@ AutoCorrelator_3
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_3),
-.ACF_result(ACF_result_3)
+.ACF_result(ACF_result_3),
+.done(ACF_done_3)
 );
 
 
 wire [WIDTH-1:0] ACF_result_4;
+wire ACF_done_4;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -271,11 +284,13 @@ AutoCorrelator_4
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_4),
-.ACF_result(ACF_result_4)
+.ACF_result(ACF_result_4),
+.done(ACF_done_4)
 );
 
 
 wire [WIDTH-1:0] ACF_result_5;
+wire ACF_done_5;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -291,11 +306,13 @@ AutoCorrelator_5
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_5),
-.ACF_result(ACF_result_5)
+.ACF_result(ACF_result_5),
+.done(ACF_done_5)
 );
 
 
 wire [WIDTH-1:0] ACF_result_6;
+wire ACF_done_6;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -311,11 +328,13 @@ AutoCorrelator_6
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_6),
-.ACF_result(ACF_result_6)
+.ACF_result(ACF_result_6),
+.done(ACF_done_6)
 );
 
 
 wire [WIDTH-1:0] ACF_result_7;
+wire ACF_done_7;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -331,11 +350,13 @@ AutoCorrelator_7
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_7),
-.ACF_result(ACF_result_7)
+.ACF_result(ACF_result_7),
+.done(ACF_done_7)
 );
 
 
 wire [WIDTH-1:0] ACF_result_8;
+wire ACF_done_8;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -351,11 +372,13 @@ AutoCorrelator_8
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_8),
-.ACF_result(ACF_result_8)
+.ACF_result(ACF_result_8),
+.done(ACF_done_8)
 );
 
 
 wire [WIDTH-1:0] ACF_result_9;
+wire ACF_done_9;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -371,11 +394,13 @@ AutoCorrelator_9
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_9),
-.ACF_result(ACF_result_9)
+.ACF_result(ACF_result_9),
+.done(ACF_done_9)
 );
 
 
 wire [WIDTH-1:0] ACF_result_10;
+wire ACF_done_10;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -391,11 +416,13 @@ AutoCorrelator_10
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_10),
-.ACF_result(ACF_result_10)
+.ACF_result(ACF_result_10),
+.done(ACF_done_10)
 );
 
 
 wire [WIDTH-1:0] ACF_result_11;
+wire ACF_done_11;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -411,11 +438,13 @@ AutoCorrelator_11
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_11),
-.ACF_result(ACF_result_11)
+.ACF_result(ACF_result_11),
+.done(ACF_done_11)
 );
 
 
 wire [WIDTH-1:0] ACF_result_12;
+wire ACF_done_12;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -431,11 +460,13 @@ AutoCorrelator_12
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_12),
-.ACF_result(ACF_result_12)
+.ACF_result(ACF_result_12),
+.done(ACF_done_12)
 );
 
 
 wire [WIDTH-1:0] ACF_result_13;
+wire ACF_done_13;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -451,11 +482,13 @@ AutoCorrelator_13
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_13),
-.ACF_result(ACF_result_13)
+.ACF_result(ACF_result_13),
+.done(ACF_done_13)
 );
 
 
 wire [WIDTH-1:0] ACF_result_14;
+wire ACF_done_14;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -471,11 +504,13 @@ AutoCorrelator_14
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_14),
-.ACF_result(ACF_result_14)
+.ACF_result(ACF_result_14),
+.done(ACF_done_14)
 );
 
 
 wire [WIDTH-1:0] ACF_result_15;
+wire ACF_done_15;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -491,11 +526,13 @@ AutoCorrelator_15
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_15),
-.ACF_result(ACF_result_15)
+.ACF_result(ACF_result_15),
+.done(ACF_done_15)
 );
 
 
 wire [WIDTH-1:0] ACF_result_16;
+wire ACF_done_16;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -511,11 +548,13 @@ AutoCorrelator_16
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_16),
-.ACF_result(ACF_result_16)
+.ACF_result(ACF_result_16),
+.done(ACF_done_16)
 );
 
 
 wire [WIDTH-1:0] ACF_result_17;
+wire ACF_done_17;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -531,11 +570,13 @@ AutoCorrelator_17
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_17),
-.ACF_result(ACF_result_17)
+.ACF_result(ACF_result_17),
+.done(ACF_done_17)
 );
 
 
 wire [WIDTH-1:0] ACF_result_18;
+wire ACF_done_18;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -551,11 +592,13 @@ AutoCorrelator_18
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_18),
-.ACF_result(ACF_result_18)
+.ACF_result(ACF_result_18),
+.done(ACF_done_18)
 );
 
 
 wire [WIDTH-1:0] ACF_result_19;
+wire ACF_done_19;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -571,11 +614,13 @@ AutoCorrelator_19
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_19),
-.ACF_result(ACF_result_19)
+.ACF_result(ACF_result_19),
+.done(ACF_done_19)
 );
 
 
 wire [WIDTH-1:0] ACF_result_20;
+wire ACF_done_20;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -591,11 +636,13 @@ AutoCorrelator_20
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_20),
-.ACF_result(ACF_result_20)
+.ACF_result(ACF_result_20),
+.done(ACF_done_20)
 );
 
 
 wire [WIDTH-1:0] ACF_result_21;
+wire ACF_done_21;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -611,11 +658,13 @@ AutoCorrelator_21
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_21),
-.ACF_result(ACF_result_21)
+.ACF_result(ACF_result_21),
+.done(ACF_done_21)
 );
 
 
 wire [WIDTH-1:0] ACF_result_22;
+wire ACF_done_22;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -631,11 +680,13 @@ AutoCorrelator_22
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_22),
-.ACF_result(ACF_result_22)
+.ACF_result(ACF_result_22),
+.done(ACF_done_22)
 );
 
 
 wire [WIDTH-1:0] ACF_result_23;
+wire ACF_done_23;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -651,11 +702,13 @@ AutoCorrelator_23
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_23),
-.ACF_result(ACF_result_23)
+.ACF_result(ACF_result_23),
+.done(ACF_done_23)
 );
 
 
 wire [WIDTH-1:0] ACF_result_24;
+wire ACF_done_24;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -671,11 +724,13 @@ AutoCorrelator_24
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_24),
-.ACF_result(ACF_result_24)
+.ACF_result(ACF_result_24),
+.done(ACF_done_24)
 );
 
 
 wire [WIDTH-1:0] ACF_result_25;
+wire ACF_done_25;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -691,11 +746,13 @@ AutoCorrelator_25
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_25),
-.ACF_result(ACF_result_25)
+.ACF_result(ACF_result_25),
+.done(ACF_done_25)
 );
 
 
 wire [WIDTH-1:0] ACF_result_26;
+wire ACF_done_26;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -711,11 +768,13 @@ AutoCorrelator_26
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_26),
-.ACF_result(ACF_result_26)
+.ACF_result(ACF_result_26),
+.done(ACF_done_26)
 );
 
 
 wire [WIDTH-1:0] ACF_result_27;
+wire ACF_done_27;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -731,11 +790,13 @@ AutoCorrelator_27
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_27),
-.ACF_result(ACF_result_27)
+.ACF_result(ACF_result_27),
+.done(ACF_done_27)
 );
 
 
 wire [WIDTH-1:0] ACF_result_28;
+wire ACF_done_28;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -751,11 +812,13 @@ AutoCorrelator_28
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_28),
-.ACF_result(ACF_result_28)
+.ACF_result(ACF_result_28),
+.done(ACF_done_28)
 );
 
 
 wire [WIDTH-1:0] ACF_result_29;
+wire ACF_done_29;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -771,11 +834,13 @@ AutoCorrelator_29
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_29),
-.ACF_result(ACF_result_29)
+.ACF_result(ACF_result_29),
+.done(ACF_done_29)
 );
 
 
 wire [WIDTH-1:0] ACF_result_30;
+wire ACF_done_30;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -791,11 +856,13 @@ AutoCorrelator_30
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_30),
-.ACF_result(ACF_result_30)
+.ACF_result(ACF_result_30),
+.done(ACF_done_30)
 );
 
 
 wire [WIDTH-1:0] ACF_result_31;
+wire ACF_done_31;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -811,11 +878,13 @@ AutoCorrelator_31
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_31),
-.ACF_result(ACF_result_31)
+.ACF_result(ACF_result_31),
+.done(ACF_done_31)
 );
 
 
 wire [WIDTH-1:0] ACF_result_32;
+wire ACF_done_32;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -831,11 +900,13 @@ AutoCorrelator_32
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_32),
-.ACF_result(ACF_result_32)
+.ACF_result(ACF_result_32),
+.done(ACF_done_32)
 );
 
 
 wire [WIDTH-1:0] ACF_result_33;
+wire ACF_done_33;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -851,11 +922,13 @@ AutoCorrelator_33
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_33),
-.ACF_result(ACF_result_33)
+.ACF_result(ACF_result_33),
+.done(ACF_done_33)
 );
 
 
 wire [WIDTH-1:0] ACF_result_34;
+wire ACF_done_34;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -871,11 +944,13 @@ AutoCorrelator_34
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_34),
-.ACF_result(ACF_result_34)
+.ACF_result(ACF_result_34),
+.done(ACF_done_34)
 );
 
 
 wire [WIDTH-1:0] ACF_result_35;
+wire ACF_done_35;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -891,11 +966,13 @@ AutoCorrelator_35
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_35),
-.ACF_result(ACF_result_35)
+.ACF_result(ACF_result_35),
+.done(ACF_done_35)
 );
 
 
 wire [WIDTH-1:0] ACF_result_36;
+wire ACF_done_36;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -911,11 +988,13 @@ AutoCorrelator_36
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_36),
-.ACF_result(ACF_result_36)
+.ACF_result(ACF_result_36),
+.done(ACF_done_36)
 );
 
 
 wire [WIDTH-1:0] ACF_result_37;
+wire ACF_done_37;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -931,11 +1010,13 @@ AutoCorrelator_37
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_37),
-.ACF_result(ACF_result_37)
+.ACF_result(ACF_result_37),
+.done(ACF_done_37)
 );
 
 
 wire [WIDTH-1:0] ACF_result_38;
+wire ACF_done_38;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -951,11 +1032,13 @@ AutoCorrelator_38
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_38),
-.ACF_result(ACF_result_38)
+.ACF_result(ACF_result_38),
+.done(ACF_done_38)
 );
 
 
 wire [WIDTH-1:0] ACF_result_39;
+wire ACF_done_39;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -971,11 +1054,13 @@ AutoCorrelator_39
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_39),
-.ACF_result(ACF_result_39)
+.ACF_result(ACF_result_39),
+.done(ACF_done_39)
 );
 
 
 wire [WIDTH-1:0] ACF_result_40;
+wire ACF_done_40;
 AutoCorrelator
 #(
 .WIDTH(WIDTH),
@@ -991,12 +1076,71 @@ AutoCorrelator_40
 .reset(~t_int_out),
 .n_i(n_i),
 .n_delta(n_delta_40),
-.ACF_result(ACF_result_40)
+.ACF_result(ACF_result_40),
+.done(ACF_done_40)
 );
 
 //.n_delta(n_delta_40),
 //.ACF_result(ACF_result_40)
 //);
+wire comm_enable;
+and(comm_enable,ACF_done_1,ACF_done_2, ACF_done_3, ACF_done_4,ACF_done_5,ACF_done_6,ACF_done_7,ACF_done_8,ACF_done_9,ACF_done_10,ACF_done_11,ACF_done_12,ACF_done_13,ACF_done_14,ACF_done_15,ACF_done_16,ACF_done_17,ACF_done_18,ACF_done_19,ACF_done_20,ACF_done_21,ACF_done_22,ACF_done_23,ACF_done_24,ACF_done_25,ACF_done_26,ACF_done_27,ACF_done_28,ACF_done_29,ACF_done_30,ACF_done_31,ACF_done_32,ACF_done_33,ACF_done_34,ACF_done_35,ACF_done_36,ACF_done_37,ACF_done_38,ACF_done_39,ACF_done_40);
+
+reg concatenated_data = {
+ACF_result_1[13:0],
+ACF_result_2[13:0],
+ACF_result_3[13:0],
+ACF_result_4[13:0],
+ACF_result_5[13:0],
+ACF_result_6[13:0],
+ACF_result_7[13:0],
+ACF_result_8[13:0],
+ACF_result_9[13:0],
+ACF_result_10[13:0],
+ACF_result_11[13:0],
+ACF_result_12[13:0],
+ACF_result_13[13:0],
+ACF_result_14[13:0],
+ACF_result_15[13:0],
+ACF_result_16[13:0],
+ACF_result_17[13:0],
+ACF_result_18[13:0],
+ACF_result_19[13:0],
+ACF_result_20[13:0],
+ACF_result_21[13:0],
+ACF_result_22[13:0],
+ACF_result_23[13:0],
+ACF_result_24[13:0],
+ACF_result_25[13:0],
+ACF_result_26[13:0],
+ACF_result_27[13:0],
+ACF_result_28[13:0],
+ACF_result_29[13:0],
+ACF_result_30[13:0],
+ACF_result_31[13:0],
+ACF_result_32[13:0],
+ACF_result_33[13:0],
+ACF_result_34[13:0],
+ACF_result_35[13:0],
+ACF_result_36[13:0],
+ACF_result_37[13:0],
+ACF_result_38[13:0],
+ACF_result_39[13:0],
+ACF_result_40[13:0]
+};
+
+FTDI_Top FTDI_Top
+(
+.enable(enable),
+.comm_clk(clk_60MHz),
+.txe(txe),
+.data_out(data_out),
+.data(concatenated_data),
+.wr(wr),
+.rd(rd),
+.siwu(siwu),
+.oe_n(oe_n)
+);
 
 
 endmodule

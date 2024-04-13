@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v" \
+"../../../../Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v" \
+"../../../../Compressed_DCS_TROPICS.srcs/sources_1/new/counterBuffer.v" \
+"../../../../Compressed_DCS_TROPICS.srcs/sources_1/new/integralTimer.v" \
+"../../../../Compressed_DCS_TROPICS.srcs/sources_1/new/sampler.v" \
+
+sv xil_defaultlib  \
+"../../../../Compressed_DCS_TROPICS.srcs/sim_1/new/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -12,81 +12,83 @@ module FT2232H_TX
     output reg [7:0] data_out
 );
 
+parameter total_bits = DATA_WIDTH*40;
+parameter total_bytes = $rtoi($ceil((total_bits/8)));
+
 reg r_wr;
 
 initial begin
     r_wr <= 1'b1;
+    data_out <= 8'b0;
 end
 
 assign wr = r_wr;
 
 parameter IDLE = 2'b00,
           SEND = 2'b01,
-          DONE = 2'b10,
+          INIT = 2'b10,
           ERROR = 2'b11;
 
 reg [1:0] state;
+reg [7:0] HEADER = 8'b11111111;
 
 initial begin
     state <= IDLE;
 end
 
-reg [7:0] to_send = 'd0;
-reg [7:0] next_data = 0;
+parameter COUNTER_WIDTH = $rtoi($ceil($clog2(total_bytes)));
+//parameter COUNTER_WIDTH = $rtoi($ceil($clog2(ADDRESS_WIDTH))) + 1;
 
-parameter ADDRESS_WIDTH = $rtoi($ceil($clog2(DATA_WIDTH*40)));
-parameter COUNTER_WIDTH = $rtoi($ceil($clog2(ADDRESS_WIDTH)));
-
-reg [ADDRESS_WIDTH+1:0]data_out_LSB;
-reg [ADDRESS_WIDTH+1:0]data_out_MSB;
-reg [COUNTER_WIDTH+1:0]data_out_COUNTER;
+reg [COUNTER_WIDTH:0]data_out_COUNTER;
 
 initial begin
-    data_out_LSB <= 0;
-    data_out_MSB <= 7;
-    data_out_COUNTER <= 0;
+    data_out_COUNTER <= 0; 
 end
 
+//reg [15:0] time_out_counter = 0;
 
-always @ ( posedge clk) begin //txe can go high while clk is low
+always @ ( posedge clk or posedge txe) begin //txe can go high while clk is low
 
     if(txe) begin
         state <= IDLE;
         r_wr <= 1'b1;
     end
+    
+    else begin
+        case(state) 
 
-    case(state) 
+            IDLE:begin
+                if(~txe) begin
+                    state <= SEND;
+                end
+                    r_wr <= 1'b1;
 
-        IDLE:begin
-            if(~txe) begin
-                state <= SEND;
+                //time_out_counter <= time_out_counter + 1'b1;
             end
-            else begin
-                r_wr <= 1'b1;
-                data_out <= 8'b0;
-            end
-        end
 
-        SEND:begin
-            if(~txe) begin
-                data_out <= data[8*data_out_COUNTER+:8];
-                data_out_COUNTER <= data_out_COUNTER + 1;
-                //data_out_LSB <= data_out_LSB+8;
-                //data_out_MSB <= data_out_MSB+8;
-                r_wr <= 1'b0;
-            end
-            else begin
-                to_send <= to_send - 1'b1;
-                r_wr <= 1'b1;
-                next_data <= to_send+1;
-                
-                data_out_LSB <= 0;
-                data_out_MSB <= 7;
+            SEND:begin
+                if(~txe) begin
+                    r_wr <= 1'b0;
+                    if (~wr) begin
+                        if (data_out_COUNTER <= total_bytes-1) begin
+                            data_out <= data[8*data_out_COUNTER+:8];
+                            data_out_COUNTER <= data_out_COUNTER + 1; 
+                        end
+                        else begin
+                            r_wr <= 1'b1;
+                            state <= IDLE;
+                            data_out_COUNTER <= 0;   
+                        end
+                    end  
+                end
 
-                state <= IDLE;
+                else begin
+                    r_wr <= 1'b1;
+                    state <= IDLE;
+                end
             end
-        end
-    endcase
+        endcase
+    end
 end
 
 

@@ -20,10 +20,27 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Comm_Master(
-input dataOut_1,
-input ready_1
-    );
+module Comm_Master
+#(
+    parameter DATA_WIDTH = 14    
+)
+(
+    input clk_60MHz,
+    input [0:(DATA_WIDTH*40)-1]data_out,
+    input enable
+);
 
-    
+FTDI_Top FTDI_Top
+(
+.enable(enable),
+.comm_clk(clk_60MHz),
+.txe,
+.data_out,
+.data,
+.wr,
+.rd,
+.siwu,
+.oe_n
+);
+
 endmodule
