@@ -32,9 +32,13 @@ reg COMM_CLK = 0;
 reg APD_INPUT = 0;
 
 initial begin
-    txe = 0;
-    #(COMM_PERIOD/2);
     txe = 1;
+    #(COMM_PERIOD/2);
+    txe = 0;
+    #(COMM_PERIOD*10);
+    txe = 1;
+    #(COMM_PERIOD*10);
+    txe = 0;
 end
 initial begin //Generate SYS CLK 12 MHz
     forever begin

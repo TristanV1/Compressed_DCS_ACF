@@ -30,7 +30,7 @@ reg sysclk   = 0,
 wire [7:0] data_out; //output data (to FT2232)
 wire wr; //write ready signal (to FT2232)
 wire rd;
-reg enable;
+reg enable = 0;
 wire siwu;
 wire oe_n;
 

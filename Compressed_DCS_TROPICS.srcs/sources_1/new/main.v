@@ -1082,12 +1082,20 @@ AutoCorrelator_40
 //.n_delta(n_delta_40),
 //.ACF_result(ACF_result_40)
 //);
-wire comm_enable;
-and(comm_enable,ACF_done_1,ACF_done_2, ACF_done_3, ACF_done_4,ACF_done_5,ACF_done_6,ACF_done_7,ACF_done_8,ACF_done_9,ACF_done_10,ACF_done_11,ACF_done_12,ACF_done_13,ACF_done_14,ACF_done_15,ACF_done_16,ACF_done_17,ACF_done_18,ACF_done_19,ACF_done_20,ACF_done_21,ACF_done_22,ACF_done_23,ACF_done_24,ACF_done_25,ACF_done_26,ACF_done_27,ACF_done_28,ACF_done_29,ACF_done_30,ACF_done_31,ACF_done_32,ACF_done_33,ACF_done_34,ACF_done_35,ACF_done_36,ACF_done_37,ACF_done_38,ACF_done_39,ACF_done_40);
+wire w_comm_enable;
+and(w_comm_enable,ACF_done_1,ACF_done_2, ACF_done_3, ACF_done_4,ACF_done_5,ACF_done_6,ACF_done_7,ACF_done_8,ACF_done_9,ACF_done_10,ACF_done_11,ACF_done_12,ACF_done_13,ACF_done_14,ACF_done_15,ACF_done_16,ACF_done_17,ACF_done_18,ACF_done_19,ACF_done_20,ACF_done_21,ACF_done_22,ACF_done_23,ACF_done_24,ACF_done_25,ACF_done_26,ACF_done_27,ACF_done_28,ACF_done_29,ACF_done_30,ACF_done_31,ACF_done_32,ACF_done_33,ACF_done_34,ACF_done_35,ACF_done_36,ACF_done_37,ACF_done_38,ACF_done_39,ACF_done_40);
+
+reg comm_enable;
+
+initial begin
+    comm_enable = 0;
+end
 
 reg [559:0] concatenated_data;
 
 always @ (posedge clk) begin
+    comm_enable <= w_comm_enable;
+
 concatenated_data <= {
     ACF_result_1[13:0],
     ACF_result_2[13:0],
@@ -1134,8 +1142,8 @@ end
 
 FTDI_Top FTDI_Top
 (
-.enable(enable),
-.comm_clk(clk_60MHz),
+.enable(comm_enable),
+.comm_clk(comm_clk),
 .txe(txe),
 .data_out(data_out),
 .data_in(concatenated_data),

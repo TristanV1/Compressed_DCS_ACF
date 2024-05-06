@@ -37,7 +37,6 @@ output oe_n
 );
 
 
-reg r_enable;
 reg r_reset;
 
 wire [7:0] w_data;
