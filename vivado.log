@@ -1,0 +1,1746 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon May  6 12:36:50 2024
+# Process ID: 23736
+# Current directory: C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21692 C:\Users\12289\OneDrive\Desktop\Repos\Compressed_DCS_ACF\Compressed_DCS_TROPICS.xpr
+# Log file: C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/vivado.log
+# Journal file: C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS' since last save.
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorVersionXsim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorVersionModelSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorVersionQuesta
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorVersionXcelium
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorVersionVCS
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorVersionRiviera
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorVersionActiveHdl
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorGccVersionXsim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorGccVersionModelSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorGccVersionQuesta
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorGccVersionXcelium
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorGccVersionVCS
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorGccVersionRiviera
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorGccVersionActiveHdl
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.gen/sources_1', nor could it be found using path 'C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.gen/sources_1'.
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.ip_user_files', nor could it be found using path 'C:/Users/12289/Desktop/Coding/FPGA/Compressed_DCS_TROPICS/Compressed_DCS_TROPICS.ip_user_files'.
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name ClassicSocBoot
+ERROR: [Runs 36-378] The checkpoint 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/utils_1/imports/synth_1/AutoCorrelator.dcp' was created with 'Vivado v2021.2 (64-bit)', and cannot be opened in this version.
+create_project Compressed_DCS_Remote_Project C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project -part xc7s25csga225-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1019.195 ; gain = 0.000
+add_files -norecurse {C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/photonCounterSampler.v C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/sampler.v C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FT2232H_TX.v C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/photonCounter.v C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/Comm_Master.v C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FTDI_Top.v C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/integralTimer.v C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/counterBuffer.v C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Constraints/CmodA7_Master.xdc
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/testbench.v C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/CommInterface_testbench.v}
+update_compile_order -fileset sim_1
+set_property file_type SystemVerilog [get_files  C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/testbench.v]
+set_property top CommInterface_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+set_property is_enabled false [get_files  C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/testbench.v]
+file mkdir C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.srcs/sim_1/new/CounterTest.sv w ]
+add_files -fileset sim_1 C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.srcs/sim_1/new/CounterTest.sv
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.srcs/sim_1/new/CounterTest.sv] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.srcs/sim_1/new/CounterTest.sv
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/Full_Integration_testbench.sv w ]
+add_files -fileset sim_1 C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/Full_Integration_testbench.sv
+update_compile_order -fileset sim_1
+set_property top Full_Integration_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+set_property is_enabled false [get_files  C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/CommInterface_testbench.v]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Full_Integration_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj Full_Integration_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AutoCorrelator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FT2232H_TX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FT2232H_TX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FTDI_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FTDI_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/counterBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counterBuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/integralTimer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module integralTimer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-2458] undeclared symbol enable, assumed default net type wire [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1138]
+INFO: [VRFC 10-2458] undeclared symbol clk_60MHz, assumed default net type wire [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1139]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/photonCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module photonCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/sampler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sampler
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/Full_Integration_testbench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_Integration_testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xelab -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2538] module instantiation should have an instance name [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/Full_Integration_testbench.sv:63]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Full_Integration_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj Full_Integration_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/Full_Integration_testbench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_Integration_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xelab -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 58 differs from formal bit length 26 for port 'dividend' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [VRFC 10-3091] actual bit length 58 differs from formal bit length 26 for port 'divisor' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 560 for port 'data_out' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1141]
+WARNING: [VRFC 10-3091] actual bit length 560 differs from formal bit length 8 for port 'data' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1142]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'concatenated_data' is not permitted [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1142]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Full_Integration_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj Full_Integration_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AutoCorrelator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FT2232H_TX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FT2232H_TX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FTDI_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FTDI_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/counterBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counterBuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/integralTimer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module integralTimer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-2458] undeclared symbol enable, assumed default net type wire [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1138]
+INFO: [VRFC 10-2458] undeclared symbol clk_60MHz, assumed default net type wire [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1139]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/photonCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module photonCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/sampler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sampler
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xelab -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'data_out' on this module [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1141]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Full_Integration_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj Full_Integration_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AutoCorrelator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FT2232H_TX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FT2232H_TX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FTDI_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FTDI_Top
+INFO: [VRFC 10-2458] undeclared symbol data, assumed default net type wire [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FTDI_Top.v:61]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/counterBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counterBuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/integralTimer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module integralTimer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-2458] undeclared symbol enable, assumed default net type wire [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1138]
+INFO: [VRFC 10-2458] undeclared symbol clk_60MHz, assumed default net type wire [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1139]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/photonCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module photonCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/sampler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sampler
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xelab -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 58 differs from formal bit length 26 for port 'dividend' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [VRFC 10-3091] actual bit length 58 differs from formal bit length 26 for port 'divisor' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'data_out' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1141]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'data_out' is not permitted [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1141]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Full_Integration_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj Full_Integration_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AutoCorrelator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FT2232H_TX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FT2232H_TX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FTDI_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FTDI_Top
+INFO: [VRFC 10-2458] undeclared symbol data, assumed default net type wire [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FTDI_Top.v:61]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/counterBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counterBuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/integralTimer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module integralTimer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-2458] undeclared symbol enable, assumed default net type wire [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1138]
+INFO: [VRFC 10-2458] undeclared symbol clk_60MHz, assumed default net type wire [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1139]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/photonCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module photonCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/sampler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sampler
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xelab -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 58 differs from formal bit length 26 for port 'dividend' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [VRFC 10-3091] actual bit length 58 differs from formal bit length 26 for port 'divisor' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'data_out' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1141]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.integralTimer(clk_speed=5000000)
+Compiling module xil_defaultlib.photonCounter
+Compiling module xil_defaultlib.sampler(default_fclk=5000000)
+Compiling module xil_defaultlib.counterBuffer_default
+Compiling module xil_defaultlib.Divider(WIDTH=26)
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.FT2232H_TX_default
+Compiling module xil_defaultlib.FTDI_Top
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.Full_Integration_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Full_Integration_testbench_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim/xsim.dir/Full_Integration_testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon May  6 13:36:23 2024...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1019.195 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Full_Integration_testbench_behav -key {Behavioral:sim_1:Functional:Full_Integration_testbench} -tclbatch {Full_Integration_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source Full_Integration_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Full_Integration_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 1019.195 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 83.3 ns
+run 833 ns
+run 833 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 833 ns
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Full_Integration_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj Full_Integration_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/Full_Integration_testbench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_Integration_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xelab -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 58 differs from formal bit length 26 for port 'dividend' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [VRFC 10-3091] actual bit length 58 differs from formal bit length 26 for port 'divisor' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'data_out' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1141]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.integralTimer(clk_speed=5000000)
+Compiling module xil_defaultlib.photonCounter
+Compiling module xil_defaultlib.sampler(default_fclk=5000000)
+Compiling module xil_defaultlib.counterBuffer_default
+Compiling module xil_defaultlib.Divider(WIDTH=26)
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.FT2232H_TX_default
+Compiling module xil_defaultlib.FTDI_Top
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.Full_Integration_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Full_Integration_testbench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1578.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1578.238 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 1578.238 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1578.238 ; gain = 0.000
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/Full_Integration_testbench/UUT/AutoCorrelator_1/ACF_result}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/Full_Integration_testbench/UUT/AutoCorrelator_2/ACF_result}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/Full_Integration_testbench/UUT/AutoCorrelator_3/ACF_result}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/Full_Integration_testbench/UUT/AutoCorrelator_4/ACF_result}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/Full_Integration_testbench/UUT/sampler_1/sample_out}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 833 ns
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/Full_Integration_testbench/UUT/photonCounter_1/counter}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/Full_Integration_testbench/UUT/photonCounter_1/photonCounter_TTL}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 833 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 500 ms
+run: Time (s): cpu = 00:00:49 ; elapsed = 00:03:00 . Memory (MB): peak = 1578.238 ; gain = 0.000
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/Full_Integration_testbench/UUT/integralTimer_1/t_int_out}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/Full_Integration_testbench/UUT/sampler_1/sample_and_clear}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+run: Time (s): cpu = 00:00:49 ; elapsed = 00:02:58 . Memory (MB): peak = 1578.238 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 50 ms
+run: Time (s): cpu = 00:00:42 ; elapsed = 00:02:40 . Memory (MB): peak = 1578.238 ; gain = 0.000
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/Full_Integration_testbench/UUT/comm_enable}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Full_Integration_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj Full_Integration_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/Full_Integration_testbench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_Integration_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xelab -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 58 differs from formal bit length 26 for port 'dividend' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [VRFC 10-3091] actual bit length 58 differs from formal bit length 26 for port 'divisor' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'data_out' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1141]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.integralTimer(clk_speed=5000000)
+Compiling module xil_defaultlib.photonCounter
+Compiling module xil_defaultlib.sampler(default_fclk=5000000)
+Compiling module xil_defaultlib.counterBuffer_default
+Compiling module xil_defaultlib.Divider(WIDTH=26)
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.FT2232H_TX_default
+Compiling module xil_defaultlib.FTDI_Top
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.Full_Integration_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Full_Integration_testbench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1578.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1578.238 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 1578.238 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 50 ms
+run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 1578.238 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 50 ms
+run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1578.238 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 60 ms
+run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 1578.238 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Full_Integration_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj Full_Integration_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/Full_Integration_testbench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_Integration_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xelab -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 58 differs from formal bit length 26 for port 'dividend' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [VRFC 10-3091] actual bit length 58 differs from formal bit length 26 for port 'divisor' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'data_out' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1141]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.integralTimer(clk_speed=5000000)
+Compiling module xil_defaultlib.photonCounter
+Compiling module xil_defaultlib.sampler(default_fclk=5000000)
+Compiling module xil_defaultlib.counterBuffer_default
+Compiling module xil_defaultlib.Divider(WIDTH=26)
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.FT2232H_TX_default
+Compiling module xil_defaultlib.FTDI_Top
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.Full_Integration_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Full_Integration_testbench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1578.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1578.238 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1578.238 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 1578.238 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Full_Integration_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj Full_Integration_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/Full_Integration_testbench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_Integration_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xelab -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 58 differs from formal bit length 26 for port 'dividend' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [VRFC 10-3091] actual bit length 58 differs from formal bit length 26 for port 'divisor' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'data_out' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1141]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.integralTimer(clk_speed=5000000)
+Compiling module xil_defaultlib.photonCounter
+Compiling module xil_defaultlib.sampler(default_fclk=5000000)
+Compiling module xil_defaultlib.counterBuffer_default
+Compiling module xil_defaultlib.Divider(WIDTH=26)
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.FT2232H_TX_default
+Compiling module xil_defaultlib.FTDI_Top
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.Full_Integration_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Full_Integration_testbench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1578.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1578.238 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1578.238 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1578.238 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Full_Integration_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj Full_Integration_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AutoCorrelator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FT2232H_TX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FT2232H_TX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FTDI_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FTDI_Top
+INFO: [VRFC 10-2458] undeclared symbol data, assumed default net type wire [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FTDI_Top.v:60]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/counterBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counterBuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/integralTimer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module integralTimer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-2458] undeclared symbol enable, assumed default net type wire [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1138]
+INFO: [VRFC 10-2458] undeclared symbol clk_60MHz, assumed default net type wire [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1139]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/photonCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module photonCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/sampler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sampler
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xelab -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 58 differs from formal bit length 26 for port 'dividend' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [VRFC 10-3091] actual bit length 58 differs from formal bit length 26 for port 'divisor' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'data_out' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1141]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.integralTimer(clk_speed=5000000)
+Compiling module xil_defaultlib.photonCounter
+Compiling module xil_defaultlib.sampler(default_fclk=5000000)
+Compiling module xil_defaultlib.counterBuffer_default
+Compiling module xil_defaultlib.Divider(WIDTH=26)
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.FT2232H_TX_default
+Compiling module xil_defaultlib.FTDI_Top
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.Full_Integration_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Full_Integration_testbench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1578.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1578.238 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1578.238 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 60 ms
+run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 1578.238 ; gain = 0.000
+set_property is_enabled false [get_files  C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/Comm_Master.v]
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Full_Integration_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj Full_Integration_testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xelab -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 58 differs from formal bit length 26 for port 'dividend' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [VRFC 10-3091] actual bit length 58 differs from formal bit length 26 for port 'divisor' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'data_out' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1141]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1578.238 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Full_Integration_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj Full_Integration_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/Full_Integration_testbench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_Integration_testbench
+WARNING: [VRFC 10-3380] identifier 'txe' is used before its declaration [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/Full_Integration_testbench.sv:35]
+WARNING: [VRFC 10-3380] identifier 'txe' is used before its declaration [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/Full_Integration_testbench.sv:37]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xelab -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 58 differs from formal bit length 26 for port 'dividend' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [VRFC 10-3091] actual bit length 58 differs from formal bit length 26 for port 'divisor' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'data_out' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1141]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.integralTimer(clk_speed=5000000)
+Compiling module xil_defaultlib.photonCounter
+Compiling module xil_defaultlib.sampler(default_fclk=5000000)
+Compiling module xil_defaultlib.counterBuffer_default
+Compiling module xil_defaultlib.Divider(WIDTH=26)
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.FT2232H_TX_default
+Compiling module xil_defaultlib.FTDI_Top
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.Full_Integration_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Full_Integration_testbench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1578.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1578.238 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1578.238 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Full_Integration_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj Full_Integration_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AutoCorrelator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FT2232H_TX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FT2232H_TX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FTDI_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FTDI_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/counterBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counterBuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/integralTimer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module integralTimer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-2458] undeclared symbol enable, assumed default net type wire [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1138]
+INFO: [VRFC 10-2458] undeclared symbol clk_60MHz, assumed default net type wire [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1139]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/photonCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module photonCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/sampler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sampler
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xelab -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 58 differs from formal bit length 26 for port 'dividend' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [VRFC 10-3091] actual bit length 58 differs from formal bit length 26 for port 'divisor' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'data_out' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1141]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.integralTimer(clk_speed=5000000)
+Compiling module xil_defaultlib.photonCounter
+Compiling module xil_defaultlib.sampler(default_fclk=5000000)
+Compiling module xil_defaultlib.counterBuffer_default
+Compiling module xil_defaultlib.Divider(WIDTH=26)
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.FT2232H_TX_default
+Compiling module xil_defaultlib.FTDI_Top
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.Full_Integration_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Full_Integration_testbench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1578.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1578.238 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 1578.238 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Full_Integration_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj Full_Integration_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AutoCorrelator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FT2232H_TX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FT2232H_TX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FTDI_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FTDI_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/counterBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counterBuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/integralTimer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module integralTimer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-2458] undeclared symbol enable, assumed default net type wire [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1137]
+INFO: [VRFC 10-2458] undeclared symbol clk_60MHz, assumed default net type wire [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1138]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/photonCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module photonCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/sampler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sampler
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xelab -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'data' on this module [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/Full_Integration_testbench.sv:75]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Full_Integration_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj Full_Integration_testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xelab -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'data' on this module [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/Full_Integration_testbench.sv:75]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Full_Integration_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj Full_Integration_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AutoCorrelator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FT2232H_TX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FT2232H_TX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FTDI_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FTDI_Top
+INFO: [VRFC 10-2458] undeclared symbol data, assumed default net type wire [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FTDI_Top.v:61]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/counterBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counterBuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/integralTimer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module integralTimer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-2458] undeclared symbol enable, assumed default net type wire [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1137]
+INFO: [VRFC 10-2458] undeclared symbol clk_60MHz, assumed default net type wire [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1138]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/photonCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module photonCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/sampler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sampler
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xelab -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'data' on this module [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/Full_Integration_testbench.sv:75]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Full_Integration_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj Full_Integration_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/Full_Integration_testbench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_Integration_testbench
+WARNING: [VRFC 10-3380] identifier 'txe' is used before its declaration [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/Full_Integration_testbench.sv:35]
+WARNING: [VRFC 10-3380] identifier 'txe' is used before its declaration [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/Full_Integration_testbench.sv:37]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xelab -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 58 differs from formal bit length 26 for port 'dividend' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [VRFC 10-3091] actual bit length 58 differs from formal bit length 26 for port 'divisor' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'data_out' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1140]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.integralTimer(clk_speed=5000000)
+Compiling module xil_defaultlib.photonCounter
+Compiling module xil_defaultlib.sampler(default_fclk=5000000)
+Compiling module xil_defaultlib.counterBuffer_default
+Compiling module xil_defaultlib.Divider(WIDTH=26)
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.FT2232H_TX_default
+Compiling module xil_defaultlib.FTDI_Top
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.Full_Integration_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Full_Integration_testbench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1578.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1578.238 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1578.238 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+run: Time (s): cpu = 00:00:20 ; elapsed = 00:00:30 . Memory (MB): peak = 1578.238 ; gain = 0.000
+add_bp {C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FTDI_Top.v} 61
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Full_Integration_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj Full_Integration_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AutoCorrelator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/Divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FT2232H_TX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FT2232H_TX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FTDI_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FTDI_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/counterBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counterBuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/integralTimer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module integralTimer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-2458] undeclared symbol enable, assumed default net type wire [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1137]
+INFO: [VRFC 10-2458] undeclared symbol clk_60MHz, assumed default net type wire [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1138]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/photonCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module photonCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/sampler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sampler
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xelab -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Integration_testbench_behav xil_defaultlib.Full_Integration_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 58 differs from formal bit length 26 for port 'dividend' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [VRFC 10-3091] actual bit length 58 differs from formal bit length 26 for port 'divisor' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'data_out' [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/main.v:1140]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:122]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/AutoCorrelator.v:123]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.integralTimer(clk_speed=5000000)
+Compiling module xil_defaultlib.photonCounter
+Compiling module xil_defaultlib.sampler(default_fclk=5000000)
+Compiling module xil_defaultlib.counterBuffer_default
+Compiling module xil_defaultlib.Divider(WIDTH=26)
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.AutoCorrelator(WIDTH=20,delayTim...
+Compiling module xil_defaultlib.FT2232H_TX_default
+Compiling module xil_defaultlib.FTDI_Top
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.Full_Integration_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Full_Integration_testbench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1578.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1578.238 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+WARNING: [Simulator 45-24] Previous breakpoint at line 61 in file 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FTDI_Top.v' not restored because it is no longer a breakable line.
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1578.238 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 60 ms
+run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 1578.238 ; gain = 0.000
+set_property is_enabled true [get_files  C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/CommInterface_testbench.v]
+set_property is_enabled false [get_files  C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/Full_Integration_testbench.sv]
+set_property top CommInterface_testbench [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CommInterface_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CommInterface_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FT2232H_TX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FT2232H_TX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FTDI_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FTDI_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/CommInterface_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CommInterface_testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xelab -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CommInterface_testbench_behav xil_defaultlib.CommInterface_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CommInterface_testbench_behav xil_defaultlib.CommInterface_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'data' on this module [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/CommInterface_testbench.v:39]
+ERROR: [VRFC 10-3180] cannot find port 'sysclk' on this module [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/CommInterface_testbench.v:36]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CommInterface_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CommInterface_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FT2232H_TX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FT2232H_TX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FTDI_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FTDI_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/CommInterface_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CommInterface_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xelab -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CommInterface_testbench_behav xil_defaultlib.CommInterface_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CommInterface_testbench_behav xil_defaultlib.CommInterface_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'sysclk' on this module [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/CommInterface_testbench.v:37]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CommInterface_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CommInterface_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FT2232H_TX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FT2232H_TX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FTDI_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FTDI_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/CommInterface_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CommInterface_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xelab -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CommInterface_testbench_behav xil_defaultlib.CommInterface_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CommInterface_testbench_behav xil_defaultlib.CommInterface_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'enable' is not connected on this instance [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/CommInterface_testbench.v:35]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FT2232H_TX_default
+Compiling module xil_defaultlib.FTDI_Top
+Compiling module xil_defaultlib.CommInterface_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CommInterface_testbench_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim/xsim.dir/CommInterface_testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon May  6 15:35:20 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CommInterface_testbench_behav -key {Behavioral:sim_1:Functional:CommInterface_testbench} -tclbatch {CommInterface_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source CommInterface_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CommInterface_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1578.238 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CommInterface_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CommInterface_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FT2232H_TX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FT2232H_TX
+ERROR: [VRFC 10-2989] 'data' is not declared [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FT2232H_TX.v:83]
+ERROR: [VRFC 10-2865] module 'FT2232H_TX' ignored due to previous errors [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FT2232H_TX.v:3]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CommInterface_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CommInterface_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FT2232H_TX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FT2232H_TX
+ERROR: [VRFC 10-2989] 'data' is not declared [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FT2232H_TX.v:83]
+ERROR: [VRFC 10-2865] module 'FT2232H_TX' ignored due to previous errors [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FT2232H_TX.v:3]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CommInterface_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CommInterface_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FT2232H_TX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FT2232H_TX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FTDI_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FTDI_Top
+INFO: [VRFC 10-2458] undeclared symbol data, assumed default net type wire [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FTDI_Top.v:60]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sim_1/new/CommInterface_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CommInterface_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim'
+"xelab -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CommInterface_testbench_behav xil_defaultlib.CommInterface_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 65e155875ea94ed5bb6959604979f917 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CommInterface_testbench_behav xil_defaultlib.CommInterface_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'data_out' is not permitted [C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_ACF/Compressed_DCS_TROPICS.srcs/sources_1/new/FTDI_Top.v:76]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/12289/OneDrive/Desktop/Repos/Compressed_DCS_Remote_Project/Compressed_DCS_Remote_Project.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May  6 15:48:49 2024...

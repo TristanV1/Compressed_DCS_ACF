@@ -7,7 +7,8 @@ module FT2232H_TX
 (
     input clk,
     input txe,
-    input [0:(DATA_WIDTH*40)-1] data,
+    input [0:(DATA_WIDTH*40)-1] data_in,
+    input enable,
     output wr,
     output reg [7:0] data_out
 );
@@ -47,8 +48,20 @@ end
 
 //reg [15:0] time_out_counter = 0;
 
-always @ ( posedge clk or posedge txe) begin //txe can go high while clk is low
+reg r_enable;
 
+initial begin
+    r_enable <= 0;
+end
+
+
+
+always @ ( posedge clk or posedge txe) begin //txe can go high while clk is low
+    
+    if (r_enable == 0) begin
+        r_enable <= enable;
+    end
+    
     if(txe) begin
         state <= IDLE;
         r_wr <= 1'b1;
@@ -58,7 +71,7 @@ always @ ( posedge clk or posedge txe) begin //txe can go high while clk is low
         case(state) 
 
             IDLE:begin
-                if(~txe) begin
+                if(~txe & r_enable) begin
                     state <= SEND;
                 end
                     r_wr <= 1'b1;
@@ -71,13 +84,14 @@ always @ ( posedge clk or posedge txe) begin //txe can go high while clk is low
                     r_wr <= 1'b0;
                     if (~wr) begin
                         if (data_out_COUNTER <= total_bytes-1) begin
-                            data_out <= data[8*data_out_COUNTER+:8];
+                            data_out <= data_in[8*data_out_COUNTER+:8];
                             data_out_COUNTER <= data_out_COUNTER + 1; 
                         end
                         else begin
                             r_wr <= 1'b1;
                             state <= IDLE;
-                            data_out_COUNTER <= 0;   
+                            data_out_COUNTER <= 0;
+                            r_enable <= 0;   
                         end
                     end  
                 end

@@ -22,13 +22,13 @@
 
 module FTDI_Top
 (
-input enable,
-
+input sysclk,
 input comm_clk,
+input enable,
 input txe,
-input [0:559] data_out,
+input [0:559] data_in,
 
-output [7:0] data,
+output [7:0] data_out,
 output wr,
 output rd,
 
@@ -70,11 +70,10 @@ FT2232H_TX TX
 (
     .clk(comm_clk),
     .txe(txe),
-    .data(data_out),
-    //.enable(r_enable),
-    //.reset(r_reset),
-    .wr(w_wr),
-    .data_out(w_data)
+    .data_in(data_in),
+    .enable(enable),
+    .wr(wr),
+    .data_out(data_out)
 );
 
 

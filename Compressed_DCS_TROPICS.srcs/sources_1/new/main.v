@@ -31,12 +31,11 @@ parameter sampling_frequency = 1_000_000
     input photonCounterIn1,
     input comm_clk,
     input txe,
-    input data,
-    input wr,
-    input rd,
-    input siwu,
-    input oe_n,
-    output reg data_out
+    output rd,
+    output siwu,
+    output oe_n,
+    output wr,
+    output data_out
 );
 
 wire t_int_out;
@@ -1086,48 +1085,52 @@ AutoCorrelator_40
 wire comm_enable;
 and(comm_enable,ACF_done_1,ACF_done_2, ACF_done_3, ACF_done_4,ACF_done_5,ACF_done_6,ACF_done_7,ACF_done_8,ACF_done_9,ACF_done_10,ACF_done_11,ACF_done_12,ACF_done_13,ACF_done_14,ACF_done_15,ACF_done_16,ACF_done_17,ACF_done_18,ACF_done_19,ACF_done_20,ACF_done_21,ACF_done_22,ACF_done_23,ACF_done_24,ACF_done_25,ACF_done_26,ACF_done_27,ACF_done_28,ACF_done_29,ACF_done_30,ACF_done_31,ACF_done_32,ACF_done_33,ACF_done_34,ACF_done_35,ACF_done_36,ACF_done_37,ACF_done_38,ACF_done_39,ACF_done_40);
 
-reg concatenated_data = {
-ACF_result_1[13:0],
-ACF_result_2[13:0],
-ACF_result_3[13:0],
-ACF_result_4[13:0],
-ACF_result_5[13:0],
-ACF_result_6[13:0],
-ACF_result_7[13:0],
-ACF_result_8[13:0],
-ACF_result_9[13:0],
-ACF_result_10[13:0],
-ACF_result_11[13:0],
-ACF_result_12[13:0],
-ACF_result_13[13:0],
-ACF_result_14[13:0],
-ACF_result_15[13:0],
-ACF_result_16[13:0],
-ACF_result_17[13:0],
-ACF_result_18[13:0],
-ACF_result_19[13:0],
-ACF_result_20[13:0],
-ACF_result_21[13:0],
-ACF_result_22[13:0],
-ACF_result_23[13:0],
-ACF_result_24[13:0],
-ACF_result_25[13:0],
-ACF_result_26[13:0],
-ACF_result_27[13:0],
-ACF_result_28[13:0],
-ACF_result_29[13:0],
-ACF_result_30[13:0],
-ACF_result_31[13:0],
-ACF_result_32[13:0],
-ACF_result_33[13:0],
-ACF_result_34[13:0],
-ACF_result_35[13:0],
-ACF_result_36[13:0],
-ACF_result_37[13:0],
-ACF_result_38[13:0],
-ACF_result_39[13:0],
-ACF_result_40[13:0]
-};
+reg [559:0] concatenated_data;
+
+always @ (posedge clk) begin
+concatenated_data <= {
+    ACF_result_1[13:0],
+    ACF_result_2[13:0],
+    ACF_result_3[13:0],
+    ACF_result_4[13:0],
+    ACF_result_5[13:0],
+    ACF_result_6[13:0],
+    ACF_result_7[13:0],
+    ACF_result_8[13:0],
+    ACF_result_9[13:0],
+    ACF_result_10[13:0],
+    ACF_result_11[13:0],
+    ACF_result_12[13:0],
+    ACF_result_13[13:0],
+    ACF_result_14[13:0],
+    ACF_result_15[13:0],
+    ACF_result_16[13:0],
+    ACF_result_17[13:0],
+    ACF_result_18[13:0],
+    ACF_result_19[13:0],
+    ACF_result_20[13:0],
+    ACF_result_21[13:0],
+    ACF_result_22[13:0],
+    ACF_result_23[13:0],
+    ACF_result_24[13:0],
+    ACF_result_25[13:0],
+    ACF_result_26[13:0],
+    ACF_result_27[13:0],
+    ACF_result_28[13:0],
+    ACF_result_29[13:0],
+    ACF_result_30[13:0],
+    ACF_result_31[13:0],
+    ACF_result_32[13:0],
+    ACF_result_33[13:0],
+    ACF_result_34[13:0],
+    ACF_result_35[13:0],
+    ACF_result_36[13:0],
+    ACF_result_37[13:0],
+    ACF_result_38[13:0],
+    ACF_result_39[13:0],
+    ACF_result_40[13:0]
+    };
+end
 
 FTDI_Top FTDI_Top
 (
@@ -1135,7 +1138,7 @@ FTDI_Top FTDI_Top
 .comm_clk(clk_60MHz),
 .txe(txe),
 .data_out(data_out),
-.data(concatenated_data),
+.data_in(concatenated_data),
 .wr(wr),
 .rd(rd),
 .siwu(siwu),
