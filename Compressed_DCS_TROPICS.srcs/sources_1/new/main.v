@@ -35,7 +35,7 @@ parameter sampling_frequency = 1_000_000
     output siwu,
     output oe_n,
     output wr,
-    output data_out
+    output [7:0] data_out
 );
 
 wire t_int_out;
